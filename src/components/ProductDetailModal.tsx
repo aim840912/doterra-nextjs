@@ -278,15 +278,9 @@ export default function ProductDetailModal({ product, isOpen, onClose }: Product
 
             {/* 操作按鈕 */}
             <div className="mt-8 pt-6 border-t border-gray-200">
-              <div className="flex gap-3">
+              <div className="flex justify-center">
                 <button 
-                  className="flex-1 bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                  disabled={!product.inStock}
-                >
-                  {product.inStock ? '加入購物車' : '暫時缺貨'}
-                </button>
-                <button 
-                  className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors"
+                  className="px-8 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors"
                   onClick={onClose}
                 >
                   關閉

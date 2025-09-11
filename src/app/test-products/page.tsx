@@ -1,3 +1,5 @@
+'use client'
+
 import { allProducts, getDoTerraProducts, getSampleProducts } from '@/data/products'
 
 export default function TestProductsPage() {
