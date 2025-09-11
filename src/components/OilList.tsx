@@ -1,22 +1,22 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { Product, ProductCategory } from '@/types/product'
-import ProductCard from './ProductCard'
-import ProductDetailModal from './ProductDetailModal'
+import { Oil, OilCategory } from '@/types/oil'
+import OilCard from './OilCard'
+import OilDetailModal from './OilDetailModal'
 
-interface ProductListProps {
-  products: Product[]
+interface OilListProps {
+  oils: Oil[]
   showFilters?: boolean
 }
 
 const categoryLabels: Record<string, string> = {
-  [ProductCategory.ESSENTIAL_OILS]: '單方精油',
-  [ProductCategory.BLENDS]: '複方精油',
-  [ProductCategory.SKINCARE]: '護膚產品',
-  [ProductCategory.WELLNESS]: '健康產品',
-  [ProductCategory.SUPPLEMENTS]: '營養補充',
-  [ProductCategory.ACCESSORIES]: '配件用品'
+  [OilCategory.ESSENTIAL_OILS]: '單方精油',
+  [OilCategory.BLENDS]: '複方精油',
+  [OilCategory.SKINCARE]: '護膚產品',
+  [OilCategory.WELLNESS]: '健康產品',
+  [OilCategory.SUPPLEMENTS]: '營養補充',
+  [OilCategory.ACCESSORIES]: '配件用品'
 }
 
 // 取得類別顯示名稱（支援自訂類別）
@@ -24,38 +24,39 @@ const getCategoryLabel = (category: string): string => {
   return categoryLabels[category] || category
 }
 
-export default function ProductList({ products, showFilters = true }: ProductListProps) {
+export default function OilList({ oils, showFilters = true }: OilListProps) {
   const [selectedCategory, setSelectedCategory] = useState<string | 'all'>('all')
   const [sortBy, setSortBy] = useState<'name' | 'category'>('name')
   const [searchTerm, setSearchTerm] = useState('')
   
   // Modal 狀態管理
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
+  const [selectedOil, setSelectedOil] = useState<Oil | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   // 取得所有獨特的類別（包含自訂類別）
   const allCategories = useMemo(() => {
-    const uniqueCategories = [...new Set(products.map(product => product.category))]
+    const uniqueCategories = [...new Set(oils.map(oil => oil.category))]
     return uniqueCategories.sort()
-  }, [products])
+  }, [oils])
 
-  // 篩選和排序產品
-  const filteredAndSortedProducts = useMemo(() => {
-    let filtered = products
+  // 篩選和排序精油
+  const filteredAndSortedOils = useMemo(() => {
+    let filtered = oils
 
     // 類別篩選
     if (selectedCategory !== 'all') {
-      filtered = filtered.filter(product => product.category === selectedCategory)
+      filtered = filtered.filter(oil => oil.category === selectedCategory)
     }
 
     // 搜尋篩選
     if (searchTerm) {
       const term = searchTerm.toLowerCase()
-      filtered = filtered.filter(product => 
-        product.name.toLowerCase().includes(term) ||
-        product.englishName.toLowerCase().includes(term) ||
-        product.description.toLowerCase().includes(term) ||
-        product.tags.some(tag => tag.toLowerCase().includes(term))
+      filtered = filtered.filter(oil => 
+        oil.name.toLowerCase().includes(term) ||
+        oil.englishName.toLowerCase().includes(term) ||
+        oil.description.toLowerCase().includes(term) ||
+        oil.tags?.some(tag => tag.toLowerCase().includes(term)) ||
+        oil.mainBenefits?.some(benefit => benefit.toLowerCase().includes(term))
       )
     }
 
@@ -73,16 +74,16 @@ export default function ProductList({ products, showFilters = true }: ProductLis
     })
 
     return filtered
-  }, [products, selectedCategory, sortBy, searchTerm])
+  }, [oils, selectedCategory, sortBy, searchTerm])
 
-  const handleProductSelect = (product: Product) => {
-    setSelectedProduct(product)
+  const handleOilSelect = (oil: Oil) => {
+    setSelectedOil(oil)
     setIsModalOpen(true)
   }
 
   const handleCloseModal = () => {
     setIsModalOpen(false)
-    setSelectedProduct(null)
+    setSelectedOil(null)
   }
 
   return (
@@ -94,12 +95,12 @@ export default function ProductList({ products, showFilters = true }: ProductLis
             {/* 搜尋框 */}
             <div className="flex-1">
               <label htmlFor="search" className="block text-sm font-medium text-gray-800 mb-2">
-                搜尋產品
+                搜尋精油
               </label>
               <input
                 id="search"
                 type="text"
-                placeholder="搜尋產品名稱、功效或英文名稱..."
+                placeholder="搜尋精油名稱、功效或英文名稱..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-900 placeholder:text-gray-500"
@@ -109,7 +110,7 @@ export default function ProductList({ products, showFilters = true }: ProductLis
             {/* 類別篩選 */}
             <div className="lg:w-48">
               <label htmlFor="category" className="block text-sm font-medium text-gray-800 mb-2">
-                產品類別
+                精油類別
               </label>
               <select
                 id="category"
@@ -153,10 +154,10 @@ export default function ProductList({ products, showFilters = true }: ProductLis
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
-              全部產品
+              全部精油
             </button>
             {allCategories.map(category => {
-              const count = products.filter(p => p.category === category).length
+              const count = oils.filter(oil => oil.category === category).length
               return (
                 <button
                   key={category}
@@ -178,7 +179,7 @@ export default function ProductList({ products, showFilters = true }: ProductLis
       {/* 搜尋結果統計 */}
       <div className="flex items-center justify-between">
         <p className="text-gray-600">
-          共找到 <span className="font-semibold text-green-600">{filteredAndSortedProducts.length}</span> 項產品
+          共找到 <span className="font-semibold text-green-600">{filteredAndSortedOils.length}</span> 項精油
           {searchTerm && (
             <>
               ，搜尋「<span className="font-medium">{searchTerm}</span>」
@@ -196,14 +197,14 @@ export default function ProductList({ products, showFilters = true }: ProductLis
         )}
       </div>
 
-      {/* 產品網格 */}
-      {filteredAndSortedProducts.length > 0 ? (
+      {/* 精油網格 */}
+      {filteredAndSortedOils.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredAndSortedProducts.map(product => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              onSelect={handleProductSelect}
+          {filteredAndSortedOils.map(oil => (
+            <OilCard
+              key={oil.id}
+              oil={oil}
+              onSelect={handleOilSelect}
             />
           ))}
         </div>
@@ -213,11 +214,11 @@ export default function ProductList({ products, showFilters = true }: ProductLis
             <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-2xl">🔍</span>
             </div>
-            <h3 className="text-lg font-medium text-gray-900 mb-2">找不到相關產品</h3>
+            <h3 className="text-lg font-medium text-gray-900 mb-2">找不到相關精油</h3>
             <p className="text-gray-500 mb-4">
               {searchTerm 
-                ? `沒有找到包含「${searchTerm}」的產品，請嘗試其他關鍵字。`
-                : '該類別暫無產品，請選擇其他類別。'
+                ? `沒有找到包含「${searchTerm}」的精油，請嘗試其他關鍵字。`
+                : '該類別暫無精油，請選擇其他類別。'
               }
             </p>
             <button
@@ -227,16 +228,16 @@ export default function ProductList({ products, showFilters = true }: ProductLis
               }}
               className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
             >
-              查看全部產品
+              查看全部精油
             </button>
           </div>
         </div>
       )}
 
-      {/* 產品詳情 Modal */}
-      {selectedProduct && (
-        <ProductDetailModal
-          product={selectedProduct}
+      {/* 精油詳情 Modal */}
+      {selectedOil && (
+        <OilDetailModal
+          oil={selectedOil}
           isOpen={isModalOpen}
           onClose={handleCloseModal}
         />

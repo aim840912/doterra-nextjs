@@ -2,20 +2,20 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { ProductCategory, CategoryOption } from '@/types/product'
+import { OilCategory, CategoryOption } from '@/types/oil'
 import ImageUploader from './ImageUploader'
 import CategorySelector from './CategorySelector'
 
 const defaultCategoryOptions: CategoryOption[] = [
-  { value: ProductCategory.ESSENTIAL_OILS, label: '單方精油' },
-  { value: ProductCategory.BLENDS, label: '複方精油' },
-  { value: ProductCategory.SKINCARE, label: '護膚產品' },
-  { value: ProductCategory.WELLNESS, label: '健康產品' },
-  { value: ProductCategory.SUPPLEMENTS, label: '營養補充' },
-  { value: ProductCategory.ACCESSORIES, label: '配件用品' }
+  { value: OilCategory.ESSENTIAL_OILS, label: '單方精油' },
+  { value: OilCategory.BLENDS, label: '複方精油' },
+  { value: OilCategory.SKINCARE, label: '護膚產品' },
+  { value: OilCategory.WELLNESS, label: '健康產品' },
+  { value: OilCategory.SUPPLEMENTS, label: '營養補充' },
+  { value: OilCategory.ACCESSORIES, label: '配件用品' }
 ]
 
-export default function AddProductForm() {
+export default function AddOilForm() {
   const router = useRouter()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState({
@@ -23,7 +23,7 @@ export default function AddProductForm() {
     englishName: '',
     description: '',
     benefits: [''],
-    category: ProductCategory.ESSENTIAL_OILS as string,
+    category: OilCategory.ESSENTIAL_OILS as string,
     volume: '',
     imageUrl: '',
     usageInstructions: '',
@@ -72,14 +72,14 @@ export default function AddProductForm() {
   }
 
   const validateForm = () => {
-    if (!formData.name.trim()) return '產品名稱不能為空'
-    if (!formData.imageUrl.trim()) return '產品圖片 URL 不能為空'
+    if (!formData.name.trim()) return '精油名稱不能為空'
+    if (!formData.imageUrl.trim()) return '精油圖片 URL 不能為空'
     
     const validBenefits = formData.benefits.filter(benefit => benefit.trim())
-    if (validBenefits.length === 0) return '至少需要一個產品功效'
+    if (validBenefits.length === 0) return '至少需要一個精油功效'
     
     const validTags = formData.tags.filter(tag => tag.trim())
-    if (validTags.length === 0) return '至少需要一個產品標籤'
+    if (validTags.length === 0) return '至少需要一個精油標籤'
     
     return null
   }
@@ -104,8 +104,8 @@ export default function AddProductForm() {
         tags: formData.tags.filter(tag => tag.trim())
       }
 
-      // 調用 API 保存產品
-      const response = await fetch('/api/products', {
+      // 調用 API 保存精油
+      const response = await fetch('/api/oils', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -116,14 +116,14 @@ export default function AddProductForm() {
       const result = await response.json()
 
       if (result.success) {
-        alert('產品新增成功！')
-        router.push('/products')
+        alert('精油新增成功！')
+        router.push('/oils')
       } else {
         alert(`新增失敗：${result.error}`)
       }
     } catch (error) {
-      alert('新增產品失敗，請稍後再試')
-      console.error('Error adding product:', error)
+      alert('新增精油失敗，請稍後再試')
+      console.error('Error adding oil:', error)
     } finally {
       setIsSubmitting(false)
     }
@@ -139,7 +139,7 @@ export default function AddProductForm() {
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-800 mb-2">
-                產品名稱 *
+                精油名稱 *
               </label>
               <input
                 type="text"
@@ -171,7 +171,7 @@ export default function AddProductForm() {
 
           <div>
             <label htmlFor="description" className="block text-sm font-medium text-gray-800 mb-2">
-              產品描述
+              精油描述
             </label>
             <textarea
               id="description"
@@ -180,14 +180,14 @@ export default function AddProductForm() {
               onChange={handleInputChange}
               rows={3}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-900 placeholder:text-gray-500"
-              placeholder="詳細描述產品特色和用途..."
+              placeholder="詳細描述精油特色和用途..."
             />
           </div>
 
           <div className="grid md:grid-cols-3 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-800 mb-2">
-                產品類別 *
+                精油類別 *
               </label>
               <CategorySelector
                 value={formData.category}
@@ -220,10 +220,10 @@ export default function AddProductForm() {
 
             <div>
               <label className="block text-sm font-medium text-gray-800 mb-2">
-                產品圖片 *
+                精油圖片 *
               </label>
               <ImageUploader
-                productId={formData.name || 'new-product'}
+                productId={formData.name || 'new-oil'}
                 onUploadSuccess={(imageUrl) => {
                   setFormData(prev => ({
                     ...prev,
@@ -245,9 +245,9 @@ export default function AddProductForm() {
           </div>
         </div>
 
-        {/* 產品功效 */}
+        {/* 精油功效 */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">產品功效</h2>
+          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">精油功效</h2>
           {formData.benefits.map((benefit, index) => (
             <div key={index} className="flex gap-2">
               <input
@@ -276,9 +276,9 @@ export default function AddProductForm() {
           </button>
         </div>
 
-        {/* 產品成分 */}
+        {/* 精油成分 */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">產品成分</h2>
+          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">精油成分</h2>
           {formData.ingredients.map((ingredient, index) => (
             <div key={index} className="flex gap-2">
               <input
@@ -307,9 +307,9 @@ export default function AddProductForm() {
           </button>
         </div>
 
-        {/* 產品標籤 */}
+        {/* 精油標籤 */}
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">產品標籤</h2>
+          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">精油標籤</h2>
           {formData.tags.map((tag, index) => (
             <div key={index} className="flex gap-2">
               <input
@@ -370,7 +370,7 @@ export default function AddProductForm() {
             disabled={isSubmitting}
             className="flex-1 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isSubmitting ? '儲存中...' : '儲存產品'}
+            {isSubmitting ? '儲存中...' : '儲存精油'}
           </button>
         </div>
       </form>

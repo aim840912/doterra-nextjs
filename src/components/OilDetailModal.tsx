@@ -3,15 +3,15 @@
 import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import Image from 'next/image'
-import { Product } from '@/types/product'
+import { Oil } from '@/types/oil'
 
-interface ProductDetailModalProps {
-  product: Product
+interface OilDetailModalProps {
+  oil: Oil
   isOpen: boolean
   onClose: () => void
 }
 
-export default function ProductDetailModal({ product, isOpen, onClose }: ProductDetailModalProps) {
+export default function OilDetailModal({ oil, isOpen, onClose }: OilDetailModalProps) {
   const modalRef = useRef<HTMLDivElement>(null)
 
   // 處理 ESC 鍵關閉
@@ -106,68 +106,50 @@ export default function ProductDetailModal({ product, isOpen, onClose }: Product
 
         {/* 內容區域 */}
         <div className="flex flex-col lg:flex-row max-h-[90vh] overflow-hidden">
-          {/* 左側 - 產品圖片 */}
+          {/* 左側 - 精油圖片 */}
           <div className="lg:w-1/2 bg-gray-50 flex items-center justify-center p-8">
             <div className="relative w-full max-w-md aspect-square">
               <Image
-                src={product.imageUrl}
-                alt={product.name}
+                src={oil.imageUrl}
+                alt={oil.name}
                 fill
                 className="object-cover rounded-xl"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
               
-              {/* 產品徽章 */}
-              <div className="absolute top-4 left-4 flex flex-col gap-2">
-                {product.isNew && (
-                  <span className="bg-green-500 text-white text-sm px-3 py-1 rounded-full font-medium shadow-lg">
-                    新品
-                  </span>
-                )}
-                {product.isBestseller && (
-                  <span className="bg-orange-500 text-white text-sm px-3 py-1 rounded-full font-medium shadow-lg">
-                    熱銷
-                  </span>
-                )}
-                {!product.inStock && (
-                  <span className="bg-red-500 text-white text-sm px-3 py-1 rounded-full font-medium shadow-lg">
-                    缺貨
-                  </span>
-                )}
-              </div>
 
               {/* 類別標籤 */}
               <div className="absolute top-4 right-4">
-                <span className={`text-sm px-3 py-1 rounded-full font-medium shadow-lg ${getBadgeColor(product.category)}`}>
-                  {getCategoryName(product.category)}
+                <span className={`text-sm px-3 py-1 rounded-full font-medium shadow-lg ${getBadgeColor(oil.category)}`}>
+                  {getCategoryName(oil.category)}
                 </span>
               </div>
             </div>
           </div>
 
-          {/* 右側 - 產品資訊 */}
+          {/* 右側 - 精油資訊 */}
           <div className="lg:w-1/2 p-8 overflow-y-auto">
-            {/* 產品標題 */}
+            {/* 精油標題 */}
             <div className="mb-6">
               <h1 id="modal-title" className="text-3xl font-bold text-gray-900 mb-2">
-                {product.name}
+                {oil.name}
               </h1>
               <p className="text-xl text-gray-600 mb-4">
-                {product.englishName}
+                {oil.englishName}
               </p>
               
               {/* 價格資訊 */}
-              {(product.retailPrice || product.memberPrice) && (
+              {(oil.retailPrice || oil.memberPrice) && (
                 <div className="flex items-center gap-4 mb-4">
-                  {product.retailPrice && (
+                  {oil.retailPrice && (
                     <div className="text-gray-600">
-                      建議售價: <span className="text-2xl font-bold text-gray-900">NT$ {product.retailPrice}</span>
+                      建議售價: <span className="text-2xl font-bold text-gray-900">NT$ {oil.retailPrice}</span>
                     </div>
                   )}
-                  {product.memberPrice && (
+                  {oil.memberPrice && (
                     <div className="text-green-600">
-                      會員價: <span className="text-2xl font-bold">NT$ {product.memberPrice}</span>
+                      會員價: <span className="text-2xl font-bold">NT$ {oil.memberPrice}</span>
                     </div>
                   )}
                 </div>
@@ -175,26 +157,26 @@ export default function ProductDetailModal({ product, isOpen, onClose }: Product
 
               {/* 規格和編號 */}
               <div className="flex flex-wrap gap-4 text-sm text-gray-600">
-                <div>規格：{product.volume}</div>
-                {product.productCode && <div>產品編號：{product.productCode}</div>}
-                {product.pvPoints && <div>PV 點數：{product.pvPoints}</div>}
+                <div>規格：{oil.volume}</div>
+                {oil.productCode && <div>精油編號：{oil.productCode}</div>}
+                {oil.pvPoints && <div>PV 點數：{oil.pvPoints}</div>}
               </div>
             </div>
 
-            {/* 產品描述 */}
+            {/* 精油描述 */}
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">產品介紹</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">精油介紹</h3>
               <p className="text-gray-700 leading-relaxed">
-                {product.detailedDescription || product.description}
+                {oil.detailedDescription || oil.description}
               </p>
             </div>
 
             {/* 主要功效 */}
-            {(product.mainBenefits?.length || product.benefits?.length) && (
+            {(oil.mainBenefits?.length || oil.benefits?.length) && (
               <div className="mb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">主要功效</h3>
                 <ul className="space-y-2">
-                  {(product.mainBenefits || product.benefits).map((benefit, index) => (
+                  {(oil.mainBenefits || oil.benefits).map((benefit, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">•</span>
                       <span className="text-gray-700">{benefit}</span>
@@ -204,68 +186,52 @@ export default function ProductDetailModal({ product, isOpen, onClose }: Product
               </div>
             )}
 
-            {/* 產品特色標籤 */}
-            {product.tags.length > 0 && (
-              <div className="mb-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">產品特色</h3>
-                <div className="flex flex-wrap gap-2">
-                  {product.tags.map((tag, index) => (
-                    <span 
-                      key={index}
-                      className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-medium border border-green-200"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
 
             {/* 詳細資訊 */}
             <div className="space-y-4">
               {/* 香味描述 */}
-              {product.aromaDescription && (
+              {oil.aromaDescription && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">香味特色</h4>
-                  <p className="text-gray-700 text-sm">{product.aromaDescription}</p>
+                  <p className="text-gray-700 text-sm">{oil.aromaDescription}</p>
                 </div>
               )}
 
               {/* 萃取資訊 */}
-              {(product.extractionMethod || product.plantPart) && (
+              {(oil.extractionMethod || oil.plantPart) && (
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">產品資訊</h4>
+                  <h4 className="font-semibold text-gray-900 mb-2">精油資訊</h4>
                   <div className="text-sm text-gray-700 space-y-1">
-                    {product.extractionMethod && <div>萃取方法：{product.extractionMethod}</div>}
-                    {product.plantPart && <div>萃取部位：{product.plantPart}</div>}
+                    {oil.extractionMethod && <div>萃取方法：{oil.extractionMethod}</div>}
+                    {oil.plantPart && <div>萃取部位：{oil.plantPart}</div>}
                   </div>
                 </div>
               )}
 
               {/* 主要成分 */}
-              {product.mainIngredients?.length && (
+              {oil.mainIngredients?.length && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">主要成分</h4>
                   <p className="text-gray-700 text-sm">
-                    {product.mainIngredients.join('、')}
+                    {oil.mainIngredients.join('、')}
                   </p>
                 </div>
               )}
 
               {/* 使用方法 */}
-              {product.usageInstructions && (
+              {oil.usageInstructions && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">使用方法</h4>
-                  <p className="text-gray-700 text-sm">{product.usageInstructions}</p>
+                  <p className="text-gray-700 text-sm">{oil.usageInstructions}</p>
                 </div>
               )}
 
               {/* 注意事項 */}
-              {product.cautions?.length && (
+              {oil.cautions?.length && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">注意事項</h4>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    {product.cautions.map((caution, index) => (
+                    {oil.cautions.map((caution, index) => (
                       <li key={index} className="flex items-start gap-2">
                         <span className="text-red-500 mt-1">⚠</span>
                         <span>{caution}</span>

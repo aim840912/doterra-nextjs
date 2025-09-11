@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-09-11T18:47:13.640Z",
+  "totalProducts": 24,
+  "products": [
+    {
+      "name": "羅勒精油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/basil-oil",
+      "imageUrl": ""
+    },
+    {
+      "name": "肉桂油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/cinnamon-bark-oil",
+      "imageUrl": ""
+    },
+    {
+      "name": "丁香精油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/clove-oil",
+      "imageUrl": ""
+    },
+    {
+      "name": "乳香精油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/frankincense-oil",
+      "imageUrl": ""
+    },
+    {
+      "name": "天竺葵精油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/geranium-oil",
+      "imageUrl": ""
+    },
+    {
+      "name": "葡萄柚精油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/grapefruit-oil",
+      "imageUrl": ""
+    },
+    {
+      "name": "薰衣草精油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/lavender-oil",
+      "imageUrl": ""
+    },
+    {
+      "name": "檸檬油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/lemon-oil",
+      "imageUrl": ""
+    },
+    {
+      "name": "檸檬草精油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/lemongrass-oil",
+      "imageUrl": ""
+    },
+    {
+      "name": "馬鬱蘭精油",
+      "url": "https://www.doterra.com/TW/zh_TW/p/marjoram-oil",
+      "imageUrl": ""
+    }
+  ]
+}

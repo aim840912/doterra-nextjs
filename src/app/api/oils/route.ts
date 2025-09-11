@@ -1,24 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { Product } from '@/types/product'
-import { allProducts } from '@/data/products'
+import { Oil } from '@/types/oil'
+import { allOils } from '@/data/products'
 
-// 獲取所有產品
+// 獲取所有精油
 export async function GET() {
   try {
     return NextResponse.json({
       success: true,
-      data: allProducts,
-      count: allProducts.length
+      data: allOils,
+      count: allOils.length
     })
-  } catch (error) {
+  } catch (_error) {
     return NextResponse.json(
-      { success: false, error: '獲取產品列表失敗' },
+      { success: false, error: '獲取精油列表失敗' },
       { status: 500 }
     )
   }
 }
 
-// 新增產品
+// 新增精油
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -34,21 +34,21 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    // 生成產品 ID
+    // 生成精油 ID
     const id = body.name.toLowerCase()
       .replace(/[^a-z0-9\u4e00-\u9fff]+/g, '-')
       .replace(/^-+|-+$/g, '')
 
     // 檢查 ID 是否已存在
-    if (allProducts.some(product => product.id === id)) {
+    if (allOils.some(oil => oil.id === id)) {
       return NextResponse.json(
-        { success: false, error: '產品名稱已存在，請使用不同的名稱' },
+        { success: false, error: '精油名稱已存在，請使用不同的名稱' },
         { status: 400 }
       )
     }
 
-    // 創建新產品
-    const newProduct: Product = {
+    // 創建新精油
+    const newOil: Oil = {
       id,
       name: body.name,
       englishName: body.englishName || '',
@@ -57,26 +57,25 @@ export async function POST(request: NextRequest) {
       category: body.category,
       volume: body.volume || '',
       imageUrl: body.imageUrl,
-      inStock: true, // 預設為有庫存
       usageInstructions: body.usageInstructions || '',
       ingredients: body.ingredients || [],
       tags: body.tags || []
     }
 
-    // 在實際應用中，這裡會將產品儲存到資料庫
+    // 在實際應用中，這裡會將精油儲存到資料庫
     // 目前我們只是模擬成功回應
-    console.log('新增產品:', newProduct)
+    console.log('新增精油:', newOil)
 
     return NextResponse.json({
       success: true,
-      data: newProduct,
-      message: '產品新增成功'
+      data: newOil,
+      message: '精油新增成功'
     }, { status: 201 })
 
   } catch (error) {
-    console.error('新增產品錯誤:', error)
+    console.error('新增精油錯誤:', error)
     return NextResponse.json(
-      { success: false, error: '新增產品失敗' },
+      { success: false, error: '新增精油失敗' },
       { status: 500 }
     )
   }

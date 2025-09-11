@@ -72,13 +72,15 @@ export default function TestProductsPage() {
                         </span>
                       )}
                     </div>
-                    <div className="flex flex-wrap gap-1 mt-1">
-                      {product.tags.slice(0, 3).map(tag => (
-                        <span key={tag} className="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+                    {(product.mainBenefits && product.mainBenefits.length > 0) && (
+                      <div className="flex flex-wrap gap-1 mt-1">
+                        {product.mainBenefits.slice(0, 3).map((benefit, index) => (
+                          <span key={index} className="inline-block bg-green-50 text-green-700 text-xs px-2 py-1 rounded border border-green-200">
+                            {benefit}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
                 

@@ -1,40 +1,49 @@
-import { Product } from '@/types/product'
-import doterraProducts from './doterra-real-products.json'
+import { Oil } from '@/types/oil'
+import doterraOils from './doterra-real-products.json'
 
-// 只使用真實的 doTERRA 產品
-export const allProducts: Product[] = doterraProducts as Product[]
+// 只使用真實的 doTERRA 精油
+export const allOils: Oil[] = doterraOils as Oil[]
 
-export const getProductsByCategory = (category: string): Product[] => {
-  return allProducts.filter(product => product.category === category)
+export const getOilsByCategory = (category: string): Oil[] => {
+  return allOils.filter(oil => oil.category === category)
 }
 
-export const getBestsellerProducts = (): Product[] => {
-  return allProducts.filter(product => product.isBestseller)
+export const getBestsellerOils = (): Oil[] => {
+  return allOils.filter(oil => oil.isBestseller)
 }
 
-export const getNewProducts = (): Product[] => {
-  return allProducts.filter(product => product.isNew)
+export const getNewOils = (): Oil[] => {
+  return allOils.filter(oil => oil.isNew)
 }
 
-export const searchProducts = (searchTerm: string): Product[] => {
+export const searchOils = (searchTerm: string): Oil[] => {
   const term = searchTerm.toLowerCase()
-  return allProducts.filter(product => 
-    product.name.toLowerCase().includes(term) ||
-    product.englishName?.toLowerCase().includes(term) ||
-    product.description?.toLowerCase().includes(term) ||
-    product.tags?.some(tag => tag.toLowerCase().includes(term))
+  return allOils.filter(oil => 
+    oil.name.toLowerCase().includes(term) ||
+    oil.englishName?.toLowerCase().includes(term) ||
+    oil.description?.toLowerCase().includes(term) ||
+    oil.tags?.some(tag => tag.toLowerCase().includes(term)) ||
+    oil.mainBenefits?.some(benefit => benefit.toLowerCase().includes(term))
   )
 }
 
-// 取得 doTERRA 產品（現在就是全部產品）
-export const getDoTerraProducts = (): Product[] => {
-  return doterraProducts as Product[]
+// 取得 doTERRA 精油（現在就是全部精油）
+export const getDoTerraOils = (): Oil[] => {
+  return doterraOils as Oil[]
 }
 
 // 向後相容：原本的 products 陣列現在返回空陣列
-export const products: Product[] = []
+export const products: Oil[] = []
+
+// 向後相容：保留舊的函數名稱，但使用新的實作
+export const allProducts = allOils
+export const getProductsByCategory = getOilsByCategory
+export const getBestsellerProducts = getBestsellerOils
+export const getNewProducts = getNewOils
+export const searchProducts = searchOils
+export const getDoTerraProducts = getDoTerraOils
 
 // 向後相容：getSampleProducts 現在返回空陣列，因為我們移除了範例產品
-export const getSampleProducts = (): Product[] => {
+export const getSampleProducts = (): Oil[] => {
   return []
 }

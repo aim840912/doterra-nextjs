@@ -13,14 +13,9 @@
     "type-check": "tsc --noEmit",
     "pre-commit": "npm run type-check && npm run lint:fix && npm run format",
     "clean": "rm -rf .next dist out",
-    "scrape:doterra": "tsx scripts/scrape-doterra.ts",
-    "scrape:doterra-advanced": "tsx scripts/scrape-doterra-advanced.ts",
-    "scrape:product-details": "tsx scripts/scrape-product-details.ts",
-    "scrape:product-details:test": "tsx scripts/scrape-product-details.ts --test",
-    "update:product-urls": "tsx scripts/update-product-urls.ts",
-    "debug:doterra": "tsx scripts/debug-doterra-site.ts",
-    "analyze:doterra": "tsx scripts/analyze-doterra-elements.ts",
-    "generate:sample-data": "tsx scripts/generate-sample-data.ts"
+    "scrape:new": "tsx scripts/new-scraper.ts",
+    "scrape:v2": "tsx scripts/new-scraper-v2.ts",
+    "scrape:working": "tsx scripts/working-scraper.ts"
   },
   "dependencies": {
     "axios": "^1.11.0",

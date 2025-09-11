@@ -1,4 +1,4 @@
-export enum ProductCategory {
+export enum OilCategory {
   ESSENTIAL_OILS = 'essential-oils',
   BLENDS = 'blends',
   SKINCARE = 'skincare',
@@ -7,11 +7,12 @@ export enum ProductCategory {
   ACCESSORIES = 'accessories'
 }
 
-// 支援自訂類別的產品類型
-export interface Product {
+// 支援自訂類別的精油類型
+export interface Oil {
   id: string
   name: string
   englishName: string
+  scientificName?: string          // 學名
   description: string
   benefits: string[]
   category: string // 改為 string 以支援自訂類別
@@ -19,10 +20,9 @@ export interface Product {
   imageUrl: string
   isNew?: boolean
   isBestseller?: boolean
-  inStock: boolean
   usageInstructions?: string
   ingredients?: string[]
-  tags: string[]
+  tags?: string[]
   
   // 新增的詳細資訊欄位
   detailedDescription?: string     // 詳細產品介紹
@@ -47,20 +47,19 @@ export interface CategoryOption {
   label: string
 }
 
-export interface ProductFilters {
+export interface OilFilters {
   category?: string // 改為 string 以支援自訂類別
-  inStockOnly?: boolean
   searchTerm?: string
 }
 
-export interface ProductListProps {
-  products: Product[]
-  filters?: ProductFilters
-  onProductSelect?: (product: Product) => void
+export interface OilListProps {
+  oils: Oil[]
+  filters?: OilFilters
+  onOilSelect?: (oil: Oil) => void
 }
 
-export interface ProductCardProps {
-  product: Product
-  onSelect?: (product: Product) => void
+export interface OilCardProps {
+  oil: Oil
+  onSelect?: (oil: Oil) => void
   compact?: boolean
 }

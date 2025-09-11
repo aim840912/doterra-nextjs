@@ -1,20 +1,20 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import ProductList from '@/components/ProductList'
-import { allProducts } from '@/data/products'
+import OilList from '@/components/OilList'
+import { allOils } from '@/data/products'
 
 export const metadata: Metadata = {
-  title: '產品目錄 - doTERRA Taiwan',
-  description: '探索 doTERRA 全系列精油產品，包含單方精油、複方精油、護膚產品和健康補充品。體驗純淨天然的精油力量。',
-  keywords: 'doTERRA, 精油, 產品目錄, 薰衣草, 薄荷, 茶樹, 複方精油, 護膚, 健康',
+  title: '精油圖鑑 - doTERRA Taiwan',
+  description: '探索 doTERRA 全系列精油，包含單方精油、複方精油、護膚精油和健康精油。了解純淨天然的精油特性與功效。',
+  keywords: 'doTERRA, 精油, 精油圖鑑, 薰衣草, 薄荷, 茶樹, 複方精油, 精油介紹, 精油功效',
   openGraph: {
-    title: '產品目錄 - doTERRA Taiwan',
-    description: '探索 doTERRA 全系列精油產品，體驗純淨天然的精油力量。',
+    title: '精油圖鑑 - doTERRA Taiwan',
+    description: '探索 doTERRA 全系列精油，了解純淨天然的精油特性與功效。',
     type: 'website',
   }
 }
 
-export default function ProductsPage() {
+export default function OilsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
       {/* 頁面標題區域 */}
@@ -22,13 +22,13 @@ export default function ProductsPage() {
         <div className="container mx-auto px-4 py-12">
           <div className="flex justify-between items-center max-w-6xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800">
-              精油產品目錄
+              精油圖鑑
             </h1>
             <Link
-              href="/products/add"
+              href="/oils/add"
               className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors shadow-md"
             >
-              + 新增產品
+              + 新增精油
             </Link>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function ProductsPage() {
 
       {/* 主要內容區域 */}
       <div className="container mx-auto px-4 py-16 pb-24">
-        <ProductList products={allProducts} showFilters={true} />
+        <OilList oils={allOils} showFilters={true} />
       </div>
 
     </div>
