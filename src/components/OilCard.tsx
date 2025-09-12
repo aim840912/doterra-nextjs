@@ -32,6 +32,7 @@ export default function OilCard({
       case 'essential-oils':  // 保持向後相容
         return 'bg-green-100 text-green-800'
       case 'blends':
+      case 'proprietary-blends':
         return 'bg-blue-100 text-blue-800'
       case 'skincare':
         return 'bg-purple-100 text-purple-800'
@@ -50,6 +51,7 @@ export default function OilCard({
       case 'essential-oils':  // 保持向後相容
         return '單方精油'
       case 'blends':
+      case 'proprietary-blends':
         return '複方精油'
       case 'skincare':
         return '護膚產品'

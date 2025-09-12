@@ -17,7 +17,7 @@ interface CategoryConfig {
 
 const CATEGORIES: CategoryConfig[] = [
   { filename: 'single-oils.json', category: 'single-oils', name: '單方精油' },
-  { filename: 'blends.json', category: 'blends', name: '複方精油' },
+  { filename: 'proprietary-blends.json', category: 'proprietary-blends', name: '複方精油' },
   { filename: 'skincare.json', category: 'skincare', name: '護膚產品' },
   { filename: 'wellness.json', category: 'wellness', name: '健康產品' },
   { filename: 'accessories.json', category: 'accessories', name: '配件用品' }

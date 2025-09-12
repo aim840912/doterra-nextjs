@@ -31,7 +31,8 @@
     "productCode": "31460302",
     "retailPrice": 1355,
     "memberPrice": 1015,
-    "pvPoints": 31
+    "pvPoints": 31,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678205604",
@@ -69,7 +70,8 @@
     "productCode": "60216131",
     "retailPrice": 655,
     "memberPrice": 490,
-    "pvPoints": 15
+    "pvPoints": 15,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678197949",
@@ -107,7 +109,8 @@
     "productCode": "60216148",
     "retailPrice": 1135,
     "memberPrice": 850,
-    "pvPoints": 23
+    "pvPoints": 23,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678348791",
@@ -143,7 +146,8 @@
     "productCode": "60208831",
     "retailPrice": 1040,
     "memberPrice": 780,
-    "pvPoints": 24
+    "pvPoints": 24,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678289108",
@@ -183,7 +187,8 @@
     "productCode": "60224971",
     "retailPrice": 1900,
     "memberPrice": 1425,
-    "pvPoints": 44
+    "pvPoints": 44,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678148656",
@@ -224,7 +229,8 @@
     "productCode": "31010302",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678369087",
@@ -260,7 +266,8 @@
     "productCode": "60208834",
     "retailPrice": 860,
     "memberPrice": 645,
-    "pvPoints": 20
+    "pvPoints": 20,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678341064",
@@ -298,7 +305,8 @@
     "productCode": "60208815",
     "retailPrice": 1800,
     "memberPrice": 1350,
-    "pvPoints": 41
+    "pvPoints": 41,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678459049",
@@ -334,7 +342,8 @@
     "productCode": "60224090",
     "retailPrice": 1040,
     "memberPrice": 780,
-    "pvPoints": 24
+    "pvPoints": 24,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678333530",
@@ -368,7 +377,8 @@
     "productCode": "",
     "retailPrice": 0,
     "memberPrice": 0,
-    "pvPoints": 0
+    "pvPoints": 0,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678281601",
@@ -410,7 +420,8 @@
     "productCode": "60223652",
     "retailPrice": 975,
     "memberPrice": 975,
-    "pvPoints": 30
+    "pvPoints": 30,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678411372",
@@ -446,7 +457,8 @@
     "productCode": "60210809",
     "retailPrice": 1200,
     "memberPrice": 900,
-    "pvPoints": 28
+    "pvPoints": 28,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678261604",
@@ -484,7 +496,8 @@
     "productCode": "60201166",
     "retailPrice": 935,
     "memberPrice": 700,
-    "pvPoints": 21
+    "pvPoints": 21,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678266361",
@@ -522,7 +535,8 @@
     "productCode": "60214477",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678423838",
@@ -564,7 +578,8 @@
     "productCode": "60215029",
     "retailPrice": 1460,
     "memberPrice": 1095,
-    "pvPoints": 34
+    "pvPoints": 34,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678416316",
@@ -604,7 +619,8 @@
     "productCode": "60214452",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678253913",
@@ -647,7 +663,8 @@
     "productCode": "60220846",
     "retailPrice": 1935,
     "memberPrice": 1450,
-    "pvPoints": 45
+    "pvPoints": 45,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678446586",
@@ -687,7 +704,8 @@
     "productCode": "60219115",
     "retailPrice": 1275,
     "memberPrice": 955,
-    "pvPoints": 29
+    "pvPoints": 29,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678326048",
@@ -724,7 +742,8 @@
     "productCode": "60224972",
     "retailPrice": 4170,
     "memberPrice": 3125,
-    "pvPoints": 90
+    "pvPoints": 90,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678182481",
@@ -762,7 +781,8 @@
     "productCode": "31200302",
     "retailPrice": 1720,
     "memberPrice": 1290,
-    "pvPoints": 40
+    "pvPoints": 40,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678403801",
@@ -798,7 +818,8 @@
     "productCode": "60210808",
     "retailPrice": 1980,
     "memberPrice": 1485,
-    "pvPoints": 46
+    "pvPoints": 46,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678384038",
@@ -832,7 +853,8 @@
     "productCode": "60208836",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678153864",
@@ -872,7 +894,8 @@
     "productCode": "60220828",
     "retailPrice": 1015,
     "memberPrice": 760,
-    "pvPoints": 23
+    "pvPoints": 23,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678389133",
@@ -907,7 +930,8 @@
     "productCode": "60209002",
     "retailPrice": 1275,
     "memberPrice": 955,
-    "pvPoints": 29
+    "pvPoints": 29,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678361550",
@@ -941,7 +965,8 @@
     "productCode": "60208833",
     "retailPrice": 835,
     "memberPrice": 625,
-    "pvPoints": 19
+    "pvPoints": 19,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678431511",
@@ -977,7 +1002,8 @@
     "productCode": "60215680",
     "retailPrice": 860,
     "memberPrice": 645,
-    "pvPoints": 20
+    "pvPoints": 20,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678177363",
@@ -1016,7 +1042,8 @@
     "productCode": "31060302",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678466527",
@@ -1052,7 +1079,8 @@
     "productCode": "",
     "retailPrice": 0,
     "memberPrice": 0,
-    "pvPoints": 0
+    "pvPoints": 0,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678376421",
@@ -1088,7 +1116,8 @@
     "productCode": "60208835",
     "retailPrice": 860,
     "memberPrice": 645,
-    "pvPoints": 20
+    "pvPoints": 20,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678356468",
@@ -1124,7 +1153,8 @@
     "productCode": "60208832",
     "retailPrice": 915,
     "memberPrice": 685,
-    "pvPoints": 21
+    "pvPoints": 21,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678169734",
@@ -1163,7 +1193,8 @@
     "productCode": "31050302",
     "retailPrice": 1975,
     "memberPrice": 1480,
-    "pvPoints": 44
+    "pvPoints": 44,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678439125",
@@ -1202,7 +1233,8 @@
     "productCode": "",
     "retailPrice": 0,
     "memberPrice": 0,
-    "pvPoints": 0
+    "pvPoints": 0,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678246390",
@@ -1232,7 +1264,8 @@
     "productCode": "60200200",
     "retailPrice": 1460,
     "memberPrice": 1095,
-    "pvPoints": 34
+    "pvPoints": 34,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678451636",
@@ -1266,7 +1299,8 @@
     "productCode": "60220683",
     "retailPrice": 1535,
     "memberPrice": 1150,
-    "pvPoints": 33
+    "pvPoints": 33,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678301978",
@@ -1307,7 +1341,8 @@
     "productCode": "60201689",
     "retailPrice": 1320,
     "memberPrice": 990,
-    "pvPoints": 30
+    "pvPoints": 30,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678226005",
@@ -1352,7 +1387,8 @@
     "productCode": "60220855",
     "retailPrice": 1200,
     "memberPrice": 900,
-    "pvPoints": 28
+    "pvPoints": 28,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678233643",
@@ -1392,7 +1428,8 @@
     "productCode": "31750302",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678218300",
@@ -1430,7 +1467,8 @@
     "productCode": "31730302",
     "retailPrice": 2035,
     "memberPrice": 1525,
-    "pvPoints": 47
+    "pvPoints": 47,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678161558",
@@ -1467,7 +1505,8 @@
     "productCode": "60228182",
     "retailPrice": 1875,
     "memberPrice": 1405,
-    "pvPoints": 43
+    "pvPoints": 43,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678396418",
@@ -1507,7 +1546,8 @@
     "productCode": "60210284",
     "retailPrice": 2080,
     "memberPrice": 1560,
-    "pvPoints": 48
+    "pvPoints": 48,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678238704",
@@ -1552,7 +1592,8 @@
     "productCode": "60220862",
     "retailPrice": 2240,
     "memberPrice": 1680,
-    "pvPoints": 52
+    "pvPoints": 52,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678309627",
@@ -1588,7 +1629,8 @@
     "productCode": "60204858",
     "retailPrice": 1615,
     "memberPrice": 1210,
-    "pvPoints": 37
+    "pvPoints": 37,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678210643",
@@ -1627,7 +1669,8 @@
     "productCode": "31710302",
     "retailPrice": 1670,
     "memberPrice": 1250,
-    "pvPoints": 38
+    "pvPoints": 38,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678274057",
@@ -1668,7 +1711,8 @@
     "productCode": "60220872",
     "retailPrice": 1310,
     "memberPrice": 980,
-    "pvPoints": 30
+    "pvPoints": 30,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678296588",
@@ -1706,7 +1750,8 @@
     "productCode": "60201621",
     "retailPrice": 1095,
     "memberPrice": 820,
-    "pvPoints": 25
+    "pvPoints": 25,
+    "ingredients": []
   },
   {
     "id": "doterra-1757620894976",

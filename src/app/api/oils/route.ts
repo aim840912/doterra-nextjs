@@ -58,7 +58,6 @@ export async function POST(request: NextRequest) {
       volume: body.volume || '',
       imageUrl: body.imageUrl,
       usageInstructions: body.usageInstructions || '',
-      ingredients: body.ingredients || [],
       tags: body.tags || []
     }
 

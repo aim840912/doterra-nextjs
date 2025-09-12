@@ -27,7 +27,6 @@ export default function AddOilForm() {
     volume: '',
     imageUrl: '',
     usageInstructions: '',
-    ingredients: [''],
     tags: ['']
   })
 
@@ -48,21 +47,21 @@ export default function AddOilForm() {
     }
   }
 
-  const handleArrayFieldChange = (field: 'benefits' | 'ingredients' | 'tags', index: number, value: string) => {
+  const handleArrayFieldChange = (field: 'benefits' | 'tags', index: number, value: string) => {
     setFormData(prev => ({
       ...prev,
       [field]: prev[field].map((item, i) => i === index ? value : item)
     }))
   }
 
-  const addArrayField = (field: 'benefits' | 'ingredients' | 'tags') => {
+  const addArrayField = (field: 'benefits' | 'tags') => {
     setFormData(prev => ({
       ...prev,
       [field]: [...prev[field], '']
     }))
   }
 
-  const removeArrayField = (field: 'benefits' | 'ingredients' | 'tags', index: number) => {
+  const removeArrayField = (field: 'benefits' | 'tags', index: number) => {
     if (formData[field].length > 1) {
       setFormData(prev => ({
         ...prev,
@@ -100,7 +99,6 @@ export default function AddOilForm() {
       const cleanedData = {
         ...formData,
         benefits: formData.benefits.filter(benefit => benefit.trim()),
-        ingredients: formData.ingredients.filter(ingredient => ingredient.trim()),
         tags: formData.tags.filter(tag => tag.trim())
       }
 
@@ -276,36 +274,6 @@ export default function AddOilForm() {
           </button>
         </div>
 
-        {/* 精油成分 */}
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">精油成分</h2>
-          {formData.ingredients.map((ingredient, index) => (
-            <div key={index} className="flex gap-2">
-              <input
-                type="text"
-                value={ingredient}
-                onChange={(e) => handleArrayFieldChange('ingredients', index, e.target.value)}
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-900 placeholder:text-gray-500"
-                placeholder={`成分 ${index + 1}`}
-              />
-              <button
-                type="button"
-                onClick={() => removeArrayField('ingredients', index)}
-                className="px-3 py-2 text-red-600 hover:bg-red-50 rounded-lg"
-                disabled={formData.ingredients.length === 1}
-              >
-                移除
-              </button>
-            </div>
-          ))}
-          <button
-            type="button"
-            onClick={() => addArrayField('ingredients')}
-            className="text-green-600 hover:text-green-700 font-medium"
-          >
-            + 新增成分
-          </button>
-        </div>
 
         {/* 精油標籤 */}
         <div className="space-y-4">

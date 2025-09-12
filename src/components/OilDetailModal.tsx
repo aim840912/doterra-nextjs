@@ -61,6 +61,7 @@ export default function OilDetailModal({
       case 'essential-oils':  // 保持向後相容
         return 'bg-green-100 text-green-800'
       case 'blends':
+      case 'proprietary-blends':
         return 'bg-blue-100 text-blue-800'
       case 'skincare':
         return 'bg-purple-100 text-purple-800'
@@ -80,6 +81,7 @@ export default function OilDetailModal({
       case 'essential-oils':  // 保持向後相容
         return '單方精油'
       case 'blends':
+      case 'proprietary-blends':
         return '複方精油'
       case 'skincare':
         return '護膚產品'
@@ -307,7 +309,20 @@ export default function OilDetailModal({
 
             {/* 操作按鈕 */}
             <div className="mt-8 pt-6 border-t border-gray-200">
-              <div className="flex justify-center">
+              <div className="flex justify-center gap-4">
+                {oil.url && (
+                  <a
+                    href={oil.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-8 py-3 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition-colors inline-flex items-center gap-2"
+                  >
+                    前往產品頁面
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                )}
                 <button 
                   className="px-8 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors"
                   onClick={onClose}

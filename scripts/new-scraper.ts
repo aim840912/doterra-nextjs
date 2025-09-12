@@ -268,8 +268,7 @@ class DoTerraNewScraper {
           pvPoints: 0,
           volume: '',
           imageUrl: '',
-          benefits: [],
-          ingredients: []
+          benefits: []
         };
 
         // 1. 產品名稱 - 從多個選擇器嘗試
@@ -458,7 +457,6 @@ class DoTerraNewScraper {
           volume: productDetails.volume,
           imageUrl: `/images/products/doterra/doterra-test-1.jpg`,
           usageInstructions: '',
-          ingredients: productDetails.ingredients,
           tags: ['精油', '天然'],
           productCode: productDetails.productCode,
           retailPrice: productDetails.retailPrice,

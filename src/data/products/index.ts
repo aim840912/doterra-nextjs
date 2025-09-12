@@ -2,7 +2,7 @@ import { Oil } from '@/types/oil'
 
 // 導入各類別產品資料
 import singleOilsData from './single-oils.json'
-import blendsData from './blends.json'
+import proprietaryBlendsData from './proprietary-blends.json'
 import skincareData from './skincare.json'
 import wellnessData from './wellness.json'
 import accessoriesData from './accessories.json'
@@ -12,7 +12,7 @@ import accessoriesData from './accessories.json'
  */
 export const PRODUCT_CATEGORIES = {
   SINGLE_OILS: 'single-oils',
-  BLENDS: 'blends',
+  PROPRIETARY_BLENDS: 'proprietary-blends',
   SKINCARE: 'skincare',
   WELLNESS: 'wellness',
   ACCESSORIES: 'accessories'
@@ -29,7 +29,7 @@ export const CATEGORY_CONFIG = {
     description: '純淨天然的單一植物精油',
     color: 'green'
   },
-  [PRODUCT_CATEGORIES.BLENDS]: {
+  [PRODUCT_CATEGORIES.PROPRIETARY_BLENDS]: {
     name: '複方精油',
     description: '精心調配的複合精油配方',
     color: 'blue'
@@ -55,7 +55,7 @@ export const CATEGORY_CONFIG = {
  * 類型安全的產品資料
  */
 const singleOils = singleOilsData as Oil[]
-const blends = blendsData as Oil[]
+const proprietaryBlends = proprietaryBlendsData as Oil[]
 const skincare = skincareData as Oil[]
 const wellness = wellnessData as Oil[]
 const accessories = accessoriesData as Oil[]
@@ -67,8 +67,8 @@ export const getProductsByCategory = (category: ProductCategory): Oil[] => {
   switch (category) {
     case PRODUCT_CATEGORIES.SINGLE_OILS:
       return singleOils
-    case PRODUCT_CATEGORIES.BLENDS:
-      return blends
+    case PRODUCT_CATEGORIES.PROPRIETARY_BLENDS:
+      return proprietaryBlends
     case PRODUCT_CATEGORIES.SKINCARE:
       return skincare
     case PRODUCT_CATEGORIES.WELLNESS:
@@ -86,7 +86,7 @@ export const getProductsByCategory = (category: ProductCategory): Oil[] => {
 export const getAllProducts = (): Oil[] => {
   return [
     ...singleOils,
-    ...blends,
+    ...proprietaryBlends,
     ...skincare,
     ...wellness,
     ...accessories
@@ -135,7 +135,7 @@ export const searchProducts = (searchTerm: string, categories?: ProductCategory[
 export const getCategoryStats = () => {
   return {
     [PRODUCT_CATEGORIES.SINGLE_OILS]: singleOils.length,
-    [PRODUCT_CATEGORIES.BLENDS]: blends.length,
+    [PRODUCT_CATEGORIES.PROPRIETARY_BLENDS]: proprietaryBlends.length,
     [PRODUCT_CATEGORIES.SKINCARE]: skincare.length,
     [PRODUCT_CATEGORIES.WELLNESS]: wellness.length,
     [PRODUCT_CATEGORIES.ACCESSORIES]: accessories.length,
@@ -187,7 +187,7 @@ export const getProductStats = getCategoryStats
  */
 export const DEFAULT_CATEGORIES: ProductCategory[] = [
   PRODUCT_CATEGORIES.SINGLE_OILS,
-  PRODUCT_CATEGORIES.BLENDS,
+  PRODUCT_CATEGORIES.PROPRIETARY_BLENDS,
   PRODUCT_CATEGORIES.SKINCARE,
   PRODUCT_CATEGORIES.WELLNESS,
   PRODUCT_CATEGORIES.ACCESSORIES

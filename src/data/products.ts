@@ -74,7 +74,7 @@ export const getSampleProducts = (): Oil[] => {
 
 // 按類別載入（推薦用法）
 export const loadSingleOils = () => getProductsByCat(PRODUCT_CATEGORIES.SINGLE_OILS)
-export const loadBlends = () => getProductsByCat(PRODUCT_CATEGORIES.BLENDS)
+export const loadBlends = () => getProductsByCat(PRODUCT_CATEGORIES.PROPRIETARY_BLENDS)
 export const loadSkincare = () => getProductsByCat(PRODUCT_CATEGORIES.SKINCARE)
 export const loadWellness = () => getProductsByCat(PRODUCT_CATEGORIES.WELLNESS)
 export const loadAccessories = () => getProductsByCat(PRODUCT_CATEGORIES.ACCESSORIES)

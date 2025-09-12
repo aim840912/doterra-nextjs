@@ -17,6 +17,8 @@
       "充滿活力"
     ],
     "aromaDescription": "草本、辛辣味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "甜桔精油",
       "迷迭香精油",
@@ -31,7 +33,8 @@
     "productCode": "31460302",
     "retailPrice": 1355,
     "memberPrice": 1015,
-    "pvPoints": 31
+    "pvPoints": 31,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678205604",
@@ -53,6 +56,8 @@
       "全家都可安心使用|散發蚊蟲不喜歡的活力香氣"
     ],
     "aromaDescription": "草本、木質香味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "芝麻籽油",
       "香茅精油",
@@ -69,7 +74,8 @@
     "productCode": "60216131",
     "retailPrice": 655,
     "memberPrice": 490,
-    "pvPoints": 15
+    "pvPoints": 15,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678197949",
@@ -91,6 +97,8 @@
       "全家都可安心使用。 散發蚊蟲不喜歡的活力香氣。"
     ],
     "aromaDescription": "草本、木質香味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "芝麻籽油",
       "香茅精油",
@@ -107,7 +115,8 @@
     "productCode": "60216148",
     "retailPrice": 1135,
     "memberPrice": 850,
-    "pvPoints": 23
+    "pvPoints": 23,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678348791",
@@ -129,6 +138,8 @@
       "具舒緩與放鬆之效。"
     ],
     "aromaDescription": "香甜、花香、柔和木質香",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "薰衣草",
       "卡南伽",
@@ -143,7 +154,8 @@
     "productCode": "60208831",
     "retailPrice": 1040,
     "memberPrice": 780,
-    "pvPoints": 24
+    "pvPoints": 24,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678289108",
@@ -165,6 +177,8 @@
       "促進思緒清晰"
     ],
     "aromaDescription": "麝香、辛香、草本味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "乳香精油",
       "萊姆精油",
@@ -183,7 +197,8 @@
     "productCode": "60224971",
     "retailPrice": 1900,
     "memberPrice": 1425,
-    "pvPoints": 44
+    "pvPoints": 44,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678148656",
@@ -208,6 +223,8 @@
       "重新找回自我肯定能量"
     ],
     "aromaDescription": "輕快、木質、清新、甜美味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "分餾椰子油",
       "黑雲杉精油",
@@ -224,7 +241,8 @@
     "productCode": "31010302",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678369087",
@@ -246,6 +264,8 @@
       "幫助專注於重要事物的香氛。"
     ],
     "aromaDescription": "松樹香、果香、柔和木質香",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "西印度檀香木",
       "膠冷杉",
@@ -260,7 +280,8 @@
     "productCode": "60208834",
     "retailPrice": 860,
     "memberPrice": 645,
-    "pvPoints": 20
+    "pvPoints": 20,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678341064",
@@ -281,6 +302,8 @@
       "維持肌膚健康"
     ],
     "aromaDescription": "草本、柑橘、香甜味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "乳香精油",
       "野橘精油",
@@ -298,7 +321,8 @@
     "productCode": "60208815",
     "retailPrice": 1800,
     "memberPrice": 1350,
-    "pvPoints": 41
+    "pvPoints": 41,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678459049",
@@ -320,6 +344,8 @@
       "有助促進通暢的清新感受。"
     ],
     "aromaDescription": "草本、香甜",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "分餾椰子油",
       "薄荷精油",
@@ -334,7 +360,8 @@
     "productCode": "60224090",
     "retailPrice": 1040,
     "memberPrice": 780,
-    "pvPoints": 24
+    "pvPoints": 24,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678333530",
@@ -355,6 +382,8 @@
       "令人感受關懷與支持。"
     ],
     "aromaDescription": "清爽、花香、活潑、柑橘味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "分餾椰子油",
       "萊姆精油*",
@@ -368,7 +397,8 @@
     "productCode": "",
     "retailPrice": 0,
     "memberPrice": 0,
-    "pvPoints": 0
+    "pvPoints": 0,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678281601",
@@ -389,6 +419,8 @@
       "堅強和希望，綻放出美好的自我。"
     ],
     "aromaDescription": "清新、愉悅、香甜",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "分餾椰子油",
       "雪松",
@@ -410,7 +442,8 @@
     "productCode": "60223652",
     "retailPrice": 975,
     "memberPrice": 975,
-    "pvPoints": 30
+    "pvPoints": 30,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678411372",
@@ -431,6 +464,8 @@
       "對抗環境威脅|具有激勵及使精神一振的香氛"
     ],
     "aromaDescription": "溫暖、木質、辛辣味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "分餾椰子油",
       "野橘精油",
@@ -446,7 +481,8 @@
     "productCode": "60210809",
     "retailPrice": 1200,
     "memberPrice": 900,
-    "pvPoints": 28
+    "pvPoints": 28,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678261604",
@@ -466,6 +502,8 @@
       "緩解疲累"
     ],
     "aromaDescription": "辛辣、清新、輕快、薄荷味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "分餾椰子油",
       "月桂葉精油",
@@ -484,7 +522,8 @@
     "productCode": "60201166",
     "retailPrice": 935,
     "memberPrice": 700,
-    "pvPoints": 21
+    "pvPoints": 21,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678266361",
@@ -505,6 +544,8 @@
       "塗抹於腹部"
     ],
     "aromaDescription": "香料、香甜、薄荷、甘草味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "分餾椰子油",
       "薄荷精油",
@@ -522,7 +563,8 @@
     "productCode": "60214477",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678423838",
@@ -543,6 +585,8 @@
       "個性的香味能喚醒心靈。|安撫情緒。"
     ],
     "aromaDescription": "溫暖、輕柔、甜美、麝香味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "分餾椰子油",
       "廣藿香精油",
@@ -564,7 +608,8 @@
     "productCode": "60215029",
     "retailPrice": 1460,
     "memberPrice": 1095,
-    "pvPoints": 34
+    "pvPoints": 34,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678416316",
@@ -586,6 +631,8 @@
       "提升心態。|緩解緊張和焦慮情緒。"
     ],
     "aromaDescription": "甜美、柑橘、花香",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "野橘",
       "薰衣草",
@@ -604,7 +651,8 @@
     "productCode": "60214452",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678253913",
@@ -628,6 +676,8 @@
       "平靜心神及情緒"
     ],
     "aromaDescription": "溫暖、香甜味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "薰衣草精油",
       "伊蘭伊蘭精油",
@@ -647,7 +697,8 @@
     "productCode": "60220846",
     "retailPrice": 1935,
     "memberPrice": 1450,
-    "pvPoints": 45
+    "pvPoints": 45,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678446586",
@@ -668,6 +719,8 @@
       "提供清新的柑橘香氣。"
     ],
     "aromaDescription": "",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "萊姆",
       "山雞椒",
@@ -687,7 +740,8 @@
     "productCode": "60219115",
     "retailPrice": 1275,
     "memberPrice": 955,
-    "pvPoints": 29
+    "pvPoints": 29,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678326048",
@@ -709,6 +763,8 @@
       "恢復肌膚彈性|調理肌膚狀況達平衡，深度滋養"
     ],
     "aromaDescription": "木質、濃郁、花香味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "乳香精油",
       "檀香木精油",
@@ -724,7 +780,8 @@
     "productCode": "60224972",
     "retailPrice": 4170,
     "memberPrice": 3125,
-    "pvPoints": 90
+    "pvPoints": 90,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678182481",
@@ -747,6 +804,8 @@
       "改善疲憊心靈和沮喪情緒"
     ],
     "aromaDescription": "乾淨、清新、薄荷味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "絲柏精油",
       "薄荷精油",
@@ -762,7 +821,8 @@
     "productCode": "31200302",
     "retailPrice": 1720,
     "memberPrice": 1290,
-    "pvPoints": 40
+    "pvPoints": 40,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678403801",
@@ -784,6 +844,8 @@
       "對抗季節性威脅。|表面清潔淨化。|具有激勵及使精神一振的香氛。"
     ],
     "aromaDescription": "溫暖、木質、辛辣味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "野橘精油",
       "丁香精油",
@@ -798,7 +860,8 @@
     "productCode": "60210808",
     "retailPrice": 1980,
     "memberPrice": 1485,
-    "pvPoints": 46
+    "pvPoints": 46,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678384038",
@@ -818,6 +881,8 @@
       "勇氣與自信感。"
     ],
     "aromaDescription": "溫潤柑橘香、花香、清淡辛香",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "野橘",
       "西印度檀香木",
@@ -832,7 +897,8 @@
     "productCode": "60208836",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678153864",
@@ -854,6 +920,8 @@
       "充滿幸福歡愉的活力"
     ],
     "aromaDescription": "柑橘、甜美味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "野橘精油",
       "檸檬精油",
@@ -872,7 +940,8 @@
     "productCode": "60220828",
     "retailPrice": 1015,
     "memberPrice": 760,
-    "pvPoints": 23
+    "pvPoints": 23,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678389133",
@@ -894,6 +963,8 @@
       "活力盎然的環境含有柑橘提振氣味。|輔以新鮮花香打造豐富層次，提升個人空間與工作環境。"
     ],
     "aromaDescription": "柑橘、花香、清甜",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "野橘",
       "葡萄柚",
@@ -907,7 +978,8 @@
     "productCode": "60209002",
     "retailPrice": 1275,
     "memberPrice": 955,
-    "pvPoints": 29
+    "pvPoints": 29,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678361550",
@@ -929,6 +1001,8 @@
       "其香氛可舒緩情緒。|促進健康與元氣。"
     ],
     "aromaDescription": "清新、濃郁檸香、淡雅草本",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "雪松",
       "山雞椒",
@@ -941,7 +1015,8 @@
     "productCode": "60208833",
     "retailPrice": 835,
     "memberPrice": 625,
-    "pvPoints": 19
+    "pvPoints": 19,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678431511",
@@ -962,6 +1037,8 @@
       "可舒緩不適。"
     ],
     "aromaDescription": "",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "綠薄荷",
       "日本薄荷",
@@ -977,7 +1054,8 @@
     "productCode": "60215680",
     "retailPrice": 860,
     "memberPrice": 645,
-    "pvPoints": 20
+    "pvPoints": 20,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678177363",
@@ -1001,6 +1079,8 @@
       "保護並提升對環境的自我防禦力"
     ],
     "aromaDescription": "清新、輕快、草本味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "檸檬精油",
       "西伯利亞冷杉精油",
@@ -1016,7 +1096,8 @@
     "productCode": "31060302",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678466527",
@@ -1039,6 +1120,8 @@
       "有助促進通暢的清新感受。"
     ],
     "aromaDescription": "草本、香甜",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "薄荷精油",
       "綠薄荷精油",
@@ -1052,7 +1135,8 @@
     "productCode": "",
     "retailPrice": 0,
     "memberPrice": 0,
-    "pvPoints": 0
+    "pvPoints": 0,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678376421",
@@ -1074,6 +1158,8 @@
       "帶來活力與安心感。"
     ],
     "aromaDescription": "木質、薄荷、花香",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "古巴香脂",
       "薰衣草",
@@ -1088,7 +1174,8 @@
     "productCode": "60208835",
     "retailPrice": 860,
     "memberPrice": 645,
-    "pvPoints": 20
+    "pvPoints": 20,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678356468",
@@ -1110,6 +1197,8 @@
       "幫助減少內心壓力。"
     ],
     "aromaDescription": "大地、薄荷、草本",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "岩蘭草",
       "薄荷",
@@ -1124,7 +1213,8 @@
     "productCode": "60208832",
     "retailPrice": 915,
     "memberPrice": 685,
-    "pvPoints": 21
+    "pvPoints": 21,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678169734",
@@ -1146,6 +1236,8 @@
       "搭配按摩可促進循環。"
     ],
     "aromaDescription": "清涼、薄荷味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "冬青精油",
       "樟樹精油",
@@ -1163,7 +1255,8 @@
     "productCode": "31050302",
     "retailPrice": 1975,
     "memberPrice": 1480,
-    "pvPoints": 44
+    "pvPoints": 44,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678439125",
@@ -1184,6 +1277,8 @@
       "放鬆緊張感，可舒緩身心。"
     ],
     "aromaDescription": "清新、薄荷、草本味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "冬青精油",
       "薰衣草精油",
@@ -1202,7 +1297,8 @@
     "productCode": "",
     "retailPrice": 0,
     "memberPrice": 0,
-    "pvPoints": 0
+    "pvPoints": 0,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678246390",
@@ -1224,6 +1320,8 @@
       "緩解疲累。"
     ],
     "aromaDescription": "清新、溫暖、辛香味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [],
     "category": "proprietary-blends",
     "volume": "15ml",
@@ -1232,7 +1330,8 @@
     "productCode": "60200200",
     "retailPrice": 1460,
     "memberPrice": 1095,
-    "pvPoints": 34
+    "pvPoints": 34,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678451636",
@@ -1252,6 +1351,8 @@
       "振奮的氛圍。|有助改善運動表現。"
     ],
     "aromaDescription": "柑橘味、辛香、薄荷氣息、香甜​",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "肉桂",
       "生薑",
@@ -1266,7 +1367,8 @@
     "productCode": "60220683",
     "retailPrice": 1535,
     "memberPrice": 1150,
-    "pvPoints": 33
+    "pvPoints": 33,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678301978",
@@ -1287,6 +1389,8 @@
       "沮喪。|舒緩女性週期性所產生的情緒不穩。"
     ],
     "aromaDescription": "松葉香、花香、草本味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "快樂鼠尾草精油",
       "薰衣草精油",
@@ -1307,7 +1411,8 @@
     "productCode": "60201689",
     "retailPrice": 1320,
     "memberPrice": 990,
-    "pvPoints": 30
+    "pvPoints": 30,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678226005",
@@ -1330,6 +1435,8 @@
       "悲觀和猜忌等負面情緒"
     ],
     "aromaDescription": "淨化、清新、薄荷味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "薄荷精油",
       "野橘精油",
@@ -1352,7 +1459,8 @@
     "productCode": "60220855",
     "retailPrice": 1200,
     "memberPrice": 900,
-    "pvPoints": 28
+    "pvPoints": 28,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678233643",
@@ -1374,6 +1482,8 @@
       "釋放與耐心|安撫憤怒與悔恨"
     ],
     "aromaDescription": "清新、木質、草本味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "黑雲杉精油",
       "佛手柑精油",
@@ -1392,7 +1502,8 @@
     "productCode": "31750302",
     "retailPrice": 1150,
     "memberPrice": 860,
-    "pvPoints": 26
+    "pvPoints": 26,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678218300",
@@ -1413,6 +1524,8 @@
       "賦予正向情緒與活力"
     ],
     "aromaDescription": "香甜、花香、麝香味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "乳香精油",
       "廣藿香精油",
@@ -1430,7 +1543,8 @@
     "productCode": "31730302",
     "retailPrice": 2035,
     "memberPrice": 1525,
-    "pvPoints": 47
+    "pvPoints": 47,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678161558",
@@ -1451,6 +1565,8 @@
       "舟車勞頓不適時使用。"
     ],
     "aromaDescription": "香料、香甜、薄荷、甘草味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "薄荷油",
       "胡荽油",
@@ -1467,7 +1583,8 @@
     "productCode": "60228182",
     "retailPrice": 1875,
     "memberPrice": 1405,
-    "pvPoints": 43
+    "pvPoints": 43,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678396418",
@@ -1490,6 +1607,8 @@
       "放鬆身心。"
     ],
     "aromaDescription": "甜美、柑橘、花香",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "野橘",
       "薰衣草",
@@ -1507,7 +1626,8 @@
     "productCode": "60210284",
     "retailPrice": 2080,
     "memberPrice": 1560,
-    "pvPoints": 48
+    "pvPoints": 48,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678238704",
@@ -1529,6 +1649,8 @@
       "厭倦的負面情緒"
     ],
     "aromaDescription": "溫暖、濃郁、辛香味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "分餾椰子油",
       "生薑精油",
@@ -1552,7 +1674,8 @@
     "productCode": "60220862",
     "retailPrice": 2240,
     "memberPrice": 1680,
-    "pvPoints": 52
+    "pvPoints": 52,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678309627",
@@ -1574,6 +1697,8 @@
       "擴香可提供舒適安心的環境。"
     ],
     "aromaDescription": "清新、香甜味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "山雞椒精油",
       "甜桔精油",
@@ -1588,7 +1713,8 @@
     "productCode": "60204858",
     "retailPrice": 1615,
     "memberPrice": 1210,
-    "pvPoints": 37
+    "pvPoints": 37,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678210643",
@@ -1610,6 +1736,8 @@
       "安心與滿足的心情|消除焦慮與不安情緒"
     ],
     "aromaDescription": "香甜、濃郁、薄荷味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "岩蘭草精油",
       "薰衣草精油",
@@ -1627,7 +1755,8 @@
     "productCode": "31710302",
     "retailPrice": 1670,
     "memberPrice": 1250,
-    "pvPoints": 38
+    "pvPoints": 38,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678274057",
@@ -1650,6 +1779,8 @@
       "憂傷或低落等負面情緒|提升能量與活力"
     ],
     "aromaDescription": "清新、溫暖、辛香味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "野橘精油",
       "八角茴香精油",
@@ -1668,7 +1799,8 @@
     "productCode": "60220872",
     "retailPrice": 1310,
     "memberPrice": 980,
-    "pvPoints": 30
+    "pvPoints": 30,
+    "ingredients": []
   },
   {
     "id": "doterra-1757678296588",
@@ -1691,6 +1823,8 @@
       "平滑|改善肌膚泛紅，舒緩不適|促進角質更新並調理肌膚|適合油性肌膚使用"
     ],
     "aromaDescription": "木質、香甜、草本味",
+    "blendComposition": "",
+    "keyIngredients": "",
     "mainIngredients": [
       "黑種草籽油",
       "芳樟精油",
@@ -1706,7 +1840,8 @@
     "productCode": "60201621",
     "retailPrice": 1095,
     "memberPrice": 820,
-    "pvPoints": 25
+    "pvPoints": 25,
+    "ingredients": []
   },
   {
     "id": "doterra-1757620894976",
