@@ -44,7 +44,8 @@ export default function OilDetailModal({ oil, isOpen, onClose }: OilDetailModalP
   // 取得徽章顏色
   const getBadgeColor = (category: string) => {
     switch (category) {
-      case 'essential-oils':
+      case 'single-oils':  // 改為 JSON 實際使用的值
+      case 'essential-oils':  // 保持向後相容
         return 'bg-green-100 text-green-800'
       case 'blends':
         return 'bg-blue-100 text-blue-800'
@@ -62,7 +63,8 @@ export default function OilDetailModal({ oil, isOpen, onClose }: OilDetailModalP
   // 取得類別名稱
   const getCategoryName = (category: string) => {
     switch (category) {
-      case 'essential-oils':
+      case 'single-oils':  // 改為 JSON 實際使用的值
+      case 'essential-oils':  // 保持向後相容
         return '單方精油'
       case 'blends':
         return '複方精油'
@@ -108,12 +110,12 @@ export default function OilDetailModal({ oil, isOpen, onClose }: OilDetailModalP
         <div className="flex flex-col lg:flex-row max-h-[90vh] overflow-hidden">
           {/* 左側 - 精油圖片 */}
           <div className="lg:w-1/2 bg-gray-50 flex items-center justify-center p-8">
-            <div className="relative w-full max-w-md aspect-square">
+            <div className="relative w-full max-w-lg aspect-square">
               <Image
                 src={oil.imageUrl}
                 alt={oil.name}
                 fill
-                className="object-cover rounded-xl"
+                className="object-contain p-2 rounded-xl"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
@@ -167,7 +169,7 @@ export default function OilDetailModal({ oil, isOpen, onClose }: OilDetailModalP
             <div className="mb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">精油介紹</h3>
               <p className="text-gray-700 leading-relaxed">
-                {oil.detailedDescription || oil.description}
+                {oil.productIntroduction || oil.detailedDescription || oil.description}
               </p>
             </div>
 
@@ -176,7 +178,7 @@ export default function OilDetailModal({ oil, isOpen, onClose }: OilDetailModalP
               <div className="mb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">主要功效</h3>
                 <ul className="space-y-2">
-                  {(oil.mainBenefits || oil.benefits).map((benefit, index) => (
+                  {(oil.mainBenefits || oil.benefits || []).map((benefit, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">•</span>
                       <span className="text-gray-700">{benefit}</span>
@@ -222,22 +224,40 @@ export default function OilDetailModal({ oil, isOpen, onClose }: OilDetailModalP
               {oil.usageInstructions && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">使用方法</h4>
-                  <p className="text-gray-700 text-sm">{oil.usageInstructions}</p>
+                  {Array.isArray(oil.usageInstructions) ? (
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      {oil.usageInstructions.map((instruction, index) => (
+                        <li key={index} className="flex items-start gap-2">
+                          <span className="text-green-600 mt-1">•</span>
+                          <span>{instruction}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-gray-700 text-sm">{oil.usageInstructions}</p>
+                  )}
                 </div>
               )}
 
               {/* 注意事項 */}
-              {oil.cautions?.length && (
+              {oil.cautions && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">注意事項</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    {oil.cautions.map((caution, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <span className="text-red-500 mt-1">⚠</span>
-                        <span>{caution}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  {Array.isArray(oil.cautions) ? (
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      {oil.cautions.map((caution, index) => (
+                        <li key={index} className="flex items-start gap-2">
+                          <span className="text-red-500 mt-1">⚠</span>
+                          <span>{caution}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="flex items-start gap-2 text-sm text-gray-700">
+                      <span className="text-red-500 mt-1">⚠</span>
+                      <span>{oil.cautions}</span>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

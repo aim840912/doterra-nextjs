@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/photo-*',
       },
+      {
+        protocol: 'https',
+        hostname: 'media.doterra.com',
+        port: '',
+        pathname: '/tw/images/**',
+      },
     ],
   },
 };

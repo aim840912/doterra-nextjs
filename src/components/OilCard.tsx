@@ -15,7 +15,8 @@ export default function OilCard({ oil, onSelect, compact = false }: OilCardProps
 
   const getBadgeColor = (category: string) => {
     switch (category) {
-      case 'essential-oils':
+      case 'single-oils':  // 改為 JSON 實際使用的值
+      case 'essential-oils':  // 保持向後相容
         return 'bg-green-100 text-green-800'
       case 'blends':
         return 'bg-blue-100 text-blue-800'
@@ -32,7 +33,8 @@ export default function OilCard({ oil, onSelect, compact = false }: OilCardProps
 
   const getCategoryName = (category: string) => {
     switch (category) {
-      case 'essential-oils':
+      case 'single-oils':  // 改為 JSON 實際使用的值
+      case 'essential-oils':  // 保持向後相容
         return '單方精油'
       case 'blends':
         return '複方精油'
@@ -59,12 +61,12 @@ export default function OilCard({ oil, onSelect, compact = false }: OilCardProps
       onClick={handleClick}
     >
       {/* 精油圖片 */}
-      <div className={`relative ${compact ? 'h-40' : 'h-48'} mb-4 bg-gray-50 rounded-lg overflow-hidden`}>
+      <div className={`relative ${compact ? 'h-40' : 'h-48'} mb-4 bg-white rounded-lg overflow-hidden`}>
         <Image
           src={oil.imageUrl}
           alt={oil.name}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-300"
+          className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         
