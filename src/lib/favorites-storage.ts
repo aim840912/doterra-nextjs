@@ -21,7 +21,7 @@ function isLocalStorageAvailable(): boolean {
     localStorage.setItem(test, test)
     localStorage.removeItem(test)
     return true
-  } catch (e) {
+  } catch {
     return false
   }
 }
@@ -171,7 +171,7 @@ function cleanup(): void {
             keysToRemove.push(key)
           }
         }
-      } catch (e) {
+      } catch {
         // 忽略非 JSON 項目
         continue
       }

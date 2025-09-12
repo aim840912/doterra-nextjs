@@ -12,10 +12,8 @@ import {
   getAllProducts,
   getProductsByCategory as getProductsByCat,
   searchProducts as searchProductsNew,
-  getBestsellerOils as getBestsellerOilsNew,
-  getNewOils as getNewOilsNew,
-  getDoTerraOils as getDoTerraOilsNew,
-  PRODUCT_CATEGORIES
+  PRODUCT_CATEGORIES,
+  ProductCategory
 } from './products/index'
 
 // 向後相容：使用新的資料載入系統
@@ -81,8 +79,7 @@ export const loadAccessories = () => getProductsByCat(PRODUCT_CATEGORIES.ACCESSO
 
 // 進階搜尋（推薦用法）
 export const searchByCategory = (searchTerm: string, category?: string): Oil[] => {
-  const categoryProducts = category ? getOilsByCategory(category) : allOils
-  return searchProductsNew(searchTerm, category ? [category as any] : undefined)
+  return searchProductsNew(searchTerm, category ? [category as ProductCategory] : undefined)
 }
 
 /**

@@ -10,7 +10,8 @@ export async function GET() {
       data: allOils,
       count: allOils.length
     })
-  } catch (_error) {
+  } catch (error) {
+    console.error('獲取精油列表失敗:', error)
     return NextResponse.json(
       { success: false, error: '獲取精油列表失敗' },
       { status: 500 }
