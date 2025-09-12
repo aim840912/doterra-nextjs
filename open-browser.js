@@ -17,7 +17,7 @@ const { chromium } = require('playwright');
     console.log('正在打開 doTERRA 專案...');
     
     // 導航至本地開發伺服器
-    await page.goto('http://localhost:3001', { 
+    await page.goto('http://localhost:3000', { 
       waitUntil: 'networkidle',
       timeout: 30000 
     });
