@@ -15,7 +15,13 @@
     "clean": "rm -rf .next dist out",
     "scrape:new": "tsx scripts/new-scraper.ts",
     "scrape:v2": "tsx scripts/new-scraper-v2.ts",
-    "scrape:working": "tsx scripts/working-scraper.ts"
+    "scrape:working": "tsx scripts/working-scraper.ts",
+    "scrape:single-oils": "tsx scripts/category-scraper.ts single-oils",
+    "scrape:blends": "tsx scripts/category-scraper.ts blends",
+    "scrape:skincare": "tsx scripts/category-scraper.ts skincare",
+    "scrape:wellness": "tsx scripts/category-scraper.ts wellness",
+    "products:merge": "tsx scripts/merge-products.ts",
+    "products:stats": "tsx -e \"import { getProductStats } from './src/data/products'; console.log(getProductStats())\""
   },
   "dependencies": {
     "axios": "^1.11.0",
