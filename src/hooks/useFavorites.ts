@@ -10,7 +10,6 @@ import {
   addToFavorites as addToFavoritesStorage,
   removeFromFavorites as removeFromFavoritesStorage,
   isFavorite as isFavoriteStorage,
-  getFavoritesCount,
   clearAllFavorites as clearAllFavoritesStorage
 } from '@/lib/favorites-storage'
 

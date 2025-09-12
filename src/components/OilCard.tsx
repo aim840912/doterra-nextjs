@@ -66,6 +66,33 @@ export default function OilCard({
     }
   }
 
+  // 系列標籤的顯示名稱和顏色
+  const getCollectionInfo = (collection: string) => {
+    const collectionMap: Record<string, { name: string; color: string }> = {
+      'onguard': { 
+        name: 'OnGuard', 
+        color: 'bg-orange-100 text-orange-700 border-orange-200' 
+      },
+      'deep-blue': { 
+        name: 'Deep Blue', 
+        color: 'bg-blue-100 text-blue-700 border-blue-200' 
+      },
+      'breathe': { 
+        name: 'Breathe', 
+        color: 'bg-cyan-100 text-cyan-700 border-cyan-200' 
+      },
+      'food': { 
+        name: 'Food', 
+        color: 'bg-emerald-100 text-emerald-700 border-emerald-200' 
+      }
+    }
+
+    return collectionMap[collection] || { 
+      name: collection, 
+      color: 'bg-gray-100 text-gray-700 border-gray-200' 
+    }
+  }
+
   return (
     <div 
       className={`
@@ -118,6 +145,28 @@ export default function OilCard({
             {getCategoryName(oil.category)}
           </span>
         </div>
+
+        {/* 系列標籤 */}
+        {oil.collections && oil.collections.length > 0 && (
+          <div className="absolute bottom-2 left-2 flex flex-wrap gap-1">
+            {oil.collections.slice(0, 2).map((collection, index) => {
+              const collectionInfo = getCollectionInfo(collection)
+              return (
+                <span 
+                  key={index}
+                  className={`text-xs px-2 py-1 rounded-full font-medium border ${collectionInfo.color}`}
+                >
+                  {collectionInfo.name}
+                </span>
+              )
+            })}
+            {oil.collections.length > 2 && (
+              <span className="text-xs px-2 py-1 rounded-full font-medium bg-gray-100 text-gray-600 border border-gray-200">
+                +{oil.collections.length - 2}
+              </span>
+            )}
+          </div>
+        )}
       </div>
 
       {/* 精油資訊 - 使用 flex-grow 讓內容區域自動增長 */}

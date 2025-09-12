@@ -20,6 +20,7 @@
     "scrape:blends": "tsx scripts/category-scraper.ts blends",
     "scrape:skincare": "tsx scripts/category-scraper.ts skincare",
     "scrape:wellness": "tsx scripts/category-scraper.ts wellness",
+    "scrape:onguard": "tsx scripts/scrape-onguard.ts",
     "products:merge": "tsx scripts/merge-products.ts",
     "products:stats": "tsx -e \"import { getProductStats } from './src/data/products'; console.log(getProductStats())\""
   },

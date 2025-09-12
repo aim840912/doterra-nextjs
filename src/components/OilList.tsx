@@ -74,7 +74,8 @@ const getCategoryColor = (category: string, isSelected: boolean = false) => {
 
 export default function OilList({ oils, showFilters = true }: OilListProps) {
   const [selectedCategory, setSelectedCategory] = useState<string | 'all'>('all')
-  const [sortBy, setSortBy] = useState<'name' | 'category'>('name')
+  const [selectedCollection, setSelectedCollection] = useState<string | 'all'>('all')
+  const [sortBy] = useState<'name' | 'category'>('name')
   const [searchTerm, setSearchTerm] = useState('')
   
   // Modal 狀態管理
@@ -90,6 +91,57 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
     return uniqueCategories.sort()
   }, [oils])
 
+  // 取得所有獨特的系列（collections）
+  const allCollections = useMemo(() => {
+    const uniqueCollections = new Set<string>()
+    oils.forEach(oil => {
+      if (oil.collections && oil.collections.length > 0) {
+        oil.collections.forEach(collection => uniqueCollections.add(collection))
+      }
+    })
+    return Array.from(uniqueCollections).sort()
+  }, [oils])
+
+  // 系列標籤的顯示名稱
+  const getCollectionLabel = (collection: string): string => {
+    const collectionLabels: Record<string, string> = {
+      'onguard': 'OnGuard 保衛系列',
+      'deep-blue': 'Deep Blue 舒緩系列',
+      'breathe': 'Breathe 順暢呼吸系列',
+      'food': 'Food 食品級系列'
+    }
+    return collectionLabels[collection] || collection
+  }
+
+  // 系列標籤的顏色配置
+  const getCollectionColor = (collection: string, isSelected: boolean = false) => {
+    const baseColors: Record<string, { normal: string; selected: string }> = {
+      'onguard': {
+        normal: 'bg-orange-100 text-orange-800 hover:bg-orange-200',
+        selected: 'bg-orange-600 text-white'
+      },
+      'deep-blue': {
+        normal: 'bg-blue-100 text-blue-800 hover:bg-blue-200',
+        selected: 'bg-blue-600 text-white'
+      },
+      'breathe': {
+        normal: 'bg-cyan-100 text-cyan-800 hover:bg-cyan-200',
+        selected: 'bg-cyan-600 text-white'
+      },
+      'food': {
+        normal: 'bg-emerald-100 text-emerald-800 hover:bg-emerald-200',
+        selected: 'bg-emerald-600 text-white'
+      }
+    }
+
+    const colors = baseColors[collection] || {
+      normal: 'bg-gray-100 text-gray-800 hover:bg-gray-200',
+      selected: 'bg-gray-600 text-white'
+    }
+
+    return isSelected ? colors.selected : colors.normal
+  }
+
   // 篩選和排序精油
   const filteredAndSortedOils = useMemo(() => {
     let filtered = oils
@@ -97,6 +149,13 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
     // 類別篩選
     if (selectedCategory !== 'all') {
       filtered = filtered.filter(oil => oil.category === selectedCategory)
+    }
+
+    // 系列篩選
+    if (selectedCollection !== 'all') {
+      filtered = filtered.filter(oil => 
+        oil.collections && oil.collections.includes(selectedCollection)
+      )
     }
 
     // 搜尋篩選
@@ -107,7 +166,8 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
         oil.englishName.toLowerCase().includes(term) ||
         oil.description.toLowerCase().includes(term) ||
         oil.tags?.some(tag => tag.toLowerCase().includes(term)) ||
-        oil.mainBenefits?.some(benefit => benefit.toLowerCase().includes(term))
+        oil.mainBenefits?.some(benefit => benefit.toLowerCase().includes(term)) ||
+        oil.collections?.some(collection => getCollectionLabel(collection).toLowerCase().includes(term))
       )
     }
 
@@ -133,7 +193,7 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
     })
 
     return filtered
-  }, [oils, selectedCategory, sortBy, searchTerm, favorites])
+  }, [oils, selectedCategory, selectedCollection, sortBy, searchTerm, favorites])
 
   const handleOilSelect = (oil: Oil) => {
     setSelectedOil(oil)
@@ -186,6 +246,26 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
               </select>
             </div>
 
+            {/* 系列篩選 */}
+            <div className="lg:w-52">
+              <label htmlFor="collection" className="block text-sm font-medium text-gray-800 mb-2">
+                產品系列
+              </label>
+              <select
+                id="collection"
+                value={selectedCollection}
+                onChange={(e) => setSelectedCollection(e.target.value)}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-900"
+              >
+                <option value="all">全部系列</option>
+                {allCollections.map(collection => (
+                  <option key={collection} value={collection}>
+                    {getCollectionLabel(collection)}
+                  </option>
+                ))}
+              </select>
+            </div>
+
             {/* 排序 - 暫時隱藏 */}
             {/* <div className="lg:w-40">
               <label htmlFor="sort" className="block text-sm font-medium text-gray-800 mb-2">
@@ -204,31 +284,81 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
           </div>
 
           {/* 快速類別標籤 */}
-          <div className="mt-4 flex flex-wrap gap-2">
-            <button
-              onClick={() => setSelectedCategory('all')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                selectedCategory === 'all'
-                  ? 'bg-green-600 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
-              全部精油
-            </button>
-            {allCategories.map(category => {
-              const count = oils.filter(oil => oil.category === category).length
-              return (
+          <div className="mt-4 space-y-3">
+            {/* 類別標籤 */}
+            <div>
+              <h4 className="text-sm font-medium text-gray-700 mb-2">精油類別</h4>
+              <div className="flex flex-wrap gap-2">
                 <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
+                  onClick={() => {
+                    setSelectedCategory('all')
+                    setSelectedCollection('all')
+                  }}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    getCategoryColor(category, selectedCategory === category)
+                    selectedCategory === 'all' && selectedCollection === 'all'
+                      ? 'bg-green-600 text-white'
+                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
                 >
-                  {getCategoryLabel(category)} ({count})
+                  全部精油
                 </button>
-              )
-            })}
+                {allCategories.map(category => {
+                  const count = oils.filter(oil => oil.category === category).length
+                  return (
+                    <button
+                      key={category}
+                      onClick={() => {
+                        setSelectedCategory(category)
+                        setSelectedCollection('all')
+                      }}
+                      className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                        getCategoryColor(category, selectedCategory === category)
+                      }`}
+                    >
+                      {getCategoryLabel(category)} ({count})
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+
+            {/* 產品系列標籤 */}
+            {allCollections.length > 0 && (
+              <div>
+                <h4 className="text-sm font-medium text-gray-700 mb-2">產品系列</h4>
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    onClick={() => setSelectedCollection('all')}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                      selectedCollection === 'all'
+                        ? 'bg-gray-600 text-white'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    }`}
+                  >
+                    全部系列
+                  </button>
+                  {allCollections.map(collection => {
+                    const count = oils.filter(oil => 
+                      oil.collections && oil.collections.includes(collection)
+                    ).length
+                    return (
+                      <button
+                        key={collection}
+                        onClick={() => {
+                          setSelectedCollection(collection)
+                          setSelectedCategory('all')
+                        }}
+                        className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                          getCollectionColor(collection, selectedCollection === collection)
+                        }`}
+                      >
+                        {getCollectionLabel(collection)} ({count})
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -238,6 +368,16 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
         <div className="flex items-center gap-4">
           <p className="text-gray-600">
             共找到 <span className="font-semibold text-green-600">{filteredAndSortedOils.length}</span> 項精油
+            {selectedCategory !== 'all' && (
+              <>
+                ，類別「<span className="font-medium">{getCategoryLabel(selectedCategory)}</span>」
+              </>
+            )}
+            {selectedCollection !== 'all' && (
+              <>
+                ，系列「<span className="font-medium">{getCollectionLabel(selectedCollection)}</span>」
+              </>
+            )}
             {searchTerm && (
               <>
                 ，搜尋「<span className="font-medium">{searchTerm}</span>」
@@ -272,12 +412,16 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
           )}
         </div>
         
-        {searchTerm && (
+        {(searchTerm || selectedCategory !== 'all' || selectedCollection !== 'all') && (
           <button
-            onClick={() => setSearchTerm('')}
+            onClick={() => {
+              setSearchTerm('')
+              setSelectedCategory('all')
+              setSelectedCollection('all')
+            }}
             className="text-sm text-gray-500 hover:text-gray-700 underline"
           >
-            清除搜尋
+            清除所有篩選
           </button>
         )}
       </div>
@@ -305,13 +449,20 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
             <p className="text-gray-500 mb-4">
               {searchTerm 
                 ? `沒有找到包含「${searchTerm}」的精油，請嘗試其他關鍵字。`
-                : '該類別暫無精油，請選擇其他類別。'
+                : selectedCategory !== 'all' && selectedCollection !== 'all'
+                  ? `類別「${getCategoryLabel(selectedCategory)}」和系列「${getCollectionLabel(selectedCollection)}」的組合暫無精油。`
+                  : selectedCategory !== 'all'
+                    ? `類別「${getCategoryLabel(selectedCategory)}」暫無精油，請選擇其他類別。`
+                    : selectedCollection !== 'all'
+                      ? `系列「${getCollectionLabel(selectedCollection)}」暫無精油，請選擇其他系列。`
+                      : '該篩選條件暫無精油。'
               }
             </p>
             <button
               onClick={() => {
                 setSearchTerm('')
                 setSelectedCategory('all')
+                setSelectedCollection('all')
               }}
               className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
             >

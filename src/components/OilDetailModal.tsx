@@ -96,6 +96,33 @@ export default function OilDetailModal({
     }
   }
 
+  // 系列標籤的顯示名稱和顏色
+  const getCollectionInfo = (collection: string) => {
+    const collectionMap: Record<string, { name: string; color: string }> = {
+      'onguard': { 
+        name: 'OnGuard 保衛系列', 
+        color: 'bg-orange-100 text-orange-700 border-orange-200' 
+      },
+      'deep-blue': { 
+        name: 'Deep Blue 舒緩系列', 
+        color: 'bg-blue-100 text-blue-700 border-blue-200' 
+      },
+      'breathe': { 
+        name: 'Breathe 順暢呼吸系列', 
+        color: 'bg-cyan-100 text-cyan-700 border-cyan-200' 
+      },
+      'food': { 
+        name: 'Food 食品級系列', 
+        color: 'bg-emerald-100 text-emerald-700 border-emerald-200' 
+      }
+    }
+
+    return collectionMap[collection] || { 
+      name: collection, 
+      color: 'bg-gray-100 text-gray-700 border-gray-200' 
+    }
+  }
+
   if (!isOpen) return null
 
   const modalContent = (
@@ -164,10 +191,27 @@ export default function OilDetailModal({
               
 
               {/* 類別標籤 */}
-              <div className="absolute top-4 right-4">
+              <div className="absolute top-4 right-4 flex flex-col gap-2">
                 <span className={`text-sm px-3 py-1 rounded-full font-medium shadow-lg ${getBadgeColor(oil.category)}`}>
                   {getCategoryName(oil.category)}
                 </span>
+                
+                {/* 系列標籤 */}
+                {oil.collections && oil.collections.length > 0 && (
+                  <div className="flex flex-col gap-1">
+                    {oil.collections.map((collection, index) => {
+                      const collectionInfo = getCollectionInfo(collection)
+                      return (
+                        <span 
+                          key={index}
+                          className={`text-sm px-3 py-1 rounded-full font-medium shadow-lg border ${collectionInfo.color}`}
+                        >
+                          {collectionInfo.name}
+                        </span>
+                      )
+                    })}
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -203,11 +247,28 @@ export default function OilDetailModal({
               )}
 
               {/* 規格和編號 */}
-              <div className="flex flex-wrap gap-4 text-sm text-gray-600">
+              <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-2">
                 <div>規格：{oil.volume}</div>
                 {oil.productCode && <div>精油編號：{oil.productCode}</div>}
                 {oil.pvPoints && <div>PV 點數：{oil.pvPoints}</div>}
               </div>
+
+              {/* 系列資訊 */}
+              {oil.collections && oil.collections.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {oil.collections.map((collection, index) => {
+                    const collectionInfo = getCollectionInfo(collection)
+                    return (
+                      <span 
+                        key={index}
+                        className={`text-sm px-3 py-1 rounded-full font-medium border ${collectionInfo.color}`}
+                      >
+                        {collectionInfo.name}
+                      </span>
+                    )
+                  })}
+                </div>
+              )}
             </div>
 
             {/* 精油描述 */}

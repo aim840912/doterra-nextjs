@@ -36,6 +36,9 @@ export interface Oil {
   applicationGuide?: string       // 應用指南
   url?: string                   // 產品 URL
   
+  // 產品系列和集合
+  collections?: string[]         // 所屬系列/集合（如 OnGuard、Deep Blue 等）
+  
   // 新增的商業資訊欄位
   specifications?: string         // 規格
   productCode?: string           // 產品編號
