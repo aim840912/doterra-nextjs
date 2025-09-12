@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import OilList from '@/components/OilList'
 import { allOils } from '@/data/products'
 
@@ -20,16 +19,10 @@ export default function OilsPage() {
       {/* 頁面標題區域 */}
       <div className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-12">
-          <div className="flex justify-between items-center max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800">
               精油圖鑑
             </h1>
-            <Link
-              href="/oils/add"
-              className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors shadow-md"
-            >
-              + 新增精油
-            </Link>
           </div>
         </div>
       </div>

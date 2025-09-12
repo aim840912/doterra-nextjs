@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import { Oil, OilCategory } from '@/types/oil'
 import OilCard from './OilCard'
 import OilDetailModal from './OilDetailModal'
+import { useFavorites } from '@/hooks/useFavorites'
 
 interface OilListProps {
   oils: Oil[]
@@ -32,6 +33,9 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
   // Modal 狀態管理
   const [selectedOil, setSelectedOil] = useState<Oil | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+
+  // 收藏功能
+  const { favorites, isFavorite, toggleFavorite } = useFavorites()
 
   // 取得所有獨特的類別（包含自訂類別）
   const allCategories = useMemo(() => {
@@ -62,6 +66,14 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
 
     // 排序
     filtered.sort((a, b) => {
+      // 優先級1: 收藏狀態 (收藏的精油優先顯示)
+      const aIsFavorite = favorites.includes(a.id)
+      const bIsFavorite = favorites.includes(b.id)
+      
+      if (aIsFavorite && !bIsFavorite) return -1
+      if (!aIsFavorite && bIsFavorite) return 1
+      
+      // 優先級2: 根據選擇的排序方式
       switch (sortBy) {
         case 'category':
           const categoryCompare = getCategoryLabel(a.category).localeCompare(getCategoryLabel(b.category), 'zh-TW')
@@ -74,7 +86,7 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
     })
 
     return filtered
-  }, [oils, selectedCategory, sortBy, searchTerm])
+  }, [oils, selectedCategory, sortBy, searchTerm, favorites])
 
   const handleOilSelect = (oil: Oil) => {
     setSelectedOil(oil)
@@ -178,14 +190,26 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
 
       {/* 搜尋結果統計 */}
       <div className="flex items-center justify-between">
-        <p className="text-gray-600">
-          共找到 <span className="font-semibold text-green-600">{filteredAndSortedOils.length}</span> 項精油
-          {searchTerm && (
-            <>
-              ，搜尋「<span className="font-medium">{searchTerm}</span>」
-            </>
+        <div className="flex items-center gap-4">
+          <p className="text-gray-600">
+            共找到 <span className="font-semibold text-green-600">{filteredAndSortedOils.length}</span> 項精油
+            {searchTerm && (
+              <>
+                ，搜尋「<span className="font-medium">{searchTerm}</span>」
+              </>
+            )}
+          </p>
+          
+          {/* 收藏統計 */}
+          {favorites.length > 0 && (
+            <div className="flex items-center gap-1 text-sm text-yellow-600">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>{favorites.length} 個收藏</span>
+            </div>
           )}
-        </p>
+        </div>
         
         {searchTerm && (
           <button
@@ -205,6 +229,8 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
               key={oil.id}
               oil={oil}
               onSelect={handleOilSelect}
+              isFavorite={isFavorite(oil.id)}
+              onToggleFavorite={toggleFavorite}
             />
           ))}
         </div>
@@ -240,6 +266,8 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
           oil={selectedOil}
           isOpen={isModalOpen}
           onClose={handleCloseModal}
+          isFavorite={isFavorite(selectedOil.id)}
+          onToggleFavorite={toggleFavorite}
         />
       )}
     </div>
