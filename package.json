@@ -22,12 +22,13 @@
     "scrape:wellness": "tsx scripts/category-scraper.ts wellness",
     "scrape:onguard": "tsx scripts/scrape-onguard.ts",
     "products:merge": "tsx scripts/merge-products.ts",
-    "products:stats": "tsx -e \"import { getProductStats } from './src/data/products'; console.log(getProductStats())\""
+    "products:stats": "tsx -e \"import { getProductStats } from './src/data/products'; console.log(getProductStats())\"",
+    "cleanup": "tsx scripts/cleanup.ts",
+    "cleanup:cache": "tsx scripts/cleanup.ts --cache-only",
+    "cleanup:deps": "tsx scripts/cleanup.ts --refresh-deps"
   },
   "dependencies": {
-    "axios": "^1.11.0",
     "browser-image-compression": "^2.0.2",
-    "cheerio": "^1.1.2",
     "next": "15.5.3",
     "playwright": "^1.55.0",
     "react": "19.1.0",

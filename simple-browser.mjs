@@ -1,4 +1,4 @@
-const { chromium } = require('playwright');
+import { chromium } from 'playwright';
 
 (async () => {
   console.log('🚀 正在啟動瀏覽器...');

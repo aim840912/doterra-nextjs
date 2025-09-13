@@ -4,6 +4,7 @@ import { chromium, Browser, Page } from 'playwright';
 import * as fs from 'fs';
 import * as path from 'path';
 import { Oil } from '../src/types/oil';
+import { Oil } from '../src/types/oil';
 
 interface ProductInfo {
   name: string;
@@ -267,7 +268,7 @@ class BreatheScraper {
 
       // 提取基本產品資訊
       const productData = await page.evaluate(() => {
-        const result: any = {
+        const result: Partial<Oil> = {
           name: '',
           englishName: '',
           description: '',

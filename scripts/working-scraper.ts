@@ -1,6 +1,7 @@
 import { chromium, Browser, Page } from 'playwright';
 import * as fs from 'fs';
 import * as path from 'path';
+import { Oil } from '../src/types/oil';
 
 interface ProductInfo {
   name: string;
@@ -460,7 +461,7 @@ class WorkingScraper {
   /**
    * 讀取現有的產品資料
    */
-  private readExistingData(outputPath: string): any[] {
+  private readExistingData(outputPath: string): Partial<Oil>[] {
     if (fs.existsSync(outputPath)) {
       try {
         const content = fs.readFileSync(outputPath, 'utf-8');
@@ -477,7 +478,7 @@ class WorkingScraper {
   /**
    * 儲存產品資料（追加模式）
    */
-  private saveProductData(outputPath: string, newProduct: any): void {
+  private saveProductData(outputPath: string, newProduct: Partial<Oil>): void {
     const existingData = this.readExistingData(outputPath);
     
     // 檢查是否已存在相同產品（根據 URL 判斷）

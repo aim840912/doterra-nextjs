@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { allProducts, getDoTerraProducts, getSampleProducts } from '@/data/products'
 
 export default function TestProductsPage() {
@@ -38,11 +39,14 @@ export default function TestProductsPage() {
               <div key={product.id} className="border rounded-lg p-4 hover:shadow-md transition-shadow">
                 <div className="flex items-start space-x-4">
                   {/* 產品圖片 */}
-                  <div className="w-16 h-16 bg-gray-200 rounded-lg flex-shrink-0 overflow-hidden">
-                    <img 
+                  <div className="w-16 h-16 bg-gray-200 rounded-lg flex-shrink-0 overflow-hidden relative">
+                    <Image 
                       src={product.imageUrl} 
                       alt={product.name}
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="64px"
+                      className="object-cover"
+                      loading="lazy"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = '/images/placeholder.jpg';

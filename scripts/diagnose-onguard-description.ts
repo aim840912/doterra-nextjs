@@ -65,7 +65,7 @@ async function diagnoseOnGuardDescription() {
                          (element.className ? '.' + element.className.split(' ').join('.') : '') +
                          (element.id ? '#' + element.id : '');
           
-          for (let child of node.childNodes) {
+          for (const child of node.childNodes) {
             searchTextNodes(child, newPath);
           }
         }

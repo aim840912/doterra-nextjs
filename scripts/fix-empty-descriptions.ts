@@ -1,6 +1,7 @@
 import { chromium, Browser, Page } from 'playwright';
 import * as fs from 'fs';
 import * as path from 'path';
+import { Oil } from '../src/types/oil';
 
 // 修復空白 description 的專用腳本
 class DescriptionFixer {
@@ -168,7 +169,7 @@ class DescriptionFixer {
     
     results.forEach(result => {
       if (result.success && result.description) {
-        const productIndex = productsData.findIndex((p: any) => p.id === result.id);
+        const productIndex = productsData.findIndex((p: Oil) => p.id === result.id);
         if (productIndex !== -1) {
           productsData[productIndex].description = result.description;
           updatedCount++;

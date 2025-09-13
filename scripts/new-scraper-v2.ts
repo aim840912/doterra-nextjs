@@ -212,7 +212,7 @@ class DoTerraScraperV2 {
 
       // 提取產品詳細資料
       const productDetails = await page.evaluate(function() {
-        var details = {
+        const details = {
           name: '',
           scientificName: '',
           description: '',
@@ -238,21 +238,21 @@ class DoTerraScraperV2 {
         // 輔助函數：根據 h2 標題獲取後續內容
         function getContentAfterH2(h2Text, elementType) {
           elementType = elementType || 'any';
-          var h2Elements = Array.from(document.querySelectorAll('h2'));
-          var targetH2 = h2Elements.find(function(h2) { 
+          const h2Elements = Array.from(document.querySelectorAll('h2'));
+          const targetH2 = h2Elements.find(function(h2) { 
             return h2.textContent && h2.textContent.indexOf(h2Text) !== -1; 
           });
           
           if (!targetH2) return elementType === 'array' ? [] : '';
           
-          var nextElement = targetH2.nextElementSibling;
+          let nextElement = targetH2.nextElementSibling;
           
           // 如果下一個元素不是我們要的類型，繼續找
           while (nextElement && nextElement.nodeType === 1) {
             if (elementType === 'p' && nextElement.tagName === 'P') {
               return nextElement.textContent ? nextElement.textContent.trim() : '';
             } else if (elementType === 'ul' && nextElement.tagName === 'UL') {
-              var items = Array.from(nextElement.querySelectorAll('li'));
+              const items = Array.from(nextElement.querySelectorAll('li'));
               return items.map(function(li) { 
                 return li.textContent ? li.textContent.trim() : ''; 
               }).filter(function(text) { return text; });
@@ -266,101 +266,101 @@ class DoTerraScraperV2 {
         }
 
         // 1. 產品名稱 - 從 .product-title 或 h1 獲取
-        var productTitleEl = document.querySelector('.product-title, h1');
+        const productTitleEl = document.querySelector('.product-title, h1');
         if (productTitleEl && productTitleEl.textContent) {
           details.name = productTitleEl.textContent.replace(/\s+/g, ' ').replace(/^\s+|\s+$/g, '');
         }
 
         // 2. 學名 - 從 .scientific 獲取
-        var scientificEl = document.querySelector('.scientific');
+        const scientificEl = document.querySelector('.scientific');
         if (scientificEl && scientificEl.textContent) {
           details.scientificName = scientificEl.textContent.replace(/^\s+|\s+$/g, '');
         }
 
         // 3. 產品描述 - 從 itemprop="description" 的下一個 p 標籤獲取
-        var descriptionEl = document.querySelector('[itemprop="description"]');
+        const descriptionEl = document.querySelector('[itemprop="description"]');
         if (descriptionEl && descriptionEl.nextElementSibling && descriptionEl.nextElementSibling.tagName === 'P') {
           details.description = descriptionEl.nextElementSibling.textContent ? descriptionEl.nextElementSibling.textContent.replace(/^\s+|\s+$/g, '') : '';
         }
 
         // 4. 產品介紹 - 從 h2 產品介紹下方的 p 獲取
-        var introduction = getContentAfterH2('產品介紹', 'p');
+        const introduction = getContentAfterH2('產品介紹', 'p');
         if (typeof introduction === 'string') {
           details.productIntroduction = introduction;
         }
 
         // 5. 使用方法 - 從 h2 使用方法下方的 ul 中的 li 獲取
-        var usageItems = getContentAfterH2('使用方法', 'ul');
+        const usageItems = getContentAfterH2('使用方法', 'ul');
         if (Array.isArray(usageItems)) {
           details.usageInstructions = usageItems;
         }
 
         // 6. 注意事項 - 從 h2 注意事項後獲取，完全不修改
-        var cautionContent = getContentAfterH2('注意事項', 'any');
+        const cautionContent = getContentAfterH2('注意事項', 'any');
         if (typeof cautionContent === 'string') {
           details.cautions = cautionContent;
         }
 
         // 7. 左側資訊 - 主要功效
-        var benefitsItems = getContentAfterH2('主要功效', 'ul');
+        const benefitsItems = getContentAfterH2('主要功效', 'ul');
         if (Array.isArray(benefitsItems)) {
           details.mainBenefits = benefitsItems;
         }
 
         // 8. 左側資訊 - 香味描述
-        var aroma = getContentAfterH2('香味描述', 'any');
+        const aroma = getContentAfterH2('香味描述', 'any');
         if (typeof aroma === 'string') {
           details.aromaDescription = aroma;
         }
 
         // 9. 左側資訊 - 萃取方式
-        var extraction = getContentAfterH2('萃取方式', 'any');
+        const extraction = getContentAfterH2('萃取方式', 'any');
         if (typeof extraction === 'string') {
           details.extractionMethod = extraction;
         }
 
         // 10. 左側資訊 - 萃取部位
-        var plantPartText = getContentAfterH2('萃取部位', 'any');
+        const plantPartText = getContentAfterH2('萃取部位', 'any');
         if (typeof plantPartText === 'string') {
           details.plantPart = plantPartText;
         }
 
         // 11. 左側資訊 - 主要成分
-        var ingredientsText = getContentAfterH2('主要成分', 'any');
+        const ingredientsText = getContentAfterH2('主要成分', 'any');
         if (typeof ingredientsText === 'string') {
           details.mainIngredients = [ingredientsText]; // 轉為陣列格式
         }
 
         // 12. 提取價格和產品資訊
-        var pageText = document.body.textContent || '';
+        const pageText = document.body.textContent || '';
         
-        var productCodeMatch = pageText.match(/產品編號[:\s]*(\d+)/);
+        const productCodeMatch = pageText.match(/產品編號[:\s]*(\d+)/);
         details.productCode = productCodeMatch && productCodeMatch[1] ? productCodeMatch[1] : '';
 
-        var retailPriceMatch = pageText.match(/建議售價[:\s]*NT\s*\$?\s*([\d,]+)/);
+        const retailPriceMatch = pageText.match(/建議售價[:\s]*NT\s*\$?\s*([\d,]+)/);
         details.retailPrice = retailPriceMatch ? parseInt(retailPriceMatch[1].replace(/,/g, ''), 10) : 0;
 
-        var memberPriceMatch = pageText.match(/會員價[:\s]*NT\s*\$?\s*([\d,]+)/);
+        const memberPriceMatch = pageText.match(/會員價[:\s]*NT\s*\$?\s*([\d,]+)/);
         details.memberPrice = memberPriceMatch ? parseInt(memberPriceMatch[1].replace(/,/g, ''), 10) : 0;
 
-        var pvPointsMatch = pageText.match(/點數[:\s]*([\d.]+)/);
+        const pvPointsMatch = pageText.match(/點數[:\s]*([\d.]+)/);
         details.pvPoints = pvPointsMatch ? parseFloat(pvPointsMatch[1]) : 0;
 
-        var volumeMatch = pageText.match(/(\d+)\s*毫升/) || pageText.match(/(\d+)\s*ml/i);
+        const volumeMatch = pageText.match(/(\d+)\s*毫升/) || pageText.match(/(\d+)\s*ml/i);
         if (volumeMatch) {
           details.volume = volumeMatch[1] + 'ml';
         }
 
         // 13. 規格信息
-        var specMatch = pageText.match(/規格[:\s]*([^<\n]+)/);
+        const specMatch = pageText.match(/規格[:\s]*([^<\n]+)/);
         if (specMatch) {
           details.specifications = specMatch[1].replace(/^\s+|\s+$/g, '');
         }
 
         // 14. 圖片
-        var images = Array.from(document.querySelectorAll('img'));
-        for (var i = 0; i < images.length; i++) {
-          var img = images[i];
+        const images = Array.from(document.querySelectorAll('img'));
+        for (let i = 0; i < images.length; i++) {
+          const img = images[i];
           if (img.src && (img.src.indexOf('product') !== -1 || (img.alt && img.alt.indexOf('精油') !== -1))) {
             details.imageUrl = img.src;
             break;

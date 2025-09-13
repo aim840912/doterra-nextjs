@@ -3,6 +3,7 @@
 import { chromium, Browser, Page } from 'playwright';
 import * as fs from 'fs';
 import * as path from 'path';
+import { Oil } from '../src/types/oil';
 
 /**
  * 全新的 doTERRA 精油爬蟲
@@ -160,7 +161,7 @@ class DoTerraNewScraper {
         }
 
         // 從產品元素中提取資訊
-        const results: any[] = [];
+        const results: Partial<Oil>[] = [];
         console.log(`📋 開始分析 ${productElements.length} 個產品元素...`);
 
         productElements.forEach((element, index) => {
@@ -243,7 +244,7 @@ class DoTerraNewScraper {
   /**
    * 爬取單個產品詳細資料
    */
-  private async scrapeProductDetails(page: Page, productInfo: ProductInfo): Promise<any> {
+  private async scrapeProductDetails(page: Page, productInfo: ProductInfo): Promise<Partial<Oil>> {
     console.log(`\n🔍 開始爬取產品: ${productInfo.name}`);
     console.log(`🔗 URL: ${productInfo.url}`);
 
@@ -259,7 +260,7 @@ class DoTerraNewScraper {
 
       // 提取產品詳細資料
       const productDetails = await page.evaluate(() => {
-        const details: any = {
+        const details: Partial<Oil> = {
           name: '',
           description: '',
           productCode: '',
