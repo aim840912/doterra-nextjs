@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { allProducts, getDoTerraProducts, getSampleProducts } from '@/data/products'
+import { getImageBlurDataURL, getResponsiveImageSizes, handleImageError } from '@/lib/image-utils'
 
 export default function TestProductsPage() {
   const doterraProducts = getDoTerraProducts()
@@ -44,13 +45,12 @@ export default function TestProductsPage() {
                       src={product.imageUrl} 
                       alt={product.name}
                       fill
-                      sizes="64px"
+                      sizes={getResponsiveImageSizes('list')}
                       className="object-cover"
                       loading="lazy"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = '/images/placeholder.jpg';
-                      }}
+                      placeholder="blur"
+                      blurDataURL={getImageBlurDataURL(product.imageUrl)}
+                      onError={(e) => handleImageError(e, '/images/placeholder.jpg')}
                     />
                   </div>
                   

@@ -132,3 +132,102 @@ export function formatFileSize(bytes: number): string {
   
   return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i]
 }
+
+/**
+ * 產生圖片的 blur placeholder data URL
+ * 用於 Next.js Image 組件的 placeholder="blur"
+ */
+export function generateBlurDataURL(
+  width: number = 8,
+  height: number = 8,
+  color: string = '#f3f4f6'
+): string {
+  // 創建簡單的 SVG blur placeholder
+  const svg = `
+    <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100%" height="100%" fill="${color}"/>
+      <defs>
+        <filter id="blur">
+          <feGaussianBlur stdDeviation="1"/>
+        </filter>
+      </defs>
+      <rect width="100%" height="100%" fill="${color}" filter="url(#blur)" opacity="0.8"/>
+    </svg>
+  `
+  
+  // 轉換為 base64 data URL
+  const base64 = Buffer.from(svg).toString('base64')
+  return `data:image/svg+xml;base64,${base64}`
+}
+
+/**
+ * 根據圖片類型產生對應的 blur placeholder
+ */
+export function getImageBlurDataURL(imageUrl: string): string {
+  // 根據圖片來源決定 placeholder 顏色
+  if (imageUrl.includes('doterra.com')) {
+    return generateBlurDataURL(8, 8, '#f0f9ff') // 淡藍色，doTERRA 品牌色調
+  }
+  
+  if (imageUrl.includes('placeholder')) {
+    return generateBlurDataURL(8, 8, '#e5e7eb') // 灰色
+  }
+  
+  // 預設淺綠色，符合精油主題
+  return generateBlurDataURL(8, 8, '#f0fdf4')
+}
+
+/**
+ * 為不同螢幕尺寸優化 sizes 屬性
+ */
+export function getResponsiveImageSizes(context: 'card' | 'modal' | 'thumbnail' | 'list'): string {
+  switch (context) {
+    case 'card':
+      // OilCard 在網格中使用
+      return '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw'
+    
+    case 'modal':
+      // OilDetailModal 大圖顯示
+      return '(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 50vw'
+    
+    case 'thumbnail':
+      // ImageUploader 縮略圖
+      return '(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 200px'
+    
+    case 'list':
+      // test-oils 頁面列表項目
+      return '64px'
+    
+    default:
+      return '100vw'
+  }
+}
+
+/**
+ * 圖片載入優化 Hook 的類型定義
+ */
+export interface ImageLoadState {
+  isLoading: boolean
+  hasError: boolean
+  hasLoaded: boolean
+}
+
+/**
+ * 圖片預載入工具函數
+ */
+export function preloadImage(src: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const img = new Image()
+    img.onload = () => resolve()
+    img.onerror = () => reject(new Error(`Failed to preload image: ${src}`))
+    img.src = src
+  })
+}
+
+/**
+ * 批量預載入圖片
+ */
+export async function preloadImages(srcs: string[]): Promise<void> {
+  const promises = srcs.map(src => preloadImage(src))
+  await Promise.allSettled(promises)
+}

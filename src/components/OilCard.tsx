@@ -1,5 +1,6 @@
 import { Oil } from '@/types/oil'
 import Image from 'next/image'
+import { getImageBlurDataURL, getResponsiveImageSizes, handleImageError } from '@/lib/image-utils'
 
 interface OilCardProps {
   oil: Oil
@@ -109,7 +110,11 @@ export default function OilCard({
           alt={oil.name}
           fill
           className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes={getResponsiveImageSizes('card')}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={getImageBlurDataURL(oil.imageUrl)}
+          onError={(e) => handleImageError(e, '/images/placeholder.jpg')}
         />
         
         {/* 收藏星星按鈕 */}

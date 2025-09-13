@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback } from 'react'
 import Image from 'next/image'
-import { validateImageFile, compressImage, getImagePreviewUrl, formatFileSize } from '@/lib/image-utils'
+import { validateImageFile, compressImage, getImagePreviewUrl, formatFileSize, getImageBlurDataURL, getResponsiveImageSizes } from '@/lib/image-utils'
 
 interface UploadedImage {
   id: string
@@ -283,6 +283,10 @@ export default function ImageUploader({
                     width={200}
                     height={200}
                     className="w-full h-full object-cover"
+                    sizes={getResponsiveImageSizes('thumbnail')}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={getImageBlurDataURL(image.preview || image.url)}
                     onError={(e) => {
                       const img = e.currentTarget
                       if (img.src !== '/images/placeholder.svg') {

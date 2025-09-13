@@ -5,6 +5,7 @@ import { createPortal } from 'react-dom'
 import Image from 'next/image'
 import { Oil } from '@/types/oil'
 import { useModalSettings } from '@/hooks/useModalSettings'
+import { getImageBlurDataURL, getResponsiveImageSizes, handleImageError } from '@/lib/image-utils'
 
 interface OilDetailModalProps {
   oil: Oil
@@ -212,8 +213,11 @@ export default function OilDetailModal({
                 alt={oil.name}
                 fill
                 className="object-contain p-2 rounded-xl"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes={getResponsiveImageSizes('modal')}
                 priority
+                placeholder="blur"
+                blurDataURL={getImageBlurDataURL(oil.imageUrl)}
+                onError={(e) => handleImageError(e, '/images/placeholder.jpg')}
               />
             </div>
           </div>
