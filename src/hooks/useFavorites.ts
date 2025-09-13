@@ -4,14 +4,10 @@
  */
 
 import { useState, useEffect, useCallback } from 'react'
-import { 
-  getFavorites, 
-  toggleFavorite as toggleFavoriteStorage,
-  addToFavorites as addToFavoritesStorage,
-  removeFromFavorites as removeFromFavoritesStorage,
-  isFavorite as isFavoriteStorage,
-  clearAllFavorites as clearAllFavoritesStorage
-} from '@/lib/favorites-storage'
+import { favoritesStorage } from '@/lib/favorites-storage'
+
+// 模擬用戶 ID（實際應用中會從認證系統獲取）
+const getCurrentUserId = () => 'anonymous'
 
 interface UseFavoritesReturn {
   /** 所有收藏的精油 ID */
@@ -39,7 +35,8 @@ export function useFavorites(): UseFavoritesReturn {
   // 初始化載入收藏列表
   useEffect(() => {
     try {
-      const storedFavorites = getFavorites()
+      const userId = getCurrentUserId()
+      const storedFavorites = favoritesStorage.getFavorites(userId)
       setFavorites(storedFavorites)
     } catch (error) {
       console.warn('載入收藏列表失敗:', error)
@@ -57,21 +54,16 @@ export function useFavorites(): UseFavoritesReturn {
   // 切換收藏狀態
   const toggleFavorite = useCallback((oilId: string): void => {
     try {
-      const success = toggleFavoriteStorage(oilId)
+      const userId = getCurrentUserId()
+      const { action } = favoritesStorage.toggleFavorite(userId, oilId)
       
-      if (success) {
-        setFavorites(prevFavorites => {
-          if (prevFavorites.includes(oilId)) {
-            // 移除收藏
-            return prevFavorites.filter(id => id !== oilId)
-          } else {
-            // 新增收藏
-            return [...prevFavorites, oilId]
-          }
-        })
-      } else {
-        console.warn('切換收藏狀態失敗，可能是 localStorage 不可用')
-      }
+      setFavorites(prevFavorites => {
+        if (action === 'added') {
+          return [...prevFavorites, oilId]
+        } else {
+          return prevFavorites.filter(id => id !== oilId)
+        }
+      })
     } catch (error) {
       console.error('切換收藏狀態時發生錯誤:', error)
     }
@@ -84,12 +76,13 @@ export function useFavorites(): UseFavoritesReturn {
         return // 已經存在，不需要重複新增
       }
 
-      const success = addToFavoritesStorage(oilId)
+      const userId = getCurrentUserId()
+      const success = favoritesStorage.addFavorite(userId, oilId)
       
       if (success) {
         setFavorites(prevFavorites => [...prevFavorites, oilId])
       } else {
-        console.warn('新增收藏失敗，可能是 localStorage 不可用')
+        console.warn('新增收藏失敗，產品已存在收藏列表中')
       }
     } catch (error) {
       console.error('新增收藏時發生錯誤:', error)
@@ -99,12 +92,13 @@ export function useFavorites(): UseFavoritesReturn {
   // 從收藏移除
   const removeFromFavorites = useCallback((oilId: string): void => {
     try {
-      const success = removeFromFavoritesStorage(oilId)
+      const userId = getCurrentUserId()
+      const success = favoritesStorage.removeFavorite(userId, oilId)
       
       if (success) {
         setFavorites(prevFavorites => prevFavorites.filter(id => id !== oilId))
       } else {
-        console.warn('移除收藏失敗，可能是 localStorage 不可用')
+        console.warn('移除收藏失敗，產品不在收藏列表中')
       }
     } catch (error) {
       console.error('移除收藏時發生錯誤:', error)
@@ -114,17 +108,13 @@ export function useFavorites(): UseFavoritesReturn {
   // 清空所有收藏
   const clearAllFavorites = useCallback((): void => {
     try {
-      const success = clearAllFavoritesStorage()
-      
-      if (success || favorites.length === 0) {
-        setFavorites([])
-      } else {
-        console.warn('清空收藏失敗，可能是 localStorage 不可用')
-      }
+      const userId = getCurrentUserId()
+      favoritesStorage.clearFavorites(userId)
+      setFavorites([])
     } catch (error) {
       console.error('清空收藏時發生錯誤:', error)
     }
-  }, [favorites.length])
+  }, [])
 
   return {
     favorites,
@@ -149,7 +139,8 @@ export function useFavoriteStatus(oilId: string) {
   // 初始化載入狀態
   useEffect(() => {
     try {
-      const favoriteStatus = isFavoriteStorage(oilId)
+      const userId = getCurrentUserId()
+      const favoriteStatus = favoritesStorage.isFavorited(userId, oilId)
       setIsFavorited(favoriteStatus)
     } catch (error) {
       console.warn('載入收藏狀態失敗:', error)
@@ -162,13 +153,9 @@ export function useFavoriteStatus(oilId: string) {
   // 切換收藏狀態
   const toggleFavorite = useCallback((): void => {
     try {
-      const success = toggleFavoriteStorage(oilId)
-      
-      if (success) {
-        setIsFavorited(prev => !prev)
-      } else {
-        console.warn('切換收藏狀態失敗，可能是 localStorage 不可用')
-      }
+      const userId = getCurrentUserId()
+      const { isFavorited: newStatus } = favoritesStorage.toggleFavorite(userId, oilId)
+      setIsFavorited(newStatus)
     } catch (error) {
       console.error('切換收藏狀態時發生錯誤:', error)
     }

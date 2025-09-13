@@ -4,11 +4,14 @@ import { useState, useMemo } from 'react'
 import { Oil, OilCategory } from '@/types/oil'
 import OilCard from './OilCard'
 import OilDetailModal from './OilDetailModal'
+import AdvancedSearch from './AdvancedSearch'
+import { ProductListSkeleton } from './ProductSkeleton'
 import { useFavorites } from '@/hooks/useFavorites'
 
 interface OilListProps {
   oils: Oil[]
   showFilters?: boolean
+  isLoading?: boolean
 }
 
 const categoryLabels: Record<string, string> = {
@@ -72,11 +75,16 @@ const getCategoryColor = (category: string, isSelected: boolean = false) => {
   return isSelected ? colors.selected : colors.normal
 }
 
-export default function OilList({ oils, showFilters = true }: OilListProps) {
+export default function OilList({ oils, showFilters = true, isLoading = false }: OilListProps) {
   const [selectedCategory, setSelectedCategory] = useState<string | 'all'>('all')
   const [selectedCollection, setSelectedCollection] = useState<string | 'all'>('all')
   const [sortBy] = useState<'name' | 'category'>('name')
   const [searchTerm, setSearchTerm] = useState('')
+  
+  // 搜尋結果狀態
+  const [searchResults, setSearchResults] = useState<Oil[]>([])
+  const [searchTotal, setSearchTotal] = useState(0)
+  const [currentSearchQuery, setCurrentSearchQuery] = useState('')
   
   // Modal 狀態管理
   const [selectedOil, setSelectedOil] = useState<Oil | null>(null)
@@ -84,6 +92,13 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
 
   // 收藏功能
   const { favorites, isFavorite, toggleFavorite, clearAllFavorites } = useFavorites()
+
+  // 處理搜尋結果
+  const handleSearchResults = (results: Oil[], total: number, query: string) => {
+    setSearchResults(results)
+    setSearchTotal(total)
+    setCurrentSearchQuery(query)
+  }
 
   // 取得所有獨特的類別（僅包含精油類別）
   const allCategories = useMemo(() => {
@@ -146,24 +161,13 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
 
   // 篩選和排序精油
   const filteredAndSortedOils = useMemo(() => {
-    let filtered = oils
+    // 如果有搜尋結果，使用搜尋結果；否則使用原始資料
+    let filtered = currentSearchQuery ? searchResults : oils
 
-    // 類別篩選
-    if (selectedCategory !== 'all') {
-      filtered = filtered.filter(oil => oil.category === selectedCategory)
-    }
-
-    // 系列篩選
-    if (selectedCollection !== 'all') {
-      filtered = filtered.filter(oil => 
-        oil.collections && oil.collections.includes(selectedCollection)
-      )
-    }
-
-    // 搜尋篩選
-    if (searchTerm) {
+    // 如果沒有搜尋但有傳統搜尋詞，則進行本地搜尋（向後兼容）
+    if (!currentSearchQuery && searchTerm) {
       const term = searchTerm.toLowerCase()
-      filtered = filtered.filter(oil => 
+      filtered = oils.filter(oil => 
         oil.name.toLowerCase().includes(term) ||
         oil.englishName.toLowerCase().includes(term) ||
         oil.description.toLowerCase().includes(term) ||
@@ -171,6 +175,21 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
         oil.mainBenefits?.some(benefit => benefit.toLowerCase().includes(term)) ||
         oil.collections?.some(collection => getCollectionLabel(collection).toLowerCase().includes(term))
       )
+    }
+
+    // 如果沒有使用 API 搜尋，則進行類別和系列篩選
+    if (!currentSearchQuery) {
+      // 類別篩選
+      if (selectedCategory !== 'all') {
+        filtered = filtered.filter(oil => oil.category === selectedCategory)
+      }
+
+      // 系列篩選
+      if (selectedCollection !== 'all') {
+        filtered = filtered.filter(oil => 
+          oil.collections && oil.collections.includes(selectedCollection)
+        )
+      }
     }
 
     // 排序
@@ -195,7 +214,7 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
     })
 
     return filtered
-  }, [oils, selectedCategory, selectedCollection, sortBy, searchTerm, favorites])
+  }, [oils, selectedCategory, selectedCollection, sortBy, searchTerm, favorites, currentSearchQuery, searchResults])
 
   const handleOilSelect = (oil: Oil) => {
     setSelectedOil(oil)
@@ -213,18 +232,17 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
       {showFilters && (
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
           <div className="flex flex-col lg:flex-row gap-4">
-            {/* 搜尋框 */}
+            {/* 進階搜尋框 */}
             <div className="flex-1">
-              <label htmlFor="search" className="block text-sm font-medium text-gray-800 mb-2">
+              <label className="block text-sm font-medium text-gray-800 mb-2">
                 搜尋精油
               </label>
-              <input
-                id="search"
-                type="text"
+              <AdvancedSearch
+                onSearchResults={handleSearchResults}
+                selectedCategory={selectedCategory}
+                selectedCollection={selectedCollection}
                 placeholder="搜尋精油名稱、功效或英文名稱..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-900 placeholder:text-gray-500"
+                className="w-full"
               />
             </div>
 
@@ -284,6 +302,32 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
               </select>
             </div> */}
           </div>
+
+          {/* 搜尋結果狀態 */}
+          {currentSearchQuery && (
+            <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-100">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-2">
+                  <svg className="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                  <span className="text-sm font-medium text-blue-700">
+                    搜尋「{currentSearchQuery}」找到 {searchTotal} 個結果
+                  </span>
+                </div>
+                <button
+                  onClick={() => {
+                    setCurrentSearchQuery('')
+                    setSearchResults([])
+                    setSearchTotal(0)
+                  }}
+                  className="text-xs text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  清除搜尋
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* 快速類別標籤 */}
           <div className="mt-4 space-y-3">
@@ -429,7 +473,9 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
       </div>
 
       {/* 精油網格 */}
-      {filteredAndSortedOils.length > 0 ? (
+      {isLoading ? (
+        <ProductListSkeleton count={8} />
+      ) : filteredAndSortedOils.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredAndSortedOils.map(oil => (
             <OilCard
