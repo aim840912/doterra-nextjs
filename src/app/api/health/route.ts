@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { allOils } from '@/data/products'
 
 // 統一回應格式
-function successResponse(data: any, message: string = '操作成功') {
+function successResponse<T = unknown>(data: T, message: string = '操作成功') {
   return NextResponse.json({
     success: true,
     message,
@@ -11,7 +11,7 @@ function successResponse(data: any, message: string = '操作成功') {
   })
 }
 
-function errorResponse(message: string, status: number = 500, details?: any) {
+function errorResponse(message: string, status: number = 500, details?: Record<string, unknown>) {
   return NextResponse.json({
     success: false,
     error: message,
@@ -23,7 +23,7 @@ function errorResponse(message: string, status: number = 500, details?: any) {
 // 檢查各項系統狀態
 async function checkSystemHealth() {
   const startTime = Date.now()
-  const checks: Record<string, any> = {}
+  const checks: Record<string, { status: string; [key: string]: unknown }> = {}
 
   // 1. 基本 API 響應檢查
   checks.api = {
@@ -130,7 +130,7 @@ async function checkSystemHealth() {
 }
 
 // 確定整體健康狀態
-function determineOverallHealth(checks: Record<string, any>) {
+function determineOverallHealth(checks: Record<string, { status: string; [key: string]: unknown }>) {
   const statuses = Object.values(checks).map(check => check.status)
   
   if (statuses.includes('unhealthy')) {

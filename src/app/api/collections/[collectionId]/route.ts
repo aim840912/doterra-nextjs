@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { allOils } from '@/data/products'
 
 // 統一回應格式
-function successResponse(data: any, message: string = '操作成功', meta?: any) {
+function successResponse<T = unknown>(data: T, message: string = '操作成功', meta?: Record<string, unknown>) {
   return NextResponse.json({
     success: true,
     message,
@@ -11,7 +11,7 @@ function successResponse(data: any, message: string = '操作成功', meta?: any
   })
 }
 
-function errorResponse(message: string, status: number = 400, details?: any) {
+function errorResponse(message: string, status: number = 400, details?: Record<string, unknown>) {
   return NextResponse.json({
     success: false,
     error: message,
@@ -108,7 +108,7 @@ export async function GET(
       }))
     }
 
-    let responseData: any = collection
+    let responseData: { id: string; name: string; products?: unknown[]; pagination?: unknown } = collection
 
     if (includeProducts) {
       // 分頁處理產品

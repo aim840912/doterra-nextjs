@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { allOils } from '@/data/products'
 
 // 統一回應格式
-function successResponse(data: any, message: string = '操作成功') {
+function successResponse<T = unknown>(data: T, message: string = '操作成功') {
   return NextResponse.json({
     success: true,
     message,

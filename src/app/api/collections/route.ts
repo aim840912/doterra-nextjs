@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { allOils } from '@/data/products'
 
 // 統一回應格式
-function successResponse(data: any, message: string = '操作成功', meta?: any) {
+function successResponse<T = unknown>(data: T, message: string = '操作成功', meta?: Record<string, unknown>) {
   return NextResponse.json({
     success: true,
     message,
@@ -11,7 +11,7 @@ function successResponse(data: any, message: string = '操作成功', meta?: any
   })
 }
 
-function errorResponse(message: string, status: number = 400, details?: any) {
+function errorResponse(message: string, status: number = 400, details?: Record<string, unknown>) {
   return NextResponse.json({
     success: false,
     error: message,
@@ -79,7 +79,7 @@ export async function GET(request: NextRequest) {
         oil.collections?.includes(collectionId)
       )
 
-      const data: any = {
+      const data: { id: string; name: string; slug: string; productCount?: number; products?: unknown[] } = {
         id: collectionId,
         name: label,
         slug: collectionId
@@ -117,7 +117,7 @@ export async function GET(request: NextRequest) {
       totalCollections: collections.length,
       totalProductsWithCollections: productsWithCollections.length,
       totalProducts: allOils.length,
-      collectionsWithProducts: collections.filter(c => includeCount ? c.productCount > 0 : true).length
+      collectionsWithProducts: collections.filter(c => includeCount ? (c.productCount ?? 0) > 0 : true).length
     }
 
     return successResponse(result.data, '獲取產品系列成功', {

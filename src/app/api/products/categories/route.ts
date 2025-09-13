@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { allOils } from '@/data/products'
 
 // 統一回應格式
-function successResponse(data: any, message: string = '操作成功', meta?: any) {
+function successResponse<T = unknown>(data: T, message: string = '操作成功', meta?: Record<string, unknown>) {
   return NextResponse.json({
     success: true,
     message,
@@ -43,7 +43,7 @@ export async function GET(request: NextRequest) {
     // 構建類別資料
     const categories = uniqueCategories.map(category => {
       const label = categoryLabels[category] || category
-      const data: any = {
+      const data: { id: string; name: string; slug: string; count?: number } = {
         id: category,
         name: label,
         slug: category

@@ -3,7 +3,7 @@ import { allOils } from '@/data/products'
 import { favoritesStorage } from '@/lib/favorites-storage'
 
 // 統一回應格式
-function successResponse(data: any, message: string = '操作成功') {
+function successResponse<T = unknown>(data: T, message: string = '操作成功') {
   return NextResponse.json({
     success: true,
     message,
