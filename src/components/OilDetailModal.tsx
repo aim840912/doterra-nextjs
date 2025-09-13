@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import Image from 'next/image'
 import { Oil } from '@/types/oil'
+import { useModalSettings } from '@/hooks/useModalSettings'
 
 interface OilDetailModalProps {
   oil: Oil
@@ -21,6 +22,7 @@ export default function OilDetailModal({
   onToggleFavorite 
 }: OilDetailModalProps) {
   const modalRef = useRef<HTMLDivElement>(null)
+  const { settings } = useModalSettings()
 
   // 處理收藏點擊
   const handleFavoriteClick = () => {
@@ -175,6 +177,31 @@ export default function OilDetailModal({
           </svg>
         </button>
 
+        {/* 類別和系列標籤 - Modal 左下角 */}
+        <div className="absolute bottom-4 left-4 z-10 flex flex-wrap gap-2">
+          {/* 類別標籤 */}
+          <span className={`text-sm px-3 py-1 rounded-full font-medium shadow-lg ${getBadgeColor(oil.category)}`}>
+            {getCategoryName(oil.category)}
+          </span>
+          
+          {/* 系列標籤 */}
+          {oil.collections && oil.collections.length > 0 && (
+            <>
+              {oil.collections.map((collection, index) => {
+                const collectionInfo = getCollectionInfo(collection)
+                return (
+                  <span 
+                    key={index}
+                    className={`text-sm px-3 py-1 rounded-full font-medium shadow-lg border ${collectionInfo.color}`}
+                  >
+                    {collectionInfo.name}
+                  </span>
+                )
+              })}
+            </>
+          )}
+        </div>
+
         {/* 內容區域 */}
         <div className="flex flex-col lg:flex-row max-h-[90vh] overflow-hidden">
           {/* 左側 - 精油圖片 */}
@@ -188,31 +215,6 @@ export default function OilDetailModal({
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
-              
-
-              {/* 類別標籤 */}
-              <div className="absolute top-4 right-4 flex flex-col gap-2">
-                <span className={`text-sm px-3 py-1 rounded-full font-medium shadow-lg ${getBadgeColor(oil.category)}`}>
-                  {getCategoryName(oil.category)}
-                </span>
-                
-                {/* 系列標籤 */}
-                {oil.collections && oil.collections.length > 0 && (
-                  <div className="flex flex-col gap-1">
-                    {oil.collections.map((collection, index) => {
-                      const collectionInfo = getCollectionInfo(collection)
-                      return (
-                        <span 
-                          key={index}
-                          className={`text-sm px-3 py-1 rounded-full font-medium shadow-lg border ${collectionInfo.color}`}
-                        >
-                          {collectionInfo.name}
-                        </span>
-                      )
-                    })}
-                  </div>
-                )}
-              </div>
             </div>
           </div>
 
@@ -231,7 +233,7 @@ export default function OilDetailModal({
               </p>
               
               {/* 價格資訊 */}
-              {(oil.retailPrice || oil.memberPrice) && (
+              {settings.showPrice && (oil.retailPrice || oil.memberPrice) && (
                 <div className="flex items-center gap-4 mb-4">
                   {oil.retailPrice && (
                     <div className="text-gray-600">
@@ -249,38 +251,24 @@ export default function OilDetailModal({
               {/* 規格和編號 */}
               <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-2">
                 <div>規格：{oil.volume}</div>
-                {oil.productCode && <div>精油編號：{oil.productCode}</div>}
-                {oil.pvPoints && <div>PV 點數：{oil.pvPoints}</div>}
+                {settings.showProductCode && oil.productCode && <div>精油編號：{oil.productCode}</div>}
+                {settings.showPvPoints && oil.pvPoints && <div>PV 點數：{oil.pvPoints}</div>}
               </div>
 
-              {/* 系列資訊 */}
-              {oil.collections && oil.collections.length > 0 && (
-                <div className="flex flex-wrap gap-2">
-                  {oil.collections.map((collection, index) => {
-                    const collectionInfo = getCollectionInfo(collection)
-                    return (
-                      <span 
-                        key={index}
-                        className={`text-sm px-3 py-1 rounded-full font-medium border ${collectionInfo.color}`}
-                      >
-                        {collectionInfo.name}
-                      </span>
-                    )
-                  })}
-                </div>
-              )}
             </div>
 
             {/* 精油描述 */}
-            <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">精油介紹</h3>
-              <p className="text-gray-700 leading-relaxed">
-                {oil.productIntroduction || oil.detailedDescription || oil.description}
-              </p>
-            </div>
+            {settings.showIntroduction && (oil.productIntroduction || oil.detailedDescription || oil.description) && (
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">精油介紹</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {oil.productIntroduction || oil.detailedDescription || oil.description}
+                </p>
+              </div>
+            )}
 
             {/* 主要功效 */}
-            {(oil.mainBenefits?.length || oil.benefits?.length) && (
+            {settings.showBenefits && (oil.mainBenefits?.length || oil.benefits?.length) && (
               <div className="mb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">主要功效</h3>
                 <ul className="space-y-2">
@@ -298,7 +286,7 @@ export default function OilDetailModal({
             {/* 詳細資訊 */}
             <div className="space-y-4">
               {/* 香味描述 */}
-              {oil.aromaDescription && (
+              {settings.showAroma && oil.aromaDescription && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">香味特色</h4>
                   <p className="text-gray-700 text-sm">{oil.aromaDescription}</p>
@@ -306,7 +294,7 @@ export default function OilDetailModal({
               )}
 
               {/* 萃取資訊 */}
-              {(oil.extractionMethod || oil.plantPart) && (
+              {settings.showExtraction && (oil.extractionMethod || oil.plantPart) && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">精油資訊</h4>
                   <div className="text-sm text-gray-700 space-y-1">
@@ -317,7 +305,7 @@ export default function OilDetailModal({
               )}
 
               {/* 主要成分 */}
-              {oil.mainIngredients?.length && (
+              {settings.showIngredients && oil.mainIngredients?.length && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">主要成分</h4>
                   <p className="text-gray-700 text-sm">
@@ -327,7 +315,7 @@ export default function OilDetailModal({
               )}
 
               {/* 使用方法 */}
-              {oil.usageInstructions && (
+              {settings.showUsage && oil.usageInstructions && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">使用方法</h4>
                   {Array.isArray(oil.usageInstructions) ? (
@@ -346,7 +334,7 @@ export default function OilDetailModal({
               )}
 
               {/* 注意事項 */}
-              {oil.cautions && (
+              {settings.showCautions && oil.cautions && (
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">注意事項</h4>
                   {Array.isArray(oil.cautions) ? (
