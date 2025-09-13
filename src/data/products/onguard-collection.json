@@ -12,10 +12,8 @@
     "imageUrl": "https://media.doterra.com/tw/images/product/on-guard-sanitizing-mist.jpg",
     "productIntroduction": "保衛複方淨化噴霧添加保衛複方精油，能營造振奮清新的氛圍並達到保護作用；內含保濕配方－蘋果萃取物，使用後不會過於乾燥，並帶來保濕及潤澤效果。\n從自然界萃取出的USP認證乙醇也能讓噴霧具備有效的清潔作用。非常適合外出遠行、上學、工作及家庭出門時使用，能夠隨時隨地清潔雙手與肌膚。",
     "mainBenefits": [
-      "添加保衛複方精油",
-      "可提升潔淨與防禦力。",
-      "內含保濕的蘋果萃取物",
-      "具有保濕及潤澤效果。",
+      "添加保衛複方精油，可提升潔淨與防禦力。",
+      "內含保濕的蘋果萃取物，具有保濕及潤澤效果。",
       "帶來活力的柑橘清香。"
     ],
     "aromaDescription": "",
@@ -23,10 +21,8 @@
     "plantPart": "",
     "mainIngredients": [],
     "usageInstructions": [
-      "噴在雙手，幫助淨化並提升防禦力。",
-      "外出、旅行時可噴在座位扶手及餐桌上。",
-      "在使用瑜珈墊及健身器材前噴上。",
-      "搭乘大眾交通工具時噴在座位上可幫助淨化。"
+      "噴在雙手，幫助淨化並提升防禦力。|外出",
+      "旅行時可噴在座位扶手及餐桌上。|在使用瑜珈墊及健身器材前噴上。|搭乘大眾交通工具時噴在座位上可幫助淨化。"
     ],
     "cautions": [
       "只供外用。避免接觸眼睛及傷口處。"
@@ -53,11 +49,10 @@
     "volume": "473ml",
     "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-foaming-hand-wash.jpg",
     "productIntroduction": "在家中和辦公室的每個洗手台旁都放一瓶保衛複方潔手凝露，讓您擁有保衛複方的保護。保衛複方潔手凝露以473毫升的家庭號包裝銷售，可搭配236毫升泡沫式填充瓶，愛惜地球資源，同時也節省您的開銷。",
-    "applicationGuide": "",
+    "applicationGuide": "取適量潔手凝露於濕潤的手掌上，搓揉至起泡後以清水洗淨。",
     "mainBenefits": [
       "對細嫩手部肌膚非常溫和的清潔產品",
-      "不傷害肌膚的防護",
-      "洗後保濕不乾澀",
+      "不傷害肌膚的防護，洗後保濕不乾澀",
       "添加保衛複方精油來加強清潔效力"
     ],
     "aromaDescription": "",
@@ -70,11 +65,7 @@
       "以清水洗淨"
     ],
     "cautions": [
-      "只供外用。避免接觸眼睛及傷口處。若於瓶底產生混濁",
-      "係因柑橘精油中之油蠟所產生",
-      "屬正常現象",
-      "不影響產品品質及效力",
-      "請安心使用。"
+      "只供外用。避免接觸眼睛及傷口處。若於瓶底產生混濁，係因柑橘精油中之油蠟所產生，屬正常現象，不影響產品品質及效力，請安心使用。"
     ],
     "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-foaming-hand-wash",
     "productCode": "38010302",
@@ -98,12 +89,11 @@
     "volume": "355ml",
     "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-cleaner-concentrate.jpg",
     "productIntroduction": "是一款理想的清潔劑。含有多特瑞專利保衛複方精油，包含：野橘、丁香、肉桂、尤加利和迷迭香等CPTG專業純正調理級認證精油，可提供自然防護。使用後留下清新、鼓舞的芳香氣味。讓您以自然、安心的方式維持居家清潔，不會造成環境及生態負擔，適合全家人使用。",
-    "applicationGuide": "",
+    "applicationGuide": "多用途清潔：將20毫升(約3瓶蓋)保衛複方濃縮清潔劑以500毫升清水稀釋後使用。|清洗衣物：將15毫升（約2⅓瓶蓋）保衛複方濃縮清潔劑與洗衣粉一起放入洗衣機中。|浴室及廁所：將30毫升(約4 2/3瓶蓋)保衛複方濃縮清潔劑以500毫升清水稀釋即可。|任何接觸面：將保衛複方濃縮清潔劑直接使用在指定的區域，讓它自然滲透。",
     "mainBenefits": [
       "取用來自植物性衍生的界面活性劑及生物酵素。",
       "獨特且自然的生物酵素複合配方。",
-      "特殊洗淨配方",
-      "讓保衛複方精油發揮最佳的洗淨力及使香氛持久。"
+      "特殊洗淨配方，讓保衛複方精油發揮最佳的洗淨力及使香氛持久。"
     ],
     "aromaDescription": "",
     "extractionMethod": "",
@@ -140,10 +130,10 @@
     "volume": "10ml",
     "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-laundry-detergent.jpg",
     "productIntroduction": "以天然原料為基底、六倍超濃縮的保衛複方洗衣精，每瓶含10毫升的保衛複方精油。天然酵素能溫和去除頑垢、斑點以及難洗污漬，可洗淨64大籃家庭的髒衣物。相當於6大罐傳統洗衣精的高倍濃縮洗淨力，不含人工合成香精、染料、有毒物質，使用生物可分解的環保成分，幫助維護環境及全家人的安全。",
-    "applicationGuide": "",
+    "applicationGuide": "高效節能洗衣槽 : 1/4 瓶蓋 (1大湯匙)|傳統洗衣槽 : 1/2瓶蓋 (2大湯匙)|對於特別骯髒的衣物，可酌量增加洗衣精的用量。|污漬：將少量的洗衣精直接塗抹在污點的表面，靜置3 - 10分鐘，再依照指示方法洗滌。對於頑強的髒污斑點，趁著衣物未乾時，再一次將洗衣精塗抹在污漬上，然後重覆清洗的步驟。",
     "mainBenefits": [
-      "添加保衛複方精油，含有野橘、丁香、肉桂、尤加利和迷迭香精油，使用後可提升潔淨與防禦力",
-      "植物來源的界面活性劑以及不添加防腐劑，對環境友善，同時讓全家都能安心使用"
+      "添加保衛複方精油，含有野橘",
+      "尤加利和迷迭香精油，使用後可提升潔淨與防禦力|植物來源的界面活性劑以及不添加防腐劑，對環境友善，同時讓全家都能安心使用"
     ],
     "aromaDescription": "",
     "extractionMethod": "",
@@ -157,14 +147,167 @@
       "頑強污漬：趁衣物未乾時，重覆塗抹洗衣精並清洗"
     ],
     "cautions": [
-      "避免接觸眼睛",
-      "僅供外用。"
+      "避免接觸眼睛，僅供外用。"
     ],
     "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-laundry-detergent",
     "productCode": "60226166",
     "retailPrice": 1535,
     "memberPrice": 1150,
     "pvPoints": 24,
+    "tags": [
+      "OnGuard系列",
+      "保衛系列"
+    ]
+  },
+  {
+    "id": "doterra-onguard-1757695256842",
+    "name": "保衛複方淨白牙膏",
+    "englishName": "",
+    "description": "結合有保護效益的CPTG專業純正調理級認證的OnGuard保衛複方精油，擁有多種天然成分，有助於舒緩口腔不適之狀況。保衛複方精油含有野橘、丁香、肉桂、尤加利和迷迭香精油，另外更添加了薄荷、冬青、沒藥及天然甜味劑－木糖醇，讓保衛複方淨白牙膏帶給您清淨、清甜的肉桂薄荷芳香口氣。",
+    "category": "onguard-collection",
+    "collections": [
+      "onguard"
+    ],
+    "volume": "240ml",
+    "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-toothpaste.jpg",
+    "productIntroduction": "結合有保護功效的CPTG專業純正調理級認證的On Guard保衛複方精油，擁有多種天然成分，有助於舒緩口腔不適之狀況。保衛複方精油含有野橘、丁香、肉桂、尤加利和迷迭香精油，另外更添加了薄荷及天然甜味劑－木糖醇，讓保衛複方淨白牙膏帶給您清淨、清甜的肉桂薄荷芳香口氣。",
+    "applicationGuide": "用適量於沾濕的牙刷上、輕柔且仔細地清潔整個牙齒與口腔、在每次餐後、早晚或透過牙醫或醫生的指示。若要達到更好之效果、可以將保衛複方精油一滴加入約 240mL 的水中當成漱口水 。",
+    "mainBenefits": [
+      "含有野橘",
+      "尤加利",
+      "迷迭香",
+      "冬青與沒藥等精油成分，植物的天然防禦效果優異，帶給您天然美好的香氣。|含二氧化矽：真正去除齒垢，亮白牙齒。|含羥基磷灰石鈣：強健牙齒。|幫助促進口腔健康。"
+    ],
+    "aromaDescription": "",
+    "extractionMethod": "",
+    "plantPart": "",
+    "mainIngredients": [],
+    "usageInstructions": [],
+    "cautions": [
+      "本產品為外用之商品 。請置放孩童伸手不及之處",
+      "並存放於室溫之下 。"
+    ],
+    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-natural-whitening-toothpaste",
+    "productCode": "60214827",
+    "retailPrice": 535,
+    "memberPrice": 400,
+    "pvPoints": 7,
+    "tags": [
+      "OnGuard系列",
+      "保衛系列"
+    ]
+  },
+  {
+    "id": "doterra-onguard-1757695243761",
+    "name": "保衛漱口水",
+    "englishName": "",
+    "description": "添加保衛複方、薄荷、冬青與沒藥等精油的保衛漱口水，能維護口腔健康，配合正確刷牙習慣能讓您散發清香的口氣。植物萃取成分幫助去除牙漬、恢復牙齒自然亮白，而木醣醇有助於維持健康及強壯的牙齒，讓您展現自信笑容。",
+    "category": "onguard-collection",
+    "collections": [
+      "onguard"
+    ],
+    "volume": "473ml",
+    "imageUrl": "https://media.doterra.com/tw/images/product/on-guard-mouthwash.jpg",
+    "productIntroduction": "天然無酒精，添加保衛複方、薄荷、冬青與沒藥等精油的獨特配方，結合其他天然成分能維護口腔健康，讓您散發清香的口氣、綻放明亮的笑容。",
+    "applicationGuide": "",
+    "mainBenefits": [
+      "天然無酒精。",
+      "散發清香的口氣。",
+      "維護口腔健康。",
+      "芥末樹萃取物幫助恢復牙齒自然亮白。",
+      "木醣醇可維持牙齒健康強壯。"
+    ],
+    "aromaDescription": "",
+    "extractionMethod": "",
+    "plantPart": "",
+    "mainIngredients": [],
+    "usageInstructions": [
+      "每日早晚於使用保衛複方淨白牙膏刷牙後",
+      "以漱口水徹底漱口清潔60秒後吐掉。使用前請搖勻 。"
+    ],
+    "cautions": [
+      "請勿吞嚥。本產品為外用之商品。2歲以下 兒童之使用須諮詢醫師或藥師。"
+    ],
+    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-mouthwash",
+    "productCode": "60208040",
+    "retailPrice": 870,
+    "memberPrice": 650,
+    "pvPoints": 12,
+    "tags": [
+      "OnGuard系列",
+      "保衛系列"
+    ]
+  },
+  {
+    "id": "doterra-onguard-1757695250212",
+    "name": "On Guard® + 保衛複方膠囊食品",
+    "englishName": "",
+    "description": "保衛複方膠囊，是來幫助您和您的家人保持健康，特別是季節替換、外在環境污染，或特別需要被保護時可及時成為身體的隱形保護罩。",
+    "category": "onguard-collection",
+    "collections": [
+      "onguard"
+    ],
+    "volume": "",
+    "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-softgels.jpg",
+    "productIntroduction": "doTERRA On Guard +保衛複方軟膠囊是一款含有獨特配方產品，包含 doTERRA 保衛複方與黑胡椒、奧勒岡草和香蜂草等，提供保衛及保護力。當季節交替換時，doTERRA 保衛複方是幫助身體健康的絕佳幫手。 doTERRA 保衛複方精油獨特配方可幫助身體打造健康的保護罩。",
+    "applicationGuide": "",
+    "mainBenefits": [
+      "調節體質，增強體力。",
+      "含有獨特植物精華配方，打造專屬防護罩。",
+      "幫助維持消化道機能。",
+      "不習慣保衛氣味者的另一種選擇。",
+      "膠囊成分：明膠(提取自牛)。"
+    ],
+    "aromaDescription": "",
+    "extractionMethod": "",
+    "plantPart": "",
+    "mainIngredients": [],
+    "usageInstructions": [],
+    "cautions": [
+      "請放在兒童接觸不到的地方。孕婦或哺乳期婦女以及已知有健康狀況者",
+      "在使用前應諮詢醫生。本產品含有亞麻籽粉。"
+    ],
+    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-softgels",
+    "productCode": "60210805",
+    "retailPrice": 1600,
+    "memberPrice": 1200,
+    "pvPoints": 32,
+    "tags": [
+      "OnGuard系列",
+      "保衛系列"
+    ]
+  },
+  {
+    "id": "doterra-onguard-1757742845008",
+    "name": "保衛複方淨化噴霧套組 (5入)",
+    "englishName": "",
+    "description": "為全家人準備好隨身防護力！",
+    "category": "onguard-collection",
+    "collections": [
+      "onguard"
+    ],
+    "volume": "27ml",
+    "imageUrl": "https://media.doterra.com/tw/images/product/on-guard-sanitizing-mist-5pk.jpg",
+    "productIntroduction": "保衛複方淨化噴霧5入套組讓您一次買滿足全家人的需求！保衛複方淨化噴霧含保衛複方精油，能營造振奮清新的氛圍並達到保護作用；添加保濕配方－蘋果萃取物，能帶來保濕及潤澤效果。",
+    "applicationGuide": "",
+    "mainBenefits": [
+      "添加保衛複方精油，可提升潔淨與防禦力。",
+      "內含保濕的蘋果萃取物，具有保濕及潤澤效果。",
+      "帶來活力的柑橘清香。"
+    ],
+    "aromaDescription": "",
+    "extractionMethod": "",
+    "plantPart": "",
+    "mainIngredients": [],
+    "usageInstructions": [
+      "噴在雙手，幫助淨化並提升防禦力。|外出",
+      "旅行時可噴在座位扶手及餐桌上。|在使用瑜珈墊及健身器材前噴上。|搭乘大眾交通工具時噴在座位上可幫助淨化。"
+    ],
+    "cautions": [
+      "只供外用。避免接觸眼睛及傷口處。"
+    ],
+    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-mist-kit",
+    "productCode": "kit-on-guard-mist-kit",
     "tags": [
       "OnGuard系列",
       "保衛系列"

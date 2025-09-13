@@ -6,6 +6,9 @@ import proprietaryBlendsData from './proprietary-blends.json'
 import skincareData from './skincare.json'
 import wellnessData from './wellness.json'
 import accessoriesData from './accessories.json'
+import deepBlueCollectionData from './deep-blue-collection.json'
+import onguardCollectionData from './onguard-collection.json'
+import breatheCollectionData from './breathe-collection.json'
 
 /**
  * 產品類別定義
@@ -15,7 +18,10 @@ export const PRODUCT_CATEGORIES = {
   PROPRIETARY_BLENDS: 'proprietary-blends',
   SKINCARE: 'skincare',
   WELLNESS: 'wellness',
-  ACCESSORIES: 'accessories'
+  ACCESSORIES: 'accessories',
+  DEEP_BLUE_COLLECTION: 'deep-blue-collection',
+  ONGUARD_COLLECTION: 'onguard-collection',
+  BREATHE_COLLECTION: 'breathe-collection'
 } as const
 
 export type ProductCategory = typeof PRODUCT_CATEGORIES[keyof typeof PRODUCT_CATEGORIES]
@@ -48,6 +54,21 @@ export const CATEGORY_CONFIG = {
     name: '配件用品',
     description: '精油使用配件與工具',
     color: 'gray'
+  },
+  [PRODUCT_CATEGORIES.DEEP_BLUE_COLLECTION]: {
+    name: 'Deep Blue 舒緩系列',
+    description: '舒緩放鬆的複方精油產品',
+    color: 'blue'
+  },
+  [PRODUCT_CATEGORIES.ONGUARD_COLLECTION]: {
+    name: 'OnGuard 保衛系列',
+    description: '保護防禦的複方精油產品',
+    color: 'orange'
+  },
+  [PRODUCT_CATEGORIES.BREATHE_COLLECTION]: {
+    name: 'Breathe 順暢呼吸系列',
+    description: '順暢清新的呼吸道護理產品',
+    color: 'teal'
   }
 } as const
 
@@ -59,6 +80,9 @@ const proprietaryBlends = proprietaryBlendsData as Oil[]
 const skincare = skincareData as Oil[]
 const wellness = wellnessData as Oil[]
 const accessories = accessoriesData as Oil[]
+const deepBlueCollection = deepBlueCollectionData as Oil[]
+const onguardCollection = onguardCollectionData as Oil[]
+const breatheCollection = breatheCollectionData as Oil[]
 
 /**
  * 按類別取得產品資料
@@ -75,6 +99,12 @@ export const getProductsByCategory = (category: ProductCategory): Oil[] => {
       return wellness
     case PRODUCT_CATEGORIES.ACCESSORIES:
       return accessories
+    case PRODUCT_CATEGORIES.DEEP_BLUE_COLLECTION:
+      return deepBlueCollection
+    case PRODUCT_CATEGORIES.ONGUARD_COLLECTION:
+      return onguardCollection
+    case PRODUCT_CATEGORIES.BREATHE_COLLECTION:
+      return breatheCollection
     default:
       return []
   }
@@ -89,7 +119,10 @@ export const getAllProducts = (): Oil[] => {
     ...proprietaryBlends,
     ...skincare,
     ...wellness,
-    ...accessories
+    ...accessories,
+    ...deepBlueCollection,
+    ...onguardCollection,
+    ...breatheCollection
   ]
 }
 
@@ -139,6 +172,9 @@ export const getCategoryStats = () => {
     [PRODUCT_CATEGORIES.SKINCARE]: skincare.length,
     [PRODUCT_CATEGORIES.WELLNESS]: wellness.length,
     [PRODUCT_CATEGORIES.ACCESSORIES]: accessories.length,
+    [PRODUCT_CATEGORIES.DEEP_BLUE_COLLECTION]: deepBlueCollection.length,
+    [PRODUCT_CATEGORIES.ONGUARD_COLLECTION]: onguardCollection.length,
+    [PRODUCT_CATEGORIES.BREATHE_COLLECTION]: breatheCollection.length,
     total: getAllProducts().length
   }
 }
@@ -190,7 +226,10 @@ export const DEFAULT_CATEGORIES: ProductCategory[] = [
   PRODUCT_CATEGORIES.PROPRIETARY_BLENDS,
   PRODUCT_CATEGORIES.SKINCARE,
   PRODUCT_CATEGORIES.WELLNESS,
-  PRODUCT_CATEGORIES.ACCESSORIES
+  PRODUCT_CATEGORIES.ACCESSORIES,
+  PRODUCT_CATEGORIES.DEEP_BLUE_COLLECTION,
+  PRODUCT_CATEGORIES.ONGUARD_COLLECTION,
+  PRODUCT_CATEGORIES.BREATHE_COLLECTION
 ]
 
 /**

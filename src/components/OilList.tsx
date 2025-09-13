@@ -85,10 +85,12 @@ export default function OilList({ oils, showFilters = true }: OilListProps) {
   // 收藏功能
   const { favorites, isFavorite, toggleFavorite, clearAllFavorites } = useFavorites()
 
-  // 取得所有獨特的類別（包含自訂類別）
+  // 取得所有獨特的類別（僅包含精油類別）
   const allCategories = useMemo(() => {
+    // 精油類別白名單 - 只保留真正的精油類別
+    const ESSENTIAL_OIL_CATEGORIES = ['single-oils', 'proprietary-blends']
     const uniqueCategories = [...new Set(oils.map(oil => oil.category))]
-    return uniqueCategories.sort()
+    return uniqueCategories.filter(category => ESSENTIAL_OIL_CATEGORIES.includes(category)).sort()
   }, [oils])
 
   // 取得所有獨特的系列（collections）

@@ -1,568 +1,5 @@
 [
   {
-    "id": "doterra-1757678261604",
-    "name": "呵護系列-順暢清新複方精油",
-    "englishName": "doTERRA Breathe Touch Respiratory Blend",
-    "scientificName": "",
-    "description": "獨特的香氛用來調理呵護，孩童、老人或敏感性肌膚都可安心使用，全新鋼珠滾珠瓶設計，使用更便利順暢。現在就讓全家人天天享受舒緩平衡的健康身心。",
-    "productIntroduction": "集合了多種精油，這種獨特配方包含薄荷、茶樹、檸檬、月桂葉、尤加利、桉油樟羅文莎葉、羅文莎葉和豆蔻，氣味清新芳香，怡人的香味感覺清新舒暢、煥然一新。",
-    "usageInstructions": [
-      "季節威脅高時，可以直接用手掌嗅吸或塗抹在胸前。",
-      "夜晚塗抹，可以幫助您有個舒適的睡眠。"
-    ],
-    "applicationGuide": "",
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。"
-    ],
-    "mainBenefits": [
-      "保持潔淨及順暢清新感受|能淨化並幫助身心放鬆|清涼",
-      "緩解疲累"
-    ],
-    "aromaDescription": "辛辣、清新、輕快、薄荷味",
-    "mainIngredients": [
-      "分餾椰子油",
-      "月桂葉精油",
-      "尤加利精油",
-      "薄荷精油",
-      "茶樹精油",
-      "檸檬精油",
-      "豆蔻精油",
-      "桉油樟羅文莎葉精油",
-      "羅文莎葉精油"
-    ],
-    "category": "breathe-collection",
-    "volume": "10ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/10ml-breathe-touch.png",
-    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-touch-oil",
-    "productCode": "60201166",
-    "retailPrice": 935,
-    "memberPrice": 700,
-    "pvPoints": 21,
-    "collections": [
-      "breathe"
-    ],
-    "tags": [
-      "Breathe系列",
-      "順暢呼吸系列"
-    ]
-  },
-  {
-    "id": "doterra-breathe-1757705555009",
-    "name": "順暢清涼喉糖",
-    "englishName": "",
-    "description": "原料取自檸檬、薄荷、尤加利、百里香、香蜂草及小豆蔻，氣味清新舒暢、清爽怡人",
-    "category": "breathe-collection",
-    "collections": [
-      "breathe"
-    ],
-    "volume": "",
-    "imageUrl": "https://media.doterra.com/tw/images/product/breathe-respiratory-drops.jpg",
-    "productIntroduction": "原料取自薄荷、尤加利葉、檸檬、小豆蔻、香蜂草及百里香，氣味清新舒暢、清爽宜人。隨時隨地來一顆，讓您精神旺盛，帶給您順暢清新感受。",
-    "applicationGuide": "一天1-5顆。",
-    "mainBenefits": [
-      "維持口氣清新",
-      "生津止渴",
-      "清涼提振",
-      "幫助精神旺盛"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [],
-    "cautions": [
-      "請置於孩童無法自行取食之處。妊娠或哺乳婦女和已知患有疾病者食用之前",
-      "應諮詢醫生意見。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-respiratory-drops",
-    "productCode": "35460402",
-    "retailPrice": 680,
-    "memberPrice": 510,
-    "pvPoints": 13,
-    "tags": [
-      "Breathe系列",
-      "順暢呼吸系列"
-    ]
-  },
-  {
-    "id": "doterra-breathe-1757705570492",
-    "name": "順暢清新複方香膏",
-    "englishName": "",
-    "description": "含獨特複方精油的香膏，滑順好推不黏膩且快速吸收，包裝輕巧攜帶方便，隨時塗抹，帶來清涼舒暢的感受。",
-    "category": "breathe-collection",
-    "collections": [
-      "breathe"
-    ],
-    "volume": "",
-    "imageUrl": "https://media.doterra.com/tw/images/product/breathe-vapor-stick.jpg",
-    "productIntroduction": "含有薄荷、茶樹、檸檬、月桂葉、尤加利葉、桉油樟羅文莎葉、羅文莎葉和豆蔻，這種含獨特複方精油的香膏，滑順好推不黏膩且快速吸收，包裝輕巧攜帶方便，隨時塗抹，帶來清涼舒暢的感受。",
-    "applicationGuide": "局部使用：適量塗抹於胸口或是頸部肌膚。",
-    "mainBenefits": [
-      "含有薄荷",
-      "月桂葉",
-      "尤加利葉",
-      "桉油樟羅文莎葉",
-      "羅文莎葉和豆蔻精油，讓您更感清新。|令人愉悅的氣味隨時撫平情緒。|緊張時讓自己喘口氣舒緩一下。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [],
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-vapor-stick",
-    "productCode": "60223913",
-    "retailPrice": 600,
-    "memberPrice": 450,
-    "pvPoints": 7,
-    "tags": [
-      "Breathe系列",
-      "順暢呼吸系列"
-    ]
-  },
-  {
-    "id": "doterra-1757678246390",
-    "name": "順暢清新複方精油",
-    "englishName": "Breathe Oil",
-    "scientificName": "",
-    "description": "順暢清新複方精油集合了多種精油，這種獨特配方包括薄荷、茶樹、檸檬、月桂葉、尤加利葉、桉油樟羅文莎葉、羅文莎葉和豆蔻，氣味清新芳香。用法簡單，只要塗抹一些在胸口、脊椎或腳底即可，怡人的香味使您感覺清新舒暢、煥然一新。",
-    "productIntroduction": "卓越的配方為您帶來順暢清新的感受。包含月桂葉、薄荷、尤加利葉、茶樹、檸檬、桉油樟羅文莎葉、羅文莎葉及豆蔻，塗抹在頸部、胸部和背部幫助淨化及舒緩。令人愉悅的氣味可以撫平情緒，夜晚擴香可以幫助您有個舒適的睡眠。",
-    "usageInstructions": [
-      "季節威脅高時，可以擴香或嗅吸使用。",
-      "滴幾滴順暢清新複方在棉球上，放在出風口，可以維持室內及車內清新香氛。",
-      "夜晚擴香或滴在枕頭上，可以幫助您有個舒適的睡眠。",
-      "滴六至八滴至120毫升水中並放入噴瓶噴灑環境，可淨化空氣，噴灑於後頸部，可獲得清涼感受。"
-    ],
-    "applicationGuide": "",
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。"
-    ],
-    "mainBenefits": [
-      "保持潔淨及順暢清新感受。 能淨化並幫助身心放鬆。 夜間擴香，可提供舒適的睡眠。 清涼",
-      "緩解疲累。"
-    ],
-    "aromaDescription": "清新、溫暖、辛香味",
-    "mainIngredients": [],
-    "category": "breathe-collection",
-    "volume": "15ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/15ml-breathe.png",
-    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-oil",
-    "productCode": "60200200",
-    "retailPrice": 1460,
-    "memberPrice": 1095,
-    "pvPoints": 34,
-    "collections": [
-      "breathe"
-    ],
-    "tags": [
-      "Breathe系列",
-      "順暢呼吸系列"
-    ]
-  },
-  {
-    "id": "doterra-deepblue-1757704300238",
-    "name": "舒緩複方香膏",
-    "englishName": "Deep Blue Stick",
-    "description": "舒緩複方香膏含有舒緩複方精油，再加上古巴香脂的有益特性，可提供深層且涼爽的舒緩作用。此款香膏塗抹起來無需使用手掌揉搓，其設計輕鬆易用，為所需部位帶來清涼舒緩的舒適感受。",
-    "category": "deep-blue-collection",
-    "collections": [
-      "deep-blue"
-    ],
-    "volume": "",
-    "imageUrl": "https://media.doterra.com/tw/images/product/deep-blue-stick.jpg",
-    "productIntroduction": "舒緩複方香膏含有舒緩複方精油，再加上古巴香脂的有益特性，可提供深層且涼爽的舒緩作用，緩解各種不適情況。",
-    "applicationGuide": "塗抹於所需之處。 若想獲得更深入的效果，塗抹前可先在肌膚上塗抹舒緩複方精油。",
-    "mainBenefits": [
-      "由舒緩複方精油和古巴香脂以及其他天然成分配製而成。",
-      "緩解各種不適情況。",
-      "保濕潤膚劑基底，親膚不油膩。",
-      "設計方便攜帶使用。",
-      "快速吸收，運動前、中、後使用，舒緩又方便。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [],
-    "cautions": [
-      "本產品僅供外部使用。避免直接接觸眼睛",
-      "耳內或敏感部位，敏感性肌膚",
-      "孕婦或住院者請諮詢醫師。不要使用於傷口上。使用後請勿過緊包紮或使用具有加熱效果之加熱䐭。若於使用後產生紅腫， 請立即停止使用。避免兒童直接接觸或誤食。如果不慎呑服，請立即尋求專業醫療人員協助。2歲以下兒童之使用，須詢問醫師或藥師。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/deep-blue-stick",
-    "productCode": "60227114",
-    "retailPrice": 1380,
-    "memberPrice": 1035,
-    "pvPoints": 25,
-    "tags": [
-      "DeepBlue系列",
-      "舒緩系列"
-    ]
-  },
-  {
-    "id": "doterra-deepblue-1757704292772",
-    "name": "舒緩霜",
-    "englishName": "Deep Blue Rub",
-    "description": "添加舒緩複方精油(冬青、樟樹、 薄荷、伊蘭伊蘭、永久花、藍艾菊、德國洋 甘菊、桂花)、甜杏仁油、尤加利精油、小米椒萃取的舒緩霜，隨時補充於關鍵部位，靈活不卡關。不論是久坐看電腦的上班族，喜歡戶外運動的人，退休後需要多動的人以及需要抱小孩的媽媽們，都適合使用。",
-    "category": "deep-blue-collection",
-    "collections": [
-      "deep-blue"
-    ],
-    "volume": "120ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/deep-blue-rub.jpg",
-    "productIntroduction": "添加天然植物萃取與其它多種天然高科技 之成分，讓您使用之後充滿清涼、活絡之舒適感。",
-    "applicationGuide": "",
-    "mainBenefits": [
-      "專有的天然植物萃取，使用後充滿清涼、活絡的舒適感。",
-      "含冬青、尤加利精油及小米椒萃取，能提升關鍵部位的溫度，深度放鬆。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [
-      "使用方法：取適量於需要的部位。",
-      "添加舒緩精油以及其他有效成分。",
-      "針對關鍵部位保養，有效感受清涼舒緩。"
-    ],
-    "cautions": [
-      "本產品僅供外部使用。避免直接接觸眼睛",
-      "耳內或敏感部位，敏感性肌膚",
-      "孕婦或住院者請諮詢醫師。不要使用於傷口上。使用後請勿過緊包紮或使用具有加 熱效果之加熱䐭。若於使用後產生紅腫， 請立即停止使用。避免兒童直接接觸或誤食。如果不慎呑服，請立即尋求專業醫療人員協助。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/deep-blue-rub",
-    "productCode": "38900302",
-    "retailPrice": 1975,
-    "memberPrice": 1480,
-    "pvPoints": 43,
-    "tags": [
-      "DeepBlue系列",
-      "舒緩系列"
-    ]
-  },
-  {
-    "id": "doterra-onguard-1757695243761",
-    "name": "保衛漱口水",
-    "englishName": "",
-    "description": "添加保衛複方、薄荷、冬青與沒藥等精油的保衛漱口水，能維護口腔健康，配合正確刷牙習慣能讓您散發清香的口氣。植物萃取成分幫助去除牙漬、恢復牙齒自然亮白，而木醣醇有助於維持健康及強壯的牙齒，讓您展現自信笑容。",
-    "category": "onguard-collection",
-    "collections": [
-      "onguard"
-    ],
-    "volume": "473ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/on-guard-mouthwash.jpg",
-    "productIntroduction": "天然無酒精，添加保衛複方、薄荷、冬青與沒藥等精油的獨特配方，結合其他天然成分能維護口腔健康，讓您散發清香的口氣、綻放明亮的笑容。",
-    "applicationGuide": "",
-    "mainBenefits": [
-      "天然無酒精。",
-      "散發清香的口氣。",
-      "維護口腔健康。",
-      "芥末樹萃取物幫助恢復牙齒自然亮白。",
-      "木醣醇可維持牙齒健康強壯。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [
-      "每日早晚於使用保衛複方淨白牙膏刷牙後",
-      "以漱口水徹底漱口清潔60秒後吐掉。使用前請搖勻 。"
-    ],
-    "cautions": [
-      "請勿吞嚥。本產品為外用之商品。2歲以下 兒童之使用須諮詢醫師或藥師。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-mouthwash",
-    "productCode": "60208040",
-    "retailPrice": 870,
-    "memberPrice": 650,
-    "pvPoints": 12,
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
-  },
-  {
-    "id": "doterra-onguard-1757697037483",
-    "name": "保衛複方洗衣精",
-    "englishName": "",
-    "description": "以天然原料為基底、六倍超濃縮的OnGuard保衛複方洗衣精，每瓶含10毫升的保衛複方精油。",
-    "category": "onguard-collection",
-    "collections": [
-      "onguard"
-    ],
-    "volume": "10ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-laundry-detergent.jpg",
-    "productIntroduction": "以天然原料為基底、六倍超濃縮的保衛複方洗衣精，每瓶含10毫升的保衛複方精油。天然酵素能溫和去除頑垢、斑點以及難洗污漬，可洗淨64大籃家庭的髒衣物。相當於6大罐傳統洗衣精的高倍濃縮洗淨力，不含人工合成香精、染料、有毒物質，使用生物可分解的環保成分，幫助維護環境及全家人的安全。",
-    "applicationGuide": "高效節能洗衣槽 : 1/4 瓶蓋 (1大湯匙)|傳統洗衣槽 : 1/2瓶蓋 (2大湯匙)|對於特別骯髒的衣物，可酌量增加洗衣精的用量。|污漬：將少量的洗衣精直接塗抹在污點的表面，靜置3 - 10分鐘，再依照指示方法洗滌。對於頑強的髒污斑點，趁著衣物未乾時，再一次將洗衣精塗抹在污漬上，然後重覆清洗的步驟。",
-    "mainBenefits": [
-      "添加保衛複方精油，含有野橘",
-      "尤加利和迷迭香精油，使用後可提升潔淨與防禦力|植物來源的界面活性劑以及不添加防腐劑，對環境友善，同時讓全家都能安心使用"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [
-      "高效節能洗衣槽：使用1/4瓶蓋（1大湯匙）",
-      "傳統洗衣槽：使用1/2瓶蓋（2大湯匙）",
-      "特別骯髒衣物：可酌量增加洗衣精用量",
-      "污漬處理：將少量洗衣精直接塗抹在污點表面，靜置3-10分鐘後洗滌",
-      "頑強污漬：趁衣物未乾時，重覆塗抹洗衣精並清洗"
-    ],
-    "cautions": [
-      "避免接觸眼睛，僅供外用。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-laundry-detergent",
-    "productCode": "60226166",
-    "retailPrice": 1535,
-    "memberPrice": 1150,
-    "pvPoints": 24,
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
-  },
-  {
-    "id": "doterra-onguard-1757695267013",
-    "name": "保衛複方淨化噴霧",
-    "englishName": "",
-    "description": "保衛複方淨化噴霧具備良好的淨化效果，能夠隨時隨地清潔雙手與環境，同時營造振奮清新的氛圍並達到保護作用。使用後還能帶來保濕及潤澤效果，非常適合上學、工作及外出時使用。",
-    "category": "onguard-collection",
-    "collections": [
-      "onguard"
-    ],
-    "volume": "27ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/on-guard-sanitizing-mist.jpg",
-    "productIntroduction": "保衛複方淨化噴霧添加保衛複方精油，能營造振奮清新的氛圍並達到保護作用；內含保濕配方－蘋果萃取物，使用後不會過於乾燥，並帶來保濕及潤澤效果。\n從自然界萃取出的USP認證乙醇也能讓噴霧具備有效的清潔作用。非常適合外出遠行、上學、工作及家庭出門時使用，能夠隨時隨地清潔雙手與肌膚。",
-    "mainBenefits": [
-      "添加保衛複方精油，可提升潔淨與防禦力。",
-      "內含保濕的蘋果萃取物，具有保濕及潤澤效果。",
-      "帶來活力的柑橘清香。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [
-      "噴在雙手，幫助淨化並提升防禦力。|外出",
-      "旅行時可噴在座位扶手及餐桌上。|在使用瑜珈墊及健身器材前噴上。|搭乘大眾交通工具時噴在座位上可幫助淨化。"
-    ],
-    "cautions": [
-      "只供外用。避免接觸眼睛及傷口處。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-mist",
-    "productCode": "60214481",
-    "retailPrice": 400,
-    "memberPrice": 300,
-    "pvPoints": 7,
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
-  },
-  {
-    "id": "doterra-onguard-1757742845008",
-    "name": "保衛複方淨化噴霧套組 (5入)",
-    "englishName": "",
-    "description": "為全家人準備好隨身防護力！",
-    "category": "onguard-collection",
-    "collections": [
-      "onguard"
-    ],
-    "volume": "27ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/on-guard-sanitizing-mist-5pk.jpg",
-    "productIntroduction": "保衛複方淨化噴霧5入套組讓您一次買滿足全家人的需求！保衛複方淨化噴霧含保衛複方精油，能營造振奮清新的氛圍並達到保護作用；添加保濕配方－蘋果萃取物，能帶來保濕及潤澤效果。",
-    "applicationGuide": "",
-    "mainBenefits": [
-      "添加保衛複方精油，可提升潔淨與防禦力。",
-      "內含保濕的蘋果萃取物，具有保濕及潤澤效果。",
-      "帶來活力的柑橘清香。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [
-      "噴在雙手，幫助淨化並提升防禦力。|外出",
-      "旅行時可噴在座位扶手及餐桌上。|在使用瑜珈墊及健身器材前噴上。|搭乘大眾交通工具時噴在座位上可幫助淨化。"
-    ],
-    "cautions": [
-      "只供外用。避免接觸眼睛及傷口處。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-mist-kit",
-    "productCode": "kit-on-guard-mist-kit",
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
-  },
-  {
-    "id": "doterra-onguard-1757695256842",
-    "name": "保衛複方淨白牙膏",
-    "englishName": "",
-    "description": "結合有保護效益的CPTG專業純正調理級認證的OnGuard保衛複方精油，擁有多種天然成分，有助於舒緩口腔不適之狀況。保衛複方精油含有野橘、丁香、肉桂、尤加利和迷迭香精油，另外更添加了薄荷、冬青、沒藥及天然甜味劑－木糖醇，讓保衛複方淨白牙膏帶給您清淨、清甜的肉桂薄荷芳香口氣。",
-    "category": "onguard-collection",
-    "collections": [
-      "onguard"
-    ],
-    "volume": "240ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-toothpaste.jpg",
-    "productIntroduction": "結合有保護功效的CPTG專業純正調理級認證的On Guard保衛複方精油，擁有多種天然成分，有助於舒緩口腔不適之狀況。保衛複方精油含有野橘、丁香、肉桂、尤加利和迷迭香精油，另外更添加了薄荷及天然甜味劑－木糖醇，讓保衛複方淨白牙膏帶給您清淨、清甜的肉桂薄荷芳香口氣。",
-    "applicationGuide": "用適量於沾濕的牙刷上、輕柔且仔細地清潔整個牙齒與口腔、在每次餐後、早晚或透過牙醫或醫生的指示。若要達到更好之效果、可以將保衛複方精油一滴加入約 240mL 的水中當成漱口水 。",
-    "mainBenefits": [
-      "含有野橘",
-      "尤加利",
-      "迷迭香",
-      "冬青與沒藥等精油成分，植物的天然防禦效果優異，帶給您天然美好的香氣。|含二氧化矽：真正去除齒垢，亮白牙齒。|含羥基磷灰石鈣：強健牙齒。|幫助促進口腔健康。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [],
-    "cautions": [
-      "本產品為外用之商品 。請置放孩童伸手不及之處",
-      "並存放於室溫之下 。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-natural-whitening-toothpaste",
-    "productCode": "60214827",
-    "retailPrice": 535,
-    "memberPrice": 400,
-    "pvPoints": 7,
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
-  },
-  {
-    "id": "doterra-onguard-1757697019316",
-    "name": "保衛複方潔手凝露",
-    "englishName": "",
-    "description": "洗手是預防保健中不可或缺的一環。在家中和辦公室的每個洗手台旁都放一瓶保衛複方潔手凝露，讓您擁有 doTERRA On Guard®保衛複方的保護。",
-    "category": "onguard-collection",
-    "collections": [
-      "onguard"
-    ],
-    "volume": "473ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-foaming-hand-wash.jpg",
-    "productIntroduction": "在家中和辦公室的每個洗手台旁都放一瓶保衛複方潔手凝露，讓您擁有保衛複方的保護。保衛複方潔手凝露以473毫升的家庭號包裝銷售，可搭配236毫升泡沫式填充瓶，愛惜地球資源，同時也節省您的開銷。",
-    "applicationGuide": "取適量潔手凝露於濕潤的手掌上，搓揉至起泡後以清水洗淨。",
-    "mainBenefits": [
-      "對細嫩手部肌膚非常溫和的清潔產品",
-      "不傷害肌膚的防護，洗後保濕不乾澀",
-      "添加保衛複方精油來加強清潔效力"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [
-      "取適量潔手凝露於濕潤的手掌上",
-      "搓揉至起泡",
-      "以清水洗淨"
-    ],
-    "cautions": [
-      "只供外用。避免接觸眼睛及傷口處。若於瓶底產生混濁，係因柑橘精油中之油蠟所產生，屬正常現象，不影響產品品質及效力，請安心使用。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-foaming-hand-wash",
-    "productCode": "38010302",
-    "retailPrice": 1040,
-    "memberPrice": 780,
-    "pvPoints": 19,
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
-  },
-  {
-    "id": "doterra-onguard-1757697025941",
-    "name": "保衛複方濃縮清潔劑",
-    "englishName": "",
-    "description": "是一款理想的清潔劑。含有多特瑞專利保衛複方精油，包含：野橘、丁香、肉桂、尤加利和迷迭香等CPTG專業純正調理級認證精油，可提供自然防護。使用後留下清新、鼓舞的芳香氣味。讓您以自然、安心的方式維持居家清潔，不會造成環境及生態負擔，適合全家人使用。",
-    "category": "onguard-collection",
-    "collections": [
-      "onguard"
-    ],
-    "volume": "355ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-cleaner-concentrate.jpg",
-    "productIntroduction": "是一款理想的清潔劑。含有多特瑞專利保衛複方精油，包含：野橘、丁香、肉桂、尤加利和迷迭香等CPTG專業純正調理級認證精油，可提供自然防護。使用後留下清新、鼓舞的芳香氣味。讓您以自然、安心的方式維持居家清潔，不會造成環境及生態負擔，適合全家人使用。",
-    "applicationGuide": "多用途清潔：將20毫升(約3瓶蓋)保衛複方濃縮清潔劑以500毫升清水稀釋後使用。|清洗衣物：將15毫升（約2⅓瓶蓋）保衛複方濃縮清潔劑與洗衣粉一起放入洗衣機中。|浴室及廁所：將30毫升(約4 2/3瓶蓋)保衛複方濃縮清潔劑以500毫升清水稀釋即可。|任何接觸面：將保衛複方濃縮清潔劑直接使用在指定的區域，讓它自然滲透。",
-    "mainBenefits": [
-      "取用來自植物性衍生的界面活性劑及生物酵素。",
-      "獨特且自然的生物酵素複合配方。",
-      "特殊洗淨配方，讓保衛複方精油發揮最佳的洗淨力及使香氛持久。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [
-      "多用途清潔：將20毫升（約3瓶蓋）以500毫升清水稀釋後使用",
-      "清洗衣物：將15毫升（約2⅓瓶蓋）與洗衣粉一起放入洗衣機",
-      "浴室及廁所：將30毫升（約4 2/3瓶蓋）以500毫升清水稀釋",
-      "任何接觸面：直接使用在指定區域，讓它自然滲透"
-    ],
-    "cautions": [
-      "請勿直接使用在木質地板或大理石上。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-cleaner-concentrate",
-    "productCode": "38140302",
-    "retailPrice": 910,
-    "memberPrice": 680,
-    "pvPoints": 15,
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
-  },
-  {
-    "id": "doterra-onguard-1757695250212",
-    "name": "On Guard® + 保衛複方膠囊食品",
-    "englishName": "",
-    "description": "保衛複方膠囊，是來幫助您和您的家人保持健康，特別是季節替換、外在環境污染，或特別需要被保護時可及時成為身體的隱形保護罩。",
-    "category": "onguard-collection",
-    "collections": [
-      "onguard"
-    ],
-    "volume": "",
-    "imageUrl": "https://media.doterra.com/tw/images/product/doterra-on-guard-softgels.jpg",
-    "productIntroduction": "doTERRA On Guard +保衛複方軟膠囊是一款含有獨特配方產品，包含 doTERRA 保衛複方與黑胡椒、奧勒岡草和香蜂草等，提供保衛及保護力。當季節交替換時，doTERRA 保衛複方是幫助身體健康的絕佳幫手。 doTERRA 保衛複方精油獨特配方可幫助身體打造健康的保護罩。",
-    "applicationGuide": "",
-    "mainBenefits": [
-      "調節體質，增強體力。",
-      "含有獨特植物精華配方，打造專屬防護罩。",
-      "幫助維持消化道機能。",
-      "不習慣保衛氣味者的另一種選擇。",
-      "膠囊成分：明膠(提取自牛)。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [],
-    "cautions": [
-      "請放在兒童接觸不到的地方。孕婦或哺乳期婦女以及已知有健康狀況者",
-      "在使用前應諮詢醫生。本產品含有亞麻籽粉。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/on-guard-softgels",
-    "productCode": "60210805",
-    "retailPrice": 1600,
-    "memberPrice": 1200,
-    "pvPoints": 32,
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
-  },
-  {
     "id": "doterra-1757678190241",
     "name": "元氣複方精油",
     "englishName": "Zendocrine Oil",
@@ -988,11 +425,7 @@
       "塗抹在手腕或脈搏處，可散發活力香氛。"
     ],
     "applicationGuide": "",
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。"
-    ],
+    "cautions": "",
     "mainBenefits": [
       "支持健康的防禦力|防護",
       "對抗環境威脅|具有激勵及使精神一振的香氛"
@@ -1013,14 +446,45 @@
     "productCode": "60210809",
     "retailPrice": 1200,
     "memberPrice": 900,
-    "pvPoints": 28,
-    "collections": [
-      "onguard"
+    "pvPoints": 28
+  },
+  {
+    "id": "doterra-1757678261604",
+    "name": "呵護系列-順暢清新複方精油",
+    "englishName": "doTERRA Breathe Touch Respiratory Blend",
+    "scientificName": "",
+    "description": "獨特的香氛用來調理呵護，孩童、老人或敏感性肌膚都可安心使用，全新鋼珠滾珠瓶設計，使用更便利順暢。現在就讓全家人天天享受舒緩平衡的健康身心。",
+    "productIntroduction": "集合了多種精油，這種獨特配方包含薄荷、茶樹、檸檬、月桂葉、尤加利、桉油樟羅文莎葉、羅文莎葉和豆蔻，氣味清新芳香，怡人的香味感覺清新舒暢、煥然一新。",
+    "usageInstructions": [
+      "季節威脅高時，可以直接用手掌嗅吸或塗抹在胸前。",
+      "夜晚塗抹，可以幫助您有個舒適的睡眠。"
     ],
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
+    "applicationGuide": "",
+    "cautions": "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕、哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛、耳內和敏感部位。",
+    "mainBenefits": [
+      "保持潔淨及順暢清新感受|能淨化並幫助身心放鬆|清涼",
+      "緩解疲累"
+    ],
+    "aromaDescription": "辛辣、清新、輕快、薄荷味",
+    "mainIngredients": [
+      "分餾椰子油",
+      "月桂葉精油",
+      "尤加利精油",
+      "薄荷精油",
+      "茶樹精油",
+      "檸檬精油",
+      "豆蔻精油",
+      "桉油樟羅文莎葉精油",
+      "羅文莎葉精油"
+    ],
+    "category": "proprietary-blends",
+    "volume": "10ml",
+    "imageUrl": "https://media.doterra.com/tw/images/product/10ml-breathe-touch.png",
+    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-touch-oil",
+    "productCode": "60201166",
+    "retailPrice": 935,
+    "memberPrice": 700,
+    "pvPoints": 21
   },
   {
     "id": "doterra-1757678266361",
@@ -1308,15 +772,13 @@
     "description": "保衛複方精油的香味獨特，在野橘精油中加入丁香、桂皮、尤加利和迷迭香，調配成能舒緩、提升防護的精油，是一種芬芳、自然的芳香調理方法，特別適合季節轉換時，可強化防護力。",
     "productIntroduction": "保衛複方精油提供一個有效的替代方案來保持您的家人和居家的健康。含有野橘、丁香、桂皮、尤加利和迷迭香精油，可提升防禦力並對抗環境和季節性的威脅。每天用來清潔居家環境，可以加強防護效果並提供潔淨和淨化效益。用來擴香時，有助於淨化空氣，幫助獲得順暢清新感受，也可以鼓舞、激勵和使精神一振。",
     "usageInstructions": [
-      "加入洗碗精或衣物中，可淨化且消除臭味。|將幾滴保衛複方精油加入分餾椰子油中，可當成芳香的清潔配方。|用於不鏽鋼表面，可去除難洗的",
-      "結塊的污漬。|滴2-3滴在口罩角落，可以嗅吸並抵禦環境威脅。"
+      "加入洗碗精或衣物中，可淨化且消除臭味。",
+      "將幾滴保衛複方精油加入分餾椰子油中，可當成芳香的清潔配方。",
+      "用於不鏽鋼表面，可去除難洗的、結塊的污漬。",
+      "滴2-3滴在口罩角落，可以嗅吸並抵禦環境威脅。"
     ],
     "applicationGuide": "",
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。"
-    ],
+    "cautions": "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕、哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛、耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。",
     "mainBenefits": [
       "支持防禦力。|防護",
       "對抗季節性威脅。|表面清潔淨化。|具有激勵及使精神一振的香氛。"
@@ -1336,14 +798,7 @@
     "productCode": "60210808",
     "retailPrice": 1980,
     "memberPrice": 1485,
-    "pvPoints": 46,
-    "collections": [
-      "onguard"
-    ],
-    "tags": [
-      "OnGuard系列",
-      "保衛系列"
-    ]
+    "pvPoints": 46
   },
   {
     "id": "doterra-1757678384038",
@@ -1677,21 +1132,20 @@
     "englishName": "Deep Blue Oil",
     "scientificName": "",
     "description": "將冬青、樟樹、薄荷、伊蘭伊蘭、桂花、藍艾菊、永久花、德國洋甘菊調配在一起，塗抹在肌膚上有清涼舒暢的感覺，有助於舒緩肌膚疲勞及不適，增加肌膚清爽活絡感。",
-    "category": "proprietary-blends",
-    "collections": [
-      "deep-blue"
-    ],
-    "volume": "5ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/5ml-deep-blue.png",
     "productIntroduction": "用於按摩可舒緩運動或久站久坐造成的不適，配方使用冬青、樟樹、薄荷、伊蘭伊蘭、永久花、藍艾菊、德國洋甘菊、桂花精油，可以舒緩及放鬆。它的影響是深入且持續的效果，輕輕塗抹在不適處，可以立即感受到舒緩複方的清涼好處。對於偶發性的疲倦、不適，能提供立即性的安撫及緩解。",
+    "usageInstructions": [
+      "運動前後塗抹舒緩複方精油，可以減緩不適。",
+      "長時間使用電腦，嘗試塗抹舒緩複方精油在肩部及頸部，可以舒緩累積的壓力。",
+      "滴1-2滴舒緩複方精油用doTERRA分餾椰子油稀釋，在睡前按摩腿部。",
+      "在一整天的繁重工作或東奔西跑之後，塗抹舒緩複方精油在下背部。"
+    ],
     "applicationGuide": "",
+    "cautions": "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕、哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛、耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。",
     "mainBenefits": [
       "可舒緩運動或久站久坐造成的不適。",
       "搭配按摩可促進循環。"
     ],
     "aromaDescription": "清涼、薄荷味",
-    "extractionMethod": "",
-    "plantPart": "",
     "mainIngredients": [
       "冬青精油",
       "樟樹精油",
@@ -1702,26 +1156,14 @@
       "德國洋甘菊精油",
       "桂花精油"
     ],
-    "usageInstructions": [
-      "運動前後塗抹舒緩複方精油，可以減緩不適。",
-      "長時間使用電腦，嘗試塗抹舒緩複方精油在肩部及頸部，可以舒緩累積的壓力。",
-      "滴1-2滴舒緩複方精油用doTERRA分餾椰子油稀釋，在睡前按摩腿部。",
-      "在一整天的繁重工作或東奔西跑之後，塗抹舒緩複方精油在下背部。"
-    ],
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。"
-    ],
+    "category": "proprietary-blends",
+    "volume": "5ml",
+    "imageUrl": "https://media.doterra.com/tw/images/product/5ml-deep-blue.png",
     "url": "https://www.doterra.com/TW/zh_TW/p/deep-blue-oil",
     "productCode": "31050302",
     "retailPrice": 1975,
     "memberPrice": 1480,
-    "pvPoints": 44,
-    "tags": [
-      "DeepBlue系列",
-      "舒緩系列"
-    ]
+    "pvPoints": 44
   },
   {
     "id": "doterra-1757678439125",
@@ -1763,6 +1205,36 @@
     "pvPoints": 0
   },
   {
+    "id": "doterra-1757678246390",
+    "name": "順暢清新複方精油",
+    "englishName": "Breathe Oil",
+    "scientificName": "",
+    "description": "順暢清新複方精油集合了多種精油，這種獨特配方包括薄荷、茶樹、檸檬、月桂葉、尤加利葉、桉油樟羅文莎葉、羅文莎葉和豆蔻，氣味清新芳香。用法簡單，只要塗抹一些在胸口、脊椎或腳底即可，怡人的香味使您感覺清新舒暢、煥然一新。",
+    "productIntroduction": "卓越的配方為您帶來順暢清新的感受。包含月桂葉、薄荷、尤加利葉、茶樹、檸檬、桉油樟羅文莎葉、羅文莎葉及豆蔻，塗抹在頸部、胸部和背部幫助淨化及舒緩。令人愉悅的氣味可以撫平情緒，夜晚擴香可以幫助您有個舒適的睡眠。",
+    "usageInstructions": [
+      "季節威脅高時，可以擴香或嗅吸使用。",
+      "滴幾滴順暢清新複方在棉球上，放在出風口，可以維持室內及車內清新香氛。",
+      "夜晚擴香或滴在枕頭上，可以幫助您有個舒適的睡眠。",
+      "滴六至八滴至120毫升水中並放入噴瓶噴灑環境，可淨化空氣，噴灑於後頸部，可獲得清涼感受。"
+    ],
+    "applicationGuide": "",
+    "cautions": "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕、哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛、耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。",
+    "mainBenefits": [
+      "保持潔淨及順暢清新感受。     能淨化並幫助身心放鬆。     夜間擴香，可提供舒適的睡眠。     清涼",
+      "緩解疲累。"
+    ],
+    "aromaDescription": "清新、溫暖、辛香味",
+    "mainIngredients": [],
+    "category": "proprietary-blends",
+    "volume": "15ml",
+    "imageUrl": "https://media.doterra.com/tw/images/product/15ml-breathe.png",
+    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-oil",
+    "productCode": "60200200",
+    "retailPrice": 1460,
+    "memberPrice": 1095,
+    "pvPoints": 34
+  },
+  {
     "id": "doterra-1757678451636",
     "name": "新瑞活力複方油",
     "englishName": "Metapwr Oil",
@@ -1770,21 +1242,21 @@
     "description": "由生薑、肉桂、薄荷、檸檬以及葡萄柚組合而成的新瑞活力複方油，能有效促進您的新陳代謝、給予身心清爽活力!",
     "productIntroduction": "一款令人振奮和充滿活力的新陳代謝配方精油，內含 生薑、肉桂、薄荷、檸檬以及葡萄柚油，能有效促進新陳代謝，是您執行健康新生活計畫的好幫手 !",
     "usageInstructions": [
-      "滴於掌心，將手掌覆蓋住鼻子嗅吸，創造適合運動的鼓舞氛圍。|混合於椰子油或乳液之中按摩身體，促進新陳代謝健康",
-      "幫助身心清爽有活力。"
+      "滴於掌心，將手掌覆蓋住鼻子嗅吸，創造適合運動的鼓舞氛圍。",
+      "混合於椰子油或乳液之中按摩身體，促進新陳代謝健康、幫助身心清爽有活力。"
     ],
     "applicationGuide": "全素可食用。建議食用方法：1次2滴，加在240毫升的飲料食用。",
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。"
-    ],
+    "cautions": "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕、哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛、耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。",
     "mainBenefits": [
       "有助新陳代謝。|感受清迎與活力。|營造鼓舞",
       "振奮的氛圍。|有助改善運動表現。"
     ],
     "aromaDescription": "柑橘味、辛香、薄荷氣息、香甜​",
     "mainIngredients": [
+      "肉桂",
+      "生薑",
+      "薄荷",
+      "檸檬",
       "葡萄柚"
     ],
     "category": "proprietary-blends",
@@ -1794,10 +1266,7 @@
     "productCode": "60220683",
     "retailPrice": 1535,
     "memberPrice": 1150,
-    "pvPoints": 33,
-    "collections": [
-      "food"
-    ]
+    "pvPoints": 33
   },
   {
     "id": "doterra-1757678301978",
@@ -1971,15 +1440,12 @@
     "description": "集合知名的草本植物成分，經過獨特的配方調製而成，其中包括薄荷、胡荽、生薑、藏茴香、豆蔻、甜茴香和八角茴香油。",
     "productIntroduction": "集合知名的草本植物成分，經過獨特的配方調製而成，其中包括薄荷、胡荽、生薑、藏茴香、豆蔻、甜茴香和八角茴香油，這些香料各具獨特的調理作用，全家人都可以安心使用，並以健康、自然、溫柔的方式來舒緩不適。",
     "usageInstructions": [
-      "在長途飛行或公路旅行之前使用，可以獲得清新",
-      "清爽感受。|旅行時隨身攜帶，可以舒緩偶發性不適。|帶來溫暖舒適放鬆感。"
+      "在長途飛行或公路旅行之前使用，可以獲得清新、清爽感受。",
+      "旅行時隨身攜帶，可以舒緩偶發性不適。",
+      "帶來溫暖舒適放鬆感。"
     ],
     "applicationGuide": "全素可食用。1次 2 滴，加在 240 毫升的飲料食用， 一天最多食用 3 次。",
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。"
-    ],
+    "cautions": "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕、哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛、耳內和敏感部位。",
     "mainBenefits": [
       "幫助舒緩不適。",
       "舟車勞頓不適時使用。"
@@ -2001,10 +1467,7 @@
     "productCode": "60228182",
     "retailPrice": 1875,
     "memberPrice": 1405,
-    "pvPoints": 43,
-    "collections": [
-      "food"
-    ]
+    "pvPoints": 43
   },
   {
     "id": "doterra-1757678396418",
@@ -2611,12 +2074,8 @@
       "滴1-2滴在水中飲用，幫助維持消化道機能。",
       "使用生薑油在喜愛的甜品或開胃菜中提味。"
     ],
-    "applicationGuide": "全素可食用。建議食用方法：1次1滴，加在240毫升的飲料食用，1天最多食用3次。",
-    "cautions": [
-      "請放置在兒童無法取得處，孕婦",
-      "哺乳或接受治療者，請先諮詢醫師再使用。避免接觸眼睛",
-      "耳內和敏感部位。"
-    ],
+    "applicationGuide": "",
+    "cautions": "請放置在兒童無法取得處，孕婦、哺乳或接受治療者，請先諮詢醫師再使用。避免接觸眼睛、耳內和敏感部位。",
     "mainBenefits": [
       "促進新陳代謝。",
       "幫助維持消化道機能。",
@@ -2633,10 +2092,7 @@
     "productCode": "60215600",
     "retailPrice": 2335,
     "memberPrice": 1750,
-    "pvPoints": 52,
-    "collections": [
-      "food"
-    ]
+    "pvPoints": 52
   },
   {
     "id": "doterra-1757650428627",
@@ -2724,14 +2180,12 @@
       "使用2滴，可強化防禦力。",
       "擴香可獲得順暢清新感受。"
     ],
-    "applicationGuide": "全素可食用。1次 2 滴，加在 240 毫升的飲料食用， 一天最多食用 3 次。",
-    "cautions": [
-      "孕婦忌食。請置於孩童無法自行取食之處。哺乳婦女和已知患有疾病者食用之前，應諮詢醫生意見。請將本產品放在兒童不能接觸的地方。存放在乾燥",
-      "陰涼的地方，避免陽光直射。"
-    ],
+    "applicationGuide": "",
+    "cautions": "孕婦忌食。請置於孩童無法自行取食之處。哺乳婦女和已知患有疾病者食用之前，應諮詢醫生意見。請將本產品放在兒童不能接觸的地方。存放在乾燥、陰涼的地方，避免陽光直射。",
     "mainBenefits": [
       "呵護健康並給予清新感受。",
-      "溫暖身心，賦予自信。"
+      "溫暖身心",
+      "賦予自信。"
     ],
     "aromaDescription": "溫暖、木質、甜美味",
     "extractionMethod": "蒸氣蒸餾法",
@@ -2746,10 +2200,7 @@
     "productCode": "60227967",
     "retailPrice": 1535,
     "memberPrice": 1150,
-    "pvPoints": 35,
-    "collections": [
-      "food"
-    ]
+    "pvPoints": 35
   },
   {
     "id": "doterra-1757651056258",
@@ -4361,15 +3812,13 @@
     "description": "綠薄荷油 (Mentha spicata) 綠薄荷清新自然的香氣廣泛運用於口香糖、糖果與潔牙產品中，以維持口氣清新。從古至今人們多使用綠薄荷幫助消化，它香甜、清新的氣味具有淨化與提振的效益，因此適於幫助集中思緒並提供正面能量。",
     "productIntroduction": "綠薄荷為一種多年生植物，植株高度約28-100公分，生長於溫帶地區。因其清涼的薄荷香氣，廣泛被運用於口香糖、糖果與口腔清潔產品中，以幫助維持口氣清新。從古至今人們多使用綠薄荷來維持消化道機能。它香甜、清新的氣味具有淨化與振奮情緒的效果，因此適於增進專注力及給予正面能量。綠薄荷和薄荷為兩種截然不同的品種，綠薄荷較為溫和。此外，綠薄荷亦常見於料理中，像是沙拉、飲品和甜點，也可用於沙拉醬料及醃漬肉品。",
     "usageInstructions": [
-      "提振情緒。|刷牙前滴於牙刷上增添口氣清新。|在各式甜點",
-      "沙拉或前菜中加入1-2滴，可增添風味及幫助消化。|於飲用水或飲品中加入1-2滴，可幫助維持消化道機能。"
+      "提振情緒。",
+      "刷牙前滴於牙刷上增添口氣清新。",
+      "在各式甜點、飲品、沙拉或前菜中加入1-2滴，可增添風味及幫助消化。",
+      "於飲用水或飲品中加入1-2滴，可幫助維持消化道機能。"
     ],
     "applicationGuide": "全素可食用。建議食用方法：1次1滴，加在120毫升的飲料食用，1天最多食用5次。",
-    "cautions": [
-      "請放置在兒童無法取得處，孕婦",
-      "哺乳或接受治療者，請先諮詢醫師再使用。避免接觸眼睛",
-      "耳內和敏感部位。"
-    ],
+    "cautions": "請放置在兒童無法取得處，孕婦、哺乳或接受治療者，請先諮詢醫師再使用。避免接觸眼睛、耳內和敏感部位。",
     "mainBenefits": [
       "幫助維持消化道機能",
       "使口氣芬芳",
@@ -4386,10 +3835,7 @@
     "productCode": "31610402",
     "retailPrice": 1320,
     "memberPrice": 990,
-    "pvPoints": 30,
-    "collections": [
-      "food"
-    ]
+    "pvPoints": 30
   },
   {
     "id": "doterra-1757650703986",
@@ -4662,23 +4108,25 @@
     "description": "檸檬非常受人喜愛，由檸檬皮經過冷壓程序製成，以保存其細緻的天然特質和作用。",
     "productIntroduction": "檸檬具有多種功能及用途，是有效的天然清潔用品，可做為天然的清潔劑，淨化空氣及表面，也可以促進一整天的清新及健康。含有高濃度的檸檬烯，可提供淨化功能並幫助獲得順暢清新感受。擴香時能使人充滿活力並能促進積極正面的情緒。",
     "usageInstructions": [
-      "擴香使用，可以獲得順暢清新感受。 加檸檬油在含有水的噴霧瓶中，可以淨化桌面",
-      "廚房流理台及其他表面。 檸檬油也可以幫助大型家具的清潔，只要加幾滴在橄欖油中就可以清潔",
-      "保護及光亮木質家具表面。 使用浸泡在檸檬油的布，來維護和保護您的皮革家具等皮革表面或服裝。 檸檬油可以補救反黑的銀器和其他早期氧化的金屬。"
+      "擴香使用，可以獲得順暢清新感受。",
+      "加檸檬油在含有水的噴霧瓶中，可以淨化桌面、廚房流理台及其他表面。",
+      "檸檬油也可以幫助大型家具的清潔，只要加幾滴在橄欖油中就可以清潔、保護及光亮木質家具表面。",
+      "使用浸泡在檸檬油的布，來維護和保護您的皮革家具等皮革表面或服裝。",
+      "檸檬油可以補救反黑的銀器和其他早期氧化的金屬。"
     ],
     "applicationGuide": "",
-    "cautions": [
-      "．請置於孩童無法自行取食之處。哺乳婦女和已知患有疾病者食用之前，應諮詢醫生意見。 ．請將本產品放在兒童不能接觸的地方。存放在乾燥",
-      "陰涼的地方，避免陽光直射。 ．提醒您：柑橘類精油揮發性較高，建議您儘快使用，勿存放過久。精油經冷壓萃取，若有沉澱屬正常現象，請安心使用。(使用後12小時內請避開陽光直射或紫外線。)"
-    ],
+    "cautions": "．請置於孩童無法自行取食之處。哺乳婦女和已知患有疾病者食用之前，應諮詢醫生意見。 ．請將本產品放在兒童不能接觸的地方。存放在乾燥、陰涼的地方，避免陽光直射。 ．提醒您：柑橘類精油揮發性較高，建議您儘快使用，勿存放過久。精油經冷壓萃取，若有沉澱屬正常現象，請安心使用。(使用後12小時內請避開陽光直射或紫外線。)",
     "mainBenefits": [
-      "淨化空間及物體表面|幫助獲得順暢清新感受|促進積極的正面情緒和認知"
+      "清潔",
+      "淨化空間及物體表面",
+      "幫助獲得順暢清新感受",
+      "促進積極的正面情緒和認知"
     ],
     "aromaDescription": "乾淨、清新、清淡、柑橘味",
     "extractionMethod": "冷壓法",
     "plantPart": "果皮",
     "mainIngredients": [
-      "詳情 視頻"
+      "D-檸檬烯、β-蒎烯"
     ],
     "category": "single-oils",
     "volume": "15ml",
@@ -4687,10 +4135,7 @@
     "productCode": "60226277",
     "retailPrice": 735,
     "memberPrice": 550,
-    "pvPoints": 17,
-    "collections": [
-      "food"
-    ]
+    "pvPoints": 17
   },
   {
     "id": "doterra-1757650359281",

@@ -192,8 +192,8 @@ class BreatheScraper {
       timeout: 60000 
     });
     
-    // 等待頁面載入和 JavaScript 執行
-    await this.sleep(5000);
+    // 等待頁面載入和 JavaScript 執行（增加等待時間）
+    await this.sleep(8000);
 
     const products: ProductInfo[] = await page.evaluate(() => {
       const links: ProductInfo[] = [];
@@ -204,6 +204,9 @@ class BreatheScraper {
         '.product-tile a',                   // 產品卡片連結
         '.product-item a',                   // 產品項目連結
         '.pdp-product-tile a',               // PDP 產品磚連結
+        '.product-card a',                   // 產品卡連結
+        '.plp-product a',                    // PLP 產品連結
+        '.product-listing a',                // 產品列表連結
         'a[href*="doterra.com"][href*="/p/"]' // doTERRA 產品連結
       ];
 
@@ -226,13 +229,18 @@ class BreatheScraper {
           }
         });
         
-        if (links.length > 0) break; // 找到連結就停止
+        // 移除 break 語句，讓爬蟲檢查所有選擇器
       }
 
       return links;
     });
 
     console.log(`✅ 找到 ${products.length} 個 Breathe 產品`);
+    console.log('📋 產品列表：');
+    products.forEach((product, index) => {
+      console.log(`  ${index + 1}. ${product.name}`);
+      console.log(`     URL: ${product.url}`);
+    });
     
     await page.close();
     return [...new Set(products)]; // 去除重複
@@ -478,9 +486,16 @@ class BreatheScraper {
    * 處理產品（檢查重複並更新/新增）
    */
   async processProduct(oil: Oil): Promise<{ action: 'updated' | 'added' | 'skipped'; file?: string }> {
+    // 為沒有產品編號的套組產品生成基於 URL 的編號
     if (!oil.productCode) {
-      console.warn(`⚠️ ${oil.name} 沒有產品編號，跳過處理`);
-      return { action: 'skipped' };
+      const urlPart = oil.url.split('/p/')[1]?.split('?')[0] || '';
+      if (urlPart) {
+        oil.productCode = `kit-${urlPart}`;
+        console.log(`🔧 為套組產品生成產品編號: ${oil.name} (${oil.productCode})`);
+      } else {
+        console.warn(`⚠️ ${oil.name} 沒有產品編號且無法從 URL 生成，跳過處理`);
+        return { action: 'skipped' };
+      }
     }
 
     const existing = this.existingProducts.get(oil.productCode);

@@ -1,54 +1,5 @@
 [
   {
-    "id": "doterra-1757678261604",
-    "name": "呵護系列-順暢清新複方精油",
-    "englishName": "doTERRA Breathe Touch Respiratory Blend",
-    "scientificName": "",
-    "description": "獨特的香氛用來調理呵護，孩童、老人或敏感性肌膚都可安心使用，全新鋼珠滾珠瓶設計，使用更便利順暢。現在就讓全家人天天享受舒緩平衡的健康身心。",
-    "productIntroduction": "集合了多種精油，這種獨特配方包含薄荷、茶樹、檸檬、月桂葉、尤加利、桉油樟羅文莎葉、羅文莎葉和豆蔻，氣味清新芳香，怡人的香味感覺清新舒暢、煥然一新。",
-    "usageInstructions": [
-      "季節威脅高時，可以直接用手掌嗅吸或塗抹在胸前。",
-      "夜晚塗抹，可以幫助您有個舒適的睡眠。"
-    ],
-    "applicationGuide": "",
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。"
-    ],
-    "mainBenefits": [
-      "保持潔淨及順暢清新感受|能淨化並幫助身心放鬆|清涼",
-      "緩解疲累"
-    ],
-    "aromaDescription": "辛辣、清新、輕快、薄荷味",
-    "mainIngredients": [
-      "分餾椰子油",
-      "月桂葉精油",
-      "尤加利精油",
-      "薄荷精油",
-      "茶樹精油",
-      "檸檬精油",
-      "豆蔻精油",
-      "桉油樟羅文莎葉精油",
-      "羅文莎葉精油"
-    ],
-    "category": "breathe-collection",
-    "volume": "10ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/10ml-breathe-touch.png",
-    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-touch-oil",
-    "productCode": "60201166",
-    "retailPrice": 935,
-    "memberPrice": 700,
-    "pvPoints": 21,
-    "collections": [
-      "breathe"
-    ],
-    "tags": [
-      "Breathe系列",
-      "順暢呼吸系列"
-    ]
-  },
-  {
     "id": "doterra-breathe-1757705555009",
     "name": "順暢清涼喉糖",
     "englishName": "",
@@ -81,87 +32,6 @@
     "retailPrice": 680,
     "memberPrice": 510,
     "pvPoints": 13,
-    "tags": [
-      "Breathe系列",
-      "順暢呼吸系列"
-    ]
-  },
-  {
-    "id": "doterra-breathe-1757705570492",
-    "name": "順暢清新複方香膏",
-    "englishName": "",
-    "description": "含獨特複方精油的香膏，滑順好推不黏膩且快速吸收，包裝輕巧攜帶方便，隨時塗抹，帶來清涼舒暢的感受。",
-    "category": "breathe-collection",
-    "collections": [
-      "breathe"
-    ],
-    "volume": "",
-    "imageUrl": "https://media.doterra.com/tw/images/product/breathe-vapor-stick.jpg",
-    "productIntroduction": "含有薄荷、茶樹、檸檬、月桂葉、尤加利葉、桉油樟羅文莎葉、羅文莎葉和豆蔻，這種含獨特複方精油的香膏，滑順好推不黏膩且快速吸收，包裝輕巧攜帶方便，隨時塗抹，帶來清涼舒暢的感受。",
-    "applicationGuide": "局部使用：適量塗抹於胸口或是頸部肌膚。",
-    "mainBenefits": [
-      "含有薄荷",
-      "月桂葉",
-      "尤加利葉",
-      "桉油樟羅文莎葉",
-      "羅文莎葉和豆蔻精油，讓您更感清新。|令人愉悅的氣味隨時撫平情緒。|緊張時讓自己喘口氣舒緩一下。"
-    ],
-    "aromaDescription": "",
-    "extractionMethod": "",
-    "plantPart": "",
-    "mainIngredients": [],
-    "usageInstructions": [],
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。"
-    ],
-    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-vapor-stick",
-    "productCode": "60223913",
-    "retailPrice": 600,
-    "memberPrice": 450,
-    "pvPoints": 7,
-    "tags": [
-      "Breathe系列",
-      "順暢呼吸系列"
-    ]
-  },
-  {
-    "id": "doterra-1757678246390",
-    "name": "順暢清新複方精油",
-    "englishName": "Breathe Oil",
-    "scientificName": "",
-    "description": "順暢清新複方精油集合了多種精油，這種獨特配方包括薄荷、茶樹、檸檬、月桂葉、尤加利葉、桉油樟羅文莎葉、羅文莎葉和豆蔻，氣味清新芳香。用法簡單，只要塗抹一些在胸口、脊椎或腳底即可，怡人的香味使您感覺清新舒暢、煥然一新。",
-    "productIntroduction": "卓越的配方為您帶來順暢清新的感受。包含月桂葉、薄荷、尤加利葉、茶樹、檸檬、桉油樟羅文莎葉、羅文莎葉及豆蔻，塗抹在頸部、胸部和背部幫助淨化及舒緩。令人愉悅的氣味可以撫平情緒，夜晚擴香可以幫助您有個舒適的睡眠。",
-    "usageInstructions": [
-      "季節威脅高時，可以擴香或嗅吸使用。",
-      "滴幾滴順暢清新複方在棉球上，放在出風口，可以維持室內及車內清新香氛。",
-      "夜晚擴香或滴在枕頭上，可以幫助您有個舒適的睡眠。",
-      "滴六至八滴至120毫升水中並放入噴瓶噴灑環境，可淨化空氣，噴灑於後頸部，可獲得清涼感受。"
-    ],
-    "applicationGuide": "",
-    "cautions": [
-      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
-      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
-      "耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。"
-    ],
-    "mainBenefits": [
-      "保持潔淨及順暢清新感受。 能淨化並幫助身心放鬆。 夜間擴香，可提供舒適的睡眠。 清涼",
-      "緩解疲累。"
-    ],
-    "aromaDescription": "清新、溫暖、辛香味",
-    "mainIngredients": [],
-    "category": "breathe-collection",
-    "volume": "15ml",
-    "imageUrl": "https://media.doterra.com/tw/images/product/15ml-breathe.png",
-    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-oil",
-    "productCode": "60200200",
-    "retailPrice": 1460,
-    "memberPrice": 1095,
-    "pvPoints": 34,
-    "collections": [
-      "breathe"
-    ],
     "tags": [
       "Breathe系列",
       "順暢呼吸系列"
@@ -1023,6 +893,51 @@
     ]
   },
   {
+    "id": "doterra-1757678261604",
+    "name": "呵護系列-順暢清新複方精油",
+    "englishName": "doTERRA Breathe Touch Respiratory Blend",
+    "scientificName": "",
+    "description": "獨特的香氛用來調理呵護，孩童、老人或敏感性肌膚都可安心使用，全新鋼珠滾珠瓶設計，使用更便利順暢。現在就讓全家人天天享受舒緩平衡的健康身心。",
+    "productIntroduction": "集合了多種精油，這種獨特配方包含薄荷、茶樹、檸檬、月桂葉、尤加利、桉油樟羅文莎葉、羅文莎葉和豆蔻，氣味清新芳香，怡人的香味感覺清新舒暢、煥然一新。",
+    "usageInstructions": [
+      "季節威脅高時，可以直接用手掌嗅吸或塗抹在胸前。",
+      "夜晚塗抹，可以幫助您有個舒適的睡眠。"
+    ],
+    "applicationGuide": "",
+    "cautions": [
+      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
+      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
+      "耳內和敏感部位。"
+    ],
+    "mainBenefits": [
+      "保持潔淨及順暢清新感受|能淨化並幫助身心放鬆|清涼",
+      "緩解疲累"
+    ],
+    "aromaDescription": "辛辣、清新、輕快、薄荷味",
+    "mainIngredients": [
+      "分餾椰子油",
+      "月桂葉精油",
+      "尤加利精油",
+      "薄荷精油",
+      "茶樹精油",
+      "檸檬精油",
+      "豆蔻精油",
+      "桉油樟羅文莎葉精油",
+      "羅文莎葉精油"
+    ],
+    "category": "proprietary-blends",
+    "volume": "10ml",
+    "imageUrl": "https://media.doterra.com/tw/images/product/10ml-breathe-touch.png",
+    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-touch-oil",
+    "productCode": "60201166",
+    "retailPrice": 935,
+    "memberPrice": 700,
+    "pvPoints": 21,
+    "collections": [
+      "breathe"
+    ]
+  },
+  {
     "id": "doterra-1757678266361",
     "name": "呵護系列-樂活複方精油",
     "englishName": "doTERRA DigestZen Touch DigestZen Blend",
@@ -1761,6 +1676,43 @@
     "retailPrice": 0,
     "memberPrice": 0,
     "pvPoints": 0
+  },
+  {
+    "id": "doterra-1757678246390",
+    "name": "順暢清新複方精油",
+    "englishName": "Breathe Oil",
+    "scientificName": "",
+    "description": "順暢清新複方精油集合了多種精油，這種獨特配方包括薄荷、茶樹、檸檬、月桂葉、尤加利葉、桉油樟羅文莎葉、羅文莎葉和豆蔻，氣味清新芳香。用法簡單，只要塗抹一些在胸口、脊椎或腳底即可，怡人的香味使您感覺清新舒暢、煥然一新。",
+    "productIntroduction": "卓越的配方為您帶來順暢清新的感受。包含月桂葉、薄荷、尤加利葉、茶樹、檸檬、桉油樟羅文莎葉、羅文莎葉及豆蔻，塗抹在頸部、胸部和背部幫助淨化及舒緩。令人愉悅的氣味可以撫平情緒，夜晚擴香可以幫助您有個舒適的睡眠。",
+    "usageInstructions": [
+      "季節威脅高時，可以擴香或嗅吸使用。",
+      "滴幾滴順暢清新複方在棉球上，放在出風口，可以維持室內及車內清新香氛。",
+      "夜晚擴香或滴在枕頭上，可以幫助您有個舒適的睡眠。",
+      "滴六至八滴至120毫升水中並放入噴瓶噴灑環境，可淨化空氣，噴灑於後頸部，可獲得清涼感受。"
+    ],
+    "applicationGuide": "",
+    "cautions": [
+      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
+      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
+      "耳內和敏感部位。敏感性肌膚可先以分餾椰子油稀釋後再使用。"
+    ],
+    "mainBenefits": [
+      "保持潔淨及順暢清新感受。 能淨化並幫助身心放鬆。 夜間擴香，可提供舒適的睡眠。 清涼",
+      "緩解疲累。"
+    ],
+    "aromaDescription": "清新、溫暖、辛香味",
+    "mainIngredients": [],
+    "category": "proprietary-blends",
+    "volume": "15ml",
+    "imageUrl": "https://media.doterra.com/tw/images/product/15ml-breathe.png",
+    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-oil",
+    "productCode": "60200200",
+    "retailPrice": 1460,
+    "memberPrice": 1095,
+    "pvPoints": 34,
+    "collections": [
+      "breathe"
+    ]
   },
   {
     "id": "doterra-1757678451636",
@@ -4904,5 +4856,45 @@
     "retailPrice": 1855,
     "memberPrice": 1390,
     "pvPoints": 42
+  },
+  {
+    "id": "doterra-breathe-1757705570492",
+    "name": "順暢清新複方香膏",
+    "englishName": "",
+    "description": "含獨特複方精油的香膏，滑順好推不黏膩且快速吸收，包裝輕巧攜帶方便，隨時塗抹，帶來清涼舒暢的感受。",
+    "category": "skincare",
+    "collections": [
+      "breathe"
+    ],
+    "volume": "",
+    "imageUrl": "https://media.doterra.com/tw/images/product/breathe-vapor-stick.jpg",
+    "productIntroduction": "含有薄荷、茶樹、檸檬、月桂葉、尤加利葉、桉油樟羅文莎葉、羅文莎葉和豆蔻，這種含獨特複方精油的香膏，滑順好推不黏膩且快速吸收，包裝輕巧攜帶方便，隨時塗抹，帶來清涼舒暢的感受。",
+    "applicationGuide": "局部使用：適量塗抹於胸口或是頸部肌膚。",
+    "mainBenefits": [
+      "含有薄荷",
+      "月桂葉",
+      "尤加利葉",
+      "桉油樟羅文莎葉",
+      "羅文莎葉和豆蔻精油，讓您更感清新。|令人愉悅的氣味隨時撫平情緒。|緊張時讓自己喘口氣舒緩一下。"
+    ],
+    "aromaDescription": "",
+    "extractionMethod": "",
+    "plantPart": "",
+    "mainIngredients": [],
+    "usageInstructions": [],
+    "cautions": [
+      "可能導致肌膚敏感，請放置在兒童無法拿取處。懷孕",
+      "哺乳或接受治療者，請先諮詢醫師後再使用。避免接觸眼睛",
+      "耳內和敏感部位。"
+    ],
+    "url": "https://www.doterra.com/TW/zh_TW/p/breathe-vapor-stick",
+    "productCode": "60223913",
+    "retailPrice": 600,
+    "memberPrice": 450,
+    "pvPoints": 7,
+    "tags": [
+      "Breathe系列",
+      "順暢呼吸系列"
+    ]
   }
 ]

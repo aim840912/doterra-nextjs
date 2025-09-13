@@ -20,7 +20,10 @@ const CATEGORIES: CategoryConfig[] = [
   { filename: 'proprietary-blends.json', category: 'proprietary-blends', name: '複方精油' },
   { filename: 'skincare.json', category: 'skincare', name: '護膚產品' },
   { filename: 'wellness.json', category: 'wellness', name: '健康產品' },
-  { filename: 'accessories.json', category: 'accessories', name: '配件用品' }
+  { filename: 'accessories.json', category: 'accessories', name: '配件用品' },
+  { filename: 'deep-blue-collection.json', category: 'deep-blue-collection', name: 'Deep Blue系列' },
+  { filename: 'onguard-collection.json', category: 'onguard-collection', name: 'OnGuard系列' },
+  { filename: 'breathe-collection.json', category: 'breathe-collection', name: 'Breathe系列' }
 ]
 
 const PRODUCTS_DIR = path.join(process.cwd(), 'src/data/products')
