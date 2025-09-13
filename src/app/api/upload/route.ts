@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
     })
 
   } catch (error) {
-    console.error('圖片上傳錯誤:', error)
+    // API 錯誤已移除: '圖片上傳錯誤:', error
     return NextResponse.json(
       { success: false, error: '圖片上傳失敗' },
       { status: 500 }
@@ -91,7 +91,7 @@ export async function DELETE(request: NextRequest) {
       await unlink(filePath)
     } catch (error) {
       // 檔案可能已經不存在，這不算錯誤
-      console.warn('檔案刪除警告:', error)
+      // API 警告已移除: '檔案刪除警告:', error
     }
 
     return NextResponse.json({
@@ -100,7 +100,7 @@ export async function DELETE(request: NextRequest) {
     })
 
   } catch (error) {
-    console.error('圖片刪除錯誤:', error)
+    // API 錯誤已移除: '圖片刪除錯誤:', error
     return NextResponse.json(
       { success: false, error: '圖片刪除失敗' },
       { status: 500 }

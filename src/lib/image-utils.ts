@@ -54,7 +54,7 @@ export async function compressImage(
     const compressedFile = await imageCompression(file, compressOptions)
     return compressedFile
   } catch (error) {
-    console.warn('圖片壓縮失敗，使用原檔案:', error)
+    // 圖片壓縮失敗，繼續使用原檔案
     return file // 壓縮失敗時返回原檔案
   }
 }

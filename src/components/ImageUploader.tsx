@@ -80,7 +80,7 @@ export default function ImageUploader({
             quality: 0.8
           })
         } catch (compressionError) {
-          console.warn('圖片壓縮失敗，使用原檔案:', compressionError)
+          // 圖片壓縮失敗，繼續使用原檔案
         }
 
         // 生成預覽
@@ -159,7 +159,7 @@ export default function ImageUploader({
       }
 
     } catch (error) {
-      console.error('刪除圖片失敗:', error)
+      // 靜默處理刪除錯誤，通過回調通知用戶
       onUploadError?.('刪除圖片失敗')
     }
   }

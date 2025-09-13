@@ -32,24 +32,26 @@ async function checkSystemHealth() {
     responseTime: 0 // 稍後計算
   }
 
-  // 2. 資料庫/資料源檢查（這裡檢查產品資料）
+  // 2. JSON 資料源檢查（檢查產品資料完整性）
   try {
     const productCount = allOils.length
     const hasValidProducts = allOils.every(oil => 
       oil.id && oil.name && oil.imageUrl
     )
 
-    checks.database = {
+    checks.dataSource = {
       status: hasValidProducts ? 'healthy' : 'warning',
-      description: hasValidProducts ? '資料完整性良好' : '發現資料完整性問題',
+      description: hasValidProducts ? 'JSON 資料完整性良好' : '發現 JSON 資料完整性問題',
       productCount,
-      dataIntegrity: hasValidProducts
+      dataIntegrity: hasValidProducts,
+      sourceType: 'JSON'
     }
   } catch (error) {
-    checks.database = {
+    checks.dataSource = {
       status: 'unhealthy',
-      description: '資料源檢查失敗',
-      error: String(error)
+      description: 'JSON 資料源檢查失敗',
+      error: String(error),
+      sourceType: 'JSON'
     }
   }
 
@@ -197,7 +199,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(responseData, { status: httpStatus })
 
   } catch (error) {
-    console.error('健康檢查失敗:', error)
+    // API 錯誤已移除: '健康檢查失敗:', error
     return errorResponse('健康檢查執行失敗', 500, {
       error: String(error)
     })

@@ -48,8 +48,7 @@ export function useModalSettings() {
         setSettings(mergedSettings)
       }
     } catch (error) {
-      console.error('載入 Modal 設定失敗:', error)
-      // 使用預設設定
+      // 靜默處理載入錯誤，使用預設設定
       setSettings(DEFAULT_SETTINGS)
     }
     setIsLoaded(true)
@@ -65,7 +64,7 @@ export function useModalSettings() {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(settingsWithTimestamp))
       setSettings(newSettings)
     } catch (error) {
-      console.error('儲存 Modal 設定失敗:', error)
+      // 靜默處理儲存錯誤，維持現有設定
     }
   }, [])
 

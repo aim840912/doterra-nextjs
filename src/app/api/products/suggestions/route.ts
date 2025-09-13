@@ -140,7 +140,7 @@ export async function GET(request: NextRequest) {
     })
 
   } catch (error) {
-    console.error('搜尋建議 API 錯誤:', error)
+    // API 錯誤已移除: '搜尋建議 API 錯誤:', error
     return NextResponse.json({
       success: false,
       error: '建議服務暫時無法使用',

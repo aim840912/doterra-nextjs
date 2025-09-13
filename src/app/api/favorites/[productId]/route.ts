@@ -57,7 +57,7 @@ export async function GET(
     }, '獲取收藏狀態成功')
 
   } catch (error) {
-    console.error('檢查收藏狀態失敗:', error)
+    // API 錯誤已移除: '檢查收藏狀態失敗:', error
     return errorResponse('檢查收藏狀態失敗', 500)
   }
 }
@@ -96,7 +96,7 @@ export async function PUT(
     }, `產品已${action === 'added' ? '添加到' : '移除自'}收藏`)
 
   } catch (error) {
-    console.error('切換收藏狀態失敗:', error)
+    // API 錯誤已移除: '切換收藏狀態失敗:', error
     return errorResponse('切換收藏狀態失敗', 500)
   }
 }
@@ -135,7 +135,7 @@ export async function DELETE(
     }, '產品已移除收藏')
 
   } catch (error) {
-    console.error('移除收藏失敗:', error)
+    // API 錯誤已移除: '移除收藏失敗:', error
     return errorResponse('移除收藏失敗', 500)
   }
 }

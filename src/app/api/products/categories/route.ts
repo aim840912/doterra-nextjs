@@ -68,7 +68,7 @@ export async function GET(request: NextRequest) {
     return successResponse(categories, '獲取產品類別成功', stats)
 
   } catch (error) {
-    console.error('獲取產品類別失敗:', error)
+    // API 錯誤已移除: '獲取產品類別失敗:', error
     return errorResponse('獲取產品類別失敗', 500)
   }
 }

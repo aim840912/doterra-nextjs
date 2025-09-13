@@ -10,7 +10,7 @@ interface ErrorProps {
 export default function Error({ error, reset }: ErrorProps) {
   useEffect(() => {
     // 在生產環境中記錄錯誤
-    console.error('應用程式錯誤:', error)
+    // 應用程式錯誤已記錄
   }, [error])
 
   return (

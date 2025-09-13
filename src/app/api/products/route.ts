@@ -81,7 +81,7 @@ export async function GET(request: NextRequest) {
     return successResponse(result.data, '獲取產品列表成功', result.pagination)
 
   } catch (error) {
-    console.error('獲取產品列表失敗:', error)
+    // API 錯誤已移除: '獲取產品列表失敗:', error
     return errorResponse('獲取產品列表失敗', 500)
   }
 }
@@ -141,12 +141,12 @@ export async function POST(request: NextRequest) {
 
     // 注意：在實際應用中，這裡需要將產品保存到資料庫
     // 目前只是模擬回應
-    console.log('創建新產品:', newProduct)
+    // API 日誌已移除: '創建新產品:', newProduct
 
     return successResponse(newProduct, '產品創建成功', { id })
 
   } catch (error) {
-    console.error('創建產品失敗:', error)
+    // API 錯誤已移除: '創建產品失敗:', error
     return errorResponse('創建產品失敗', 500)
   }
 }

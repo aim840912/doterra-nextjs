@@ -138,7 +138,7 @@ export async function GET(
     return successResponse(responseData, '獲取產品系列資訊成功')
 
   } catch (error) {
-    console.error('獲取產品系列詳情失敗:', error)
+    // API 錯誤已移除: '獲取產品系列詳情失敗:', error
     return errorResponse('獲取產品系列詳情失敗', 500)
   }
 }
@@ -171,12 +171,12 @@ export async function PUT(
       ...body
     }
 
-    console.log('更新產品系列:', updatedCollection)
+    // API 日誌已移除: '更新產品系列:', updatedCollection
 
     return successResponse(updatedCollection, '產品系列更新成功')
 
   } catch (error) {
-    console.error('更新產品系列失敗:', error)
+    // API 錯誤已移除: '更新產品系列失敗:', error
     return errorResponse('更新產品系列失敗', 500)
   }
 }
@@ -216,12 +216,12 @@ export async function DELETE(
     }
 
     // 在實際應用中，這裡會從資料庫中刪除系列
-    console.log('刪除產品系列:', collectionId)
+    // API 日誌已移除: '刪除產品系列:', collectionId
 
     return successResponse({ id: collectionId }, '產品系列刪除成功')
 
   } catch (error) {
-    console.error('刪除產品系列失敗:', error)
+    // API 錯誤已移除: '刪除產品系列失敗:', error
     return errorResponse('刪除產品系列失敗', 500)
   }
 }

@@ -55,7 +55,7 @@ export default function AdvancedSearch({
       try {
         setSearchHistory(JSON.parse(history))
       } catch (error) {
-        console.error('載入搜尋歷史失敗:', error)
+        // 靜默處理載入錯誤，使用空陣列
       }
     }
   }, [])
@@ -95,7 +95,7 @@ export default function AdvancedSearch({
           }
         }
       } catch (error) {
-        console.error('獲取搜尋建議失敗:', error)
+        // 靜默處理搜尋建議錯誤，使用歷史記錄
         setSuggestions(searchHistory.slice(0, 5))
       }
     }, 300) // 300ms 防抖延遲
@@ -132,15 +132,15 @@ export default function AdvancedSearch({
           onSearchResults(data.data.results, data.data.total, query)
           saveSearchHistory(query)
         } else {
-          console.warn('搜尋 API 回應失敗:', data)
+          // API 回應失敗，返回空結果
           onSearchResults([], 0, query)
         }
       } else {
-        console.error('搜尋 API 請求失敗:', response.status, response.statusText)
+        // API 請求失敗，返回空結果
         onSearchResults([], 0, query)
       }
     } catch (error) {
-      console.error('搜尋失敗:', error)
+      // 靜默處理搜尋錯誤，返回空結果
       onSearchResults([], 0, query)
     } finally {
       setIsLoading(false)

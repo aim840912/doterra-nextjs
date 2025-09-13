@@ -39,7 +39,7 @@ export function useFavorites(): UseFavoritesReturn {
       const storedFavorites = favoritesStorage.getFavorites(userId)
       setFavorites(storedFavorites)
     } catch (error) {
-      console.warn('載入收藏列表失敗:', error)
+      // 靜默處理載入錯誤，設定為空陣列
       setFavorites([])
     } finally {
       setIsLoading(false)
@@ -65,7 +65,7 @@ export function useFavorites(): UseFavoritesReturn {
         }
       })
     } catch (error) {
-      console.error('切換收藏狀態時發生錯誤:', error)
+      // 靜默處理切換錯誤，維持現有狀態
     }
   }, [])
 
@@ -82,10 +82,10 @@ export function useFavorites(): UseFavoritesReturn {
       if (success) {
         setFavorites(prevFavorites => [...prevFavorites, oilId])
       } else {
-        console.warn('新增收藏失敗，產品已存在收藏列表中')
+        // 產品已存在收藏列表中，無需重複新增
       }
     } catch (error) {
-      console.error('新增收藏時發生錯誤:', error)
+      // 靜默處理新增錯誤，維持現有狀態
     }
   }, [favorites])
 
@@ -98,10 +98,10 @@ export function useFavorites(): UseFavoritesReturn {
       if (success) {
         setFavorites(prevFavorites => prevFavorites.filter(id => id !== oilId))
       } else {
-        console.warn('移除收藏失敗，產品不在收藏列表中')
+        // 產品不在收藏列表中，無需移除
       }
     } catch (error) {
-      console.error('移除收藏時發生錯誤:', error)
+      // 靜默處理移除錯誤，維持現有狀態
     }
   }, [])
 
@@ -112,7 +112,7 @@ export function useFavorites(): UseFavoritesReturn {
       favoritesStorage.clearFavorites(userId)
       setFavorites([])
     } catch (error) {
-      console.error('清空收藏時發生錯誤:', error)
+      // 靜默處理清空錯誤，維持現有狀態
     }
   }, [])
 
@@ -143,7 +143,7 @@ export function useFavoriteStatus(oilId: string) {
       const favoriteStatus = favoritesStorage.isFavorited(userId, oilId)
       setIsFavorited(favoriteStatus)
     } catch (error) {
-      console.warn('載入收藏狀態失敗:', error)
+      // 靜默處理載入錯誤，設定為未收藏
       setIsFavorited(false)
     } finally {
       setIsLoading(false)
@@ -157,7 +157,7 @@ export function useFavoriteStatus(oilId: string) {
       const { isFavorited: newStatus } = favoritesStorage.toggleFavorite(userId, oilId)
       setIsFavorited(newStatus)
     } catch (error) {
-      console.error('切換收藏狀態時發生錯誤:', error)
+      // 靜默處理切換錯誤，維持現有狀態
     }
   }, [oilId])
 

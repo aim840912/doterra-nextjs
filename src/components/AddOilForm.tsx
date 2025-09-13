@@ -121,7 +121,7 @@ export default function AddOilForm() {
       }
     } catch (error) {
       alert('新增精油失敗，請稍後再試')
-      console.error('Error adding oil:', error)
+      // 靜默處理新增錯誤，已通過 alert 通知用戶
     } finally {
       setIsSubmitting(false)
     }

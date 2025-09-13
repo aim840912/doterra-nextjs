@@ -126,7 +126,7 @@ export async function GET(request: NextRequest) {
     })
 
   } catch (error) {
-    console.error('獲取產品系列失敗:', error)
+    // API 錯誤已移除: '獲取產品系列失敗:', error
     return errorResponse('獲取產品系列失敗', 500)
   }
 }
@@ -164,12 +164,12 @@ export async function POST(request: NextRequest) {
     }
 
     // 注意：在實際應用中，這裡需要將系列保存到資料庫
-    console.log('創建新產品系列:', newCollection)
+    // API 日誌已移除: '創建新產品系列:', newCollection
 
     return successResponse(newCollection, '產品系列創建成功', { id: body.id })
 
   } catch (error) {
-    console.error('創建產品系列失敗:', error)
+    // API 錯誤已移除: '創建產品系列失敗:', error
     return errorResponse('創建產品系列失敗', 500)
   }
 }

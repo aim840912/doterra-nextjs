@@ -38,7 +38,7 @@ export async function GET(
     return successResponse(product, '獲取產品詳情成功')
 
   } catch (error) {
-    console.error('獲取產品詳情失敗:', error)
+    // API 錯誤已移除: '獲取產品詳情失敗:', error
     return errorResponse('獲取產品詳情失敗', 500)
   }
 }
@@ -66,12 +66,12 @@ export async function PUT(
     // 目前只是模擬回應
     const updatedProduct = { ...product, ...body }
     
-    console.log('更新產品:', updatedProduct)
+    // API 日誌已移除: '更新產品:', updatedProduct
 
     return successResponse(updatedProduct, '產品更新成功')
 
   } catch (error) {
-    console.error('更新產品失敗:', error)
+    // API 錯誤已移除: '更新產品失敗:', error
     return errorResponse('更新產品失敗', 500)
   }
 }
@@ -96,12 +96,12 @@ export async function DELETE(
 
     // 在實際應用中，這裡會從資料庫中刪除產品
     // 目前只是模擬回應
-    console.log('刪除產品:', product)
+    // API 日誌已移除: '刪除產品:', product
 
     return successResponse({ id }, '產品刪除成功')
 
   } catch (error) {
-    console.error('刪除產品失敗:', error)
+    // API 錯誤已移除: '刪除產品失敗:', error
     return errorResponse('刪除產品失敗', 500)
   }
 }

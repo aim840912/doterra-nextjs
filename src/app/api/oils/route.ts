@@ -11,7 +11,7 @@ export async function GET() {
       count: allOils.length
     })
   } catch (error) {
-    console.error('獲取精油列表失敗:', error)
+    // API 錯誤已移除: '獲取精油列表失敗:', error
     return NextResponse.json(
       { success: false, error: '獲取精油列表失敗' },
       { status: 500 }
@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
 
     // 在實際應用中，這裡會將精油儲存到資料庫
     // 目前我們只是模擬成功回應
-    console.log('新增精油:', newOil)
+    // API 日誌已移除: '新增精油:', newOil
 
     return NextResponse.json({
       success: true,
@@ -73,7 +73,7 @@ export async function POST(request: NextRequest) {
     }, { status: 201 })
 
   } catch (error) {
-    console.error('新增精油錯誤:', error)
+    // API 錯誤已移除: '新增精油錯誤:', error
     return NextResponse.json(
       { success: false, error: '新增精油失敗' },
       { status: 500 }
