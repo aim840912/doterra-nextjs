@@ -37,9 +37,7 @@ function SettingGroup({ title, children }: SettingGroupProps) {
   return (
     <div className="mb-4">
       <h4 className="text-sm font-medium text-gray-900 mb-3">{title}</h4>
-      <div className="space-y-1">
-        {children}
-      </div>
+      {children}
     </div>
   )
 }
@@ -77,13 +75,13 @@ export default function ModalSettingsPanel({ isOpen, onClose }: ModalSettingsPan
     <div className="fixed inset-0 z-50 flex items-start justify-end p-4">
       {/* 背景遮罩 */}
       <div 
-        className="absolute inset-0 bg-black bg-opacity-25" 
+        className="absolute inset-0 bg-black/40" 
         onClick={onClose}
       />
       
-      {/* 設定面板 */}
+      {/* 設定面板 - 加寬以容納兩欄 */}
       <div 
-        className="relative bg-white rounded-lg shadow-xl border border-gray-200 w-full max-w-sm transform transition-all duration-200"
+        className="relative bg-white rounded-lg shadow-xl border border-gray-200 w-full max-w-sm md:max-w-lg transform transition-all duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* 標題列 */}
@@ -101,7 +99,7 @@ export default function ModalSettingsPanel({ isOpen, onClose }: ModalSettingsPan
         </div>
 
         {/* 設定內容 */}
-        <div className="p-4 max-h-96 overflow-y-auto">
+        <div className="p-4 max-h-[500px] overflow-y-auto">
           {/* 產品資訊組 */}
           <SettingGroup title="產品資訊">
             <SettingItem
@@ -124,43 +122,45 @@ export default function ModalSettingsPanel({ isOpen, onClose }: ModalSettingsPan
           {/* 分隔線 */}
           <div className="border-t border-gray-200 my-4"></div>
 
-          {/* 詳細資訊組 */}
+          {/* 詳細資訊組 - 改為兩欄顯示 */}
           <SettingGroup title="詳細資訊">
-            <SettingItem
-              label="精油介紹"
-              checked={settings.showIntroduction}
-              onChange={(checked) => updateSetting('showIntroduction', checked)}
-            />
-            <SettingItem
-              label="主要功效"
-              checked={settings.showBenefits}
-              onChange={(checked) => updateSetting('showBenefits', checked)}
-            />
-            <SettingItem
-              label="香味特色"
-              checked={settings.showAroma}
-              onChange={(checked) => updateSetting('showAroma', checked)}
-            />
-            <SettingItem
-              label="精油資訊"
-              checked={settings.showExtraction}
-              onChange={(checked) => updateSetting('showExtraction', checked)}
-            />
-            <SettingItem
-              label="主要成分"
-              checked={settings.showIngredients}
-              onChange={(checked) => updateSetting('showIngredients', checked)}
-            />
-            <SettingItem
-              label="使用方法"
-              checked={settings.showUsage}
-              onChange={(checked) => updateSetting('showUsage', checked)}
-            />
-            <SettingItem
-              label="注意事項"
-              checked={settings.showCautions}
-              onChange={(checked) => updateSetting('showCautions', checked)}
-            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">
+              <SettingItem
+                label="精油介紹"
+                checked={settings.showIntroduction}
+                onChange={(checked) => updateSetting('showIntroduction', checked)}
+              />
+              <SettingItem
+                label="主要功效"
+                checked={settings.showBenefits}
+                onChange={(checked) => updateSetting('showBenefits', checked)}
+              />
+              <SettingItem
+                label="香味特色"
+                checked={settings.showAroma}
+                onChange={(checked) => updateSetting('showAroma', checked)}
+              />
+              <SettingItem
+                label="精油資訊"
+                checked={settings.showExtraction}
+                onChange={(checked) => updateSetting('showExtraction', checked)}
+              />
+              <SettingItem
+                label="主要成分"
+                checked={settings.showIngredients}
+                onChange={(checked) => updateSetting('showIngredients', checked)}
+              />
+              <SettingItem
+                label="使用方法"
+                checked={settings.showUsage}
+                onChange={(checked) => updateSetting('showUsage', checked)}
+              />
+              <SettingItem
+                label="注意事項"
+                checked={settings.showCautions}
+                onChange={(checked) => updateSetting('showCautions', checked)}
+              />
+            </div>
           </SettingGroup>
         </div>
 
