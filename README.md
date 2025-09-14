@@ -1,6 +1,6 @@
-# 🌿 doTERRA 精油圖鑑
+# 🌿 doTERRA 精油圖鑑平台
 
-![doTERRA 精油電商平台主視覺](./docs/images/hero-screenshot.png)
+![doTERRA 精油主視覺](./docs/images/hero-screenshot.png)
 
 [![網站效能](https://img.shields.io/badge/載入速度-2.5秒-brightgreen)](https://github.com/aim840912/doterra-nextjs)
 [![手機適配](https://img.shields.io/badge/手機適配-100%25-blue)](https://github.com/aim840912/doterra-nextjs)
@@ -14,12 +14,11 @@
 ### ⚡ **載入速度快 3 倍**
 
 - 傳統網站需要 5.8 秒載入
-- **本平台只需 2.5 秒** - 讓客戶不再等待
+- **本平台只需 2.5 秒**
 - 圖片秒載技術，購物體驗如絲般順滑
 
 ### 📱 **完美手機體驗**
 
-- 90% 的客戶用手機購物，我們 100% 完美支援
 - 手機、平板、電腦都有最佳瀏覽體驗
 - 一套程式碼，全裝置通用
 
@@ -65,14 +64,13 @@
 
 ### 🎯 **智慧載入 - 像 GPS 選最佳路線**
 
-- 只載入客戶需要看的內容
+- 只載入需要看的內容
 - 圖片智慧壓縮，品質不變，速度更快
 
 ### 🔒 **品質保證 - 如汽車出廠前檢驗**
 
 - 每次更新經過 5 道自動檢查
 - 程式碼品質 100% 把關
-- 零錯誤上線，客戶體驗有保障
 
 ### 📦 **輕量設計 - 比手機照片還小**
 
@@ -97,7 +95,7 @@
 
 ### 📝 **圖鑑頁面 - 完整資訊展示**
 
-![產品列表頁面](./docs/images/product-list.png)
+![圖鑑列表頁面](./docs/images/homepage.png)
 
 - 高清產品圖片展示
 - 詳細的精油功效說明
