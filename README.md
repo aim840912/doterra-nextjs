@@ -1,4 +1,6 @@
-# 🌿 doTERRA 精油電商平台
+# 🌿 doTERRA 精油圖鑑
+
+![doTERRA 精油電商平台主視覺](./docs/images/hero-screenshot.png)
 
 [![網站效能](https://img.shields.io/badge/載入速度-2.5秒-brightgreen)](https://github.com/aim840912/doterra-nextjs)
 [![手機適配](https://img.shields.io/badge/手機適配-100%25-blue)](https://github.com/aim840912/doterra-nextjs)
@@ -89,17 +91,13 @@
 🔍 搜尋功能：     0.5 秒極速回應
 ⭐ 收藏功能：     提升客戶黏著度
 
----------
+---
 
 ## 🎨 平台功能展示
 
-### 🏪 **首頁 - 專業品牌形象**
+### 📝 **圖鑑頁面 - 完整資訊展示**
 
-- 清新的精油主題設計
-- 一眼就能找到想要的產品
-- 專業可信賴的品牌印象
-
-### 📝 **產品頁面 - 完整資訊展示**
+![產品列表頁面](./docs/images/product-list.png)
 
 - 高清產品圖片展示
 - 詳細的精油功效說明
@@ -108,15 +106,39 @@
 
 ### 🔍 **智慧搜尋 - 快速找到需要的油**
 
+![搜尋功能展示](./docs/images/search-feature.png)
+
 - 0.5 秒極速搜尋
 - 自動建議相關產品
 - 按類別、功效分類
 
-### 📱 **手機版 - 完美購物體驗**
+### 📱 **完美響應式設計 - 全裝置最佳體驗**
+
+<p align="center">
+  <img src="./docs/images/mobile-view.png" width="25%" alt="手機版視圖" />
+  <img src="./docs/images/tablet-view.png" width="35%" alt="平板版視圖" />
+  <img src="./docs/images/desktop-view.png" width="35%" alt="桌面版視圖" />
+</p>
+
+**手機版特色**：
 
 - 大按鈕設計，方便點擊
+- 單手操作友善介面
+- 快速載入，節省流量
 
----------
+**平板版特色**：
+
+- 完美利用螢幕空間
+- 觸控操作最佳化
+- 橫豎屏自動適應
+
+**桌面版特色**：
+
+- 大螢幕完整體驗
+- 滑鼠操作精準
+- 多欄位資訊展示
+
+---
 
 ### 🔧 技術人員專用區
 
