@@ -17,10 +17,18 @@ export interface KnowledgeBenefit {
 export interface KnowledgeCard {
   /** 識別碼，= code 小寫化，如 'o-115'。同時是圖片檔名與 React key */
   id: string
-  /** 卡片編號原文，如 'O-115'。首字是拉丁字母 O，不是數字 0 */
-  code: string
+  /**
+   * 卡片編號原文，如 'O-115'、'2-14'。少數卡片未印編號（如茶樹），此時省略，
+   * id 改用英文名 slug。
+   * 這批圖不只一個系列：多數是「精油小知識」的 O-xx，也混有
+   * 「營養補充品 NUTRITION SUPPLEMENT」的數字編號（如生薑油 2-14）。
+   * O-xx 的首字是拉丁字母 O，不是數字 0。
+   */
+  code?: string
   /** 編號數值，排序專用。字串排序會把 'O-115' 排在 'O-7' 之前 */
-  codeNum: number
+  codeNum?: number
+  /** 卡片頁腳標示的系列名，如 '精油小知識'、'營養補充品' */
+  series: string
 
   /** 中文名，如 '樺樹' */
   name: string
@@ -33,12 +41,24 @@ export interface KnowledgeCard {
   aromaNotes?: string[]
   /** 香味原文（含卡片原本的分隔符），供校對時與原圖對照 */
   aromaRaw?: string
+  /**
+   * 已人工確認：本卡的香味描述與 single-oils.json 的官方版本確實不同
+   * （兩份資料來源不同，不是轉錄錯誤）。填入官方版本的原文以供追溯。
+   * 有這個欄位時，verify-knowledge 會把差異列為提示而非錯誤。
+   */
+  aromaDiffersFromCatalog?: string
 
   /** 功效清單，卡片原文照登，不改寫、不過濾 */
   benefits: KnowledgeBenefit[]
 
   /** 成分，卡片印出「成分：」時才有（多見於 touch 滾珠瓶系列） */
   ingredients?: string[]
+
+  /** 使用方法。少數卡片另闢區塊講怎麼用（如茶樹的「對抗痘痘4大用法」），與功效性質不同 */
+  usage?: {
+    title: string
+    items: string[]
+  }
 
   /**
    * 以下兩個欄位是**歸納出來的分類標籤，不是卡片原文**。

@@ -28,7 +28,23 @@ const OILS_PATH = path.join(ROOT, 'src/data/products/single-oils.json')
 const read = <T>(p: string): T => JSON.parse(fs.readFileSync(p, 'utf-8'))
 
 /** 香味比對前的正規化：各卡分隔符不同（、／空白／・／｜），一律去除後比字元 */
-const normalizeAroma = (s: string): string => s.replace(/[\s、,，・·|｜/]/g, '')
+/**
+ * 香味描述拆成詞條。各卡的分隔符不同（、／空白／・／｜），既有目錄則統一用「、」。
+ * 拆成詞條後比集合而非比字串——實測發現卡片與目錄的詞條常相同、只是排列不同，
+ * 那不是轉錄錯誤，不該當成 error。
+ */
+const tokenizeAroma = (s: string): string[] =>
+  s
+    .split(/[\s、,，・·|｜/]+/)
+    .map(t => t.trim())
+    .filter(Boolean)
+
+/** 去掉目錄英文名常見的 " Oil" / " Touch Oil" 尾綴，方便與卡片英文名相等比對 */
+const stripOilSuffix = (s: string): string =>
+  s
+    .toLowerCase()
+    .replace(/\s+(touch\s+)?oil$/, '')
+    .trim()
 
 const problems: string[] = []
 const warnings: string[] = []
@@ -48,14 +64,14 @@ function checkVocabulary(cards: KnowledgeCard[]): void {
     c.aromaFamilies.forEach(v => {
       usedAroma.add(v)
       if (!aromaVocab.has(v))
-        problems.push(`${c.code}：香味族群「${v}」不在受控詞彙內`)
+        problems.push(`${c.code ?? c.id}：香味族群「${v}」不在受控詞彙內`)
     })
     c.topics.forEach(v => {
       usedTopic.add(v)
       if (!topicVocab.has(v))
-        problems.push(`${c.code}：功效主題「${v}」不在受控詞彙內`)
+        problems.push(`${c.code ?? c.id}：功效主題「${v}」不在受控詞彙內`)
     })
-    if (c.topics.length === 0) problems.push(`${c.code}：至少要有一個功效主題`)
+    if (c.topics.length === 0) problems.push(`${c.code ?? c.id}：至少要有一個功效主題`)
     if (c.aromaNotes && c.aromaFamilies.length === 0) {
       warnings.push(`${c.code} ${c.name}：有香味描述但未歸類到任何香味族群`)
     }
@@ -77,28 +93,44 @@ function checkStructure(cards: KnowledgeCard[]): void {
   }
 
   for (const c of cards) {
+    // 沒印編號的卡片（如茶樹）：id 用英文名 slug，跳過編號相關檢查
+    if (!c.code) {
+      if (!/^[a-z0-9-]+$/.test(c.id)) {
+        problems.push(`${c.name}：無編號的卡片，id 必須是小寫英數 slug，實際是「${c.id}」`)
+      }
+      if (c.codeNum !== undefined) {
+        problems.push(`${c.name}：沒有 code 就不該有 codeNum`)
+      }
+      if (!c.notes) {
+        problems.push(`${c.name}：無編號的卡片必須在 notes 說明未印編號`)
+      }
+      continue
+    }
     if (c.id !== c.code.toLowerCase()) {
       problems.push(
-        `${c.code}：id 應為 "${c.code.toLowerCase()}"，實際是 "${c.id}"`
+        `${c.code ?? c.id}：id 應為 "${c.code.toLowerCase()}"，實際是 "${c.id}"`
       )
     }
-    if (!/^O-\d+$/.test(c.code) || c.code.charCodeAt(0) !== 79) {
-      problems.push(
-        `${c.code}：編號格式錯誤，首字必須是拉丁字母 O（不是數字 0 或全形Ｏ）`
-      )
+    // 兩種系列：精油小知識的 O-xx、營養補充品的數字編號（如 2-14）
+    if (!/^(O|\d+)-\d+$/.test(c.code)) {
+      problems.push(`${c.code ?? c.id}：編號格式錯誤，應為 O-數字 或 數字-數字`)
     }
-    if (c.codeNum !== Number(c.code.slice(2))) {
-      problems.push(
-        `${c.code}：codeNum 應為 ${Number(c.code.slice(2))}，實際是 ${c.codeNum}`
-      )
+    // O 系列的首字必須是拉丁字母 O——轉錄成數字 0 或全形Ｏ 肉眼幾乎看不出來
+    if (c.code.startsWith('0-') || c.code.startsWith('Ｏ')) {
+      problems.push(`${c.code ?? c.id}：編號首字不是拉丁字母 O（是數字 0 或全形Ｏ）`)
     }
+    const numPart = Number(c.code.split('-')[1])
+    if (c.codeNum !== numPart) {
+      problems.push(`${c.code ?? c.id}：codeNum 應為 ${numPart}，實際是 ${c.codeNum}`)
+    }
+    if (!c.series) problems.push(`${c.code ?? c.id}：缺少 series（卡片頁腳的系列名）`)
     if (c.image !== `/images/knowledge/${c.id}.webp`) {
-      problems.push(`${c.code}：image 應為 /images/knowledge/${c.id}.webp`)
+      problems.push(`${c.code ?? c.id}：image 應為 /images/knowledge/${c.id}.webp`)
     }
-    if (c.benefits.length === 0) problems.push(`${c.code}：功效清單是空的`)
+    if (c.benefits.length === 0) problems.push(`${c.code ?? c.id}：功效清單是空的`)
     for (const b of c.benefits) {
       if (b.text !== b.text.trim() || b.text === '') {
-        problems.push(`${c.code}：功效條目有空白或空字串「${b.text}」`)
+        problems.push(`${c.code ?? c.id}：功效條目有空白或空字串「${b.text}」`)
       }
     }
 
@@ -108,7 +140,7 @@ function checkStructure(cards: KnowledgeCard[]): void {
       ['sourceFile', seen.src],
     ] as const) {
       const val = c[key]
-      if (set.has(val)) problems.push(`${c.code}：${key} 重複「${val}」`)
+      if (set.has(val)) problems.push(`${c.code ?? c.id}：${key} 重複「${val}」`)
       set.add(val)
     }
   }
@@ -118,37 +150,66 @@ function crossCheck(cards: KnowledgeCard[], oils: OilRecord[]): void {
   let matched = 0
 
   for (const card of cards) {
-    const oil = oils.find(
-      o =>
-        o.name.startsWith(card.name) ||
-        (!!card.englishName &&
-          !!o.englishName &&
-          o.englishName
-            .toLowerCase()
-            .startsWith(card.englishName.toLowerCase()))
-    )
+    // 中文名優先：卡片的「玫瑰」對上目錄的「玫瑰精油」。
+    // 英文名只能做「去掉 Oil / Touch Oil 後的完整相等」比對——
+    // 用 startsWith 會讓 Rose 命中 Rosemary（迷迭香），實測踩過這個坑。
+    const oil =
+      oils.find(o => o.name.startsWith(card.name)) ??
+      (card.englishName
+        ? oils.find(
+            o =>
+              !!o.englishName &&
+              stripOilSuffix(o.englishName) ===
+                stripOilSuffix(card.englishName!)
+          )
+        : undefined)
 
     if (!oil) {
       warnings.push(
-        `${card.code} ${card.name}：既有目錄查無對應精油，只能人工校對`
+        `${card.code ?? card.id} ${card.name}：既有目錄查無對應精油，只能人工校對`
       )
       continue
     }
     matched++
 
     if (card.aromaRaw && oil.aromaDescription) {
-      const a = normalizeAroma(card.aromaRaw)
-      const b = normalizeAroma(oil.aromaDescription)
-      if (a !== b) {
+      const a = tokenizeAroma(card.aromaRaw)
+      const b = tokenizeAroma(oil.aromaDescription)
+      const sameSet =
+        a.length === b.length &&
+        [...a].sort().join('|') === [...b].sort().join('|')
+
+      if (!sameSet && card.aromaDiffersFromCatalog) {
+        // 已人工確認兩份來源本來就不同，僅提示
+        warnings.push(
+          `${card.code ?? card.id} ${card.name}：香味與官方目錄不同（已確認為來源差異）\n` +
+            `    卡片：${card.aromaRaw}　／　目錄：${oil.aromaDescription}`
+        )
+        if (card.aromaDiffersFromCatalog !== oil.aromaDescription) {
+          problems.push(
+            `${card.code}：aromaDiffersFromCatalog 記錄的目錄版本已過期\n` +
+              `    記錄：${card.aromaDiffersFromCatalog}\n` +
+              `    實際：${oil.aromaDescription}`
+          )
+        }
+      } else if (!sameSet) {
+        // 詞條本身對不上——可能是漏抄或抄錯字
         problems.push(
-          `${card.code} ${card.name}：香味不一致\n` +
+          `${card.code ?? card.id} ${card.name}：香味詞條不一致\n` +
             `    卡片轉錄：${card.aromaRaw}\n` +
-            `    既有目錄：${oil.aromaDescription}`
+            `    既有目錄：${oil.aromaDescription}\n` +
+            `    若已確認兩邊來源本就不同，請在該卡加 aromaDiffersFromCatalog 欄位`
+        )
+      } else if (a.join('|') !== b.join('|')) {
+        // 詞條相同、只是排列不同。以卡片為準（我們轉錄的就是卡片），僅提示
+        warnings.push(
+          `${card.code ?? card.id} ${card.name}：香味詞條相同但順序不同（以卡片為準）\n` +
+            `    卡片：${card.aromaRaw}　／　目錄：${oil.aromaDescription}`
         )
       }
     } else if (!card.aromaRaw && oil.aromaDescription) {
       warnings.push(
-        `${card.code} ${card.name}：卡片未標香味，但既有目錄有「${oil.aromaDescription}」（確認是否漏抄）`
+        `${card.code ?? card.id} ${card.name}：卡片未標香味，但既有目錄有「${oil.aromaDescription}」（確認是否漏抄）`
       )
     }
   }

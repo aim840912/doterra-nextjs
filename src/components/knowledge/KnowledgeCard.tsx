@@ -77,8 +77,8 @@ function KnowledgeCard({ card, onSelect }: KnowledgeCardProps) {
         )}
 
         <ul className="text-sm text-gray-600 space-y-1 mt-auto">
-          {preview.map(benefit => (
-            <li key={benefit.text} className="flex items-start gap-1.5">
+          {preview.map((benefit, i) => (
+            <li key={`${benefit.text}-${i}`} className="flex items-start gap-1.5">
               <span className="text-green-500 mt-0.5" aria-hidden="true">
                 ·
               </span>

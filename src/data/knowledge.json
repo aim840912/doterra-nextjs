@@ -1,299 +1,1827 @@
 [
   {
-    "id": "o-115",
-    "code": "O-115",
-    "codeNum": 115,
-    "name": "樺樹",
-    "englishName": "Birch",
-    "aromaNotes": ["薄荷味", "甜味", "輕微的木香"],
-    "aromaRaw": "薄荷味 甜味 輕微的木香",
-    "aromaFamilies": ["薄荷", "甜香", "木質"],
-    "topics": ["肌肉關節", "神經", "免疫抗菌", "口腔"],
-    "benefits": [
-      { "text": "肌肉酸痛" },
-      { "text": "止痛抗感染" },
-      { "text": "骨頭疼痛" },
-      { "text": "牙齦出血" },
-      { "text": "肌肉發炎" },
-      { "text": "神經病症" },
-      { "text": "脊椎側彎" },
-      { "text": "多發性硬化症" }
+    "id": "o-1",
+    "code": "O-1",
+    "codeNum": 1,
+    "series": "精油小知識",
+    "name": "羅勒",
+    "englishName": "Basil",
+    "aromaNotes": [
+      "溫暖",
+      "辣",
+      "草本味"
     ],
-    "image": "/images/knowledge/o-115.webp",
-    "sourceFile": "IMG_6801.JPG",
-    "notes": "功效為對齊的雙欄 4 列，依橫列左右交替讀取"
-  },
-  {
-    "id": "o-114",
-    "code": "O-114",
-    "codeNum": 114,
-    "name": "芹菜籽",
-    "englishName": "Celery Seed",
-    "aromaNotes": ["甘甜", "溫暖", "樸實", "辛辣"],
-    "aromaRaw": "甘甜 溫暖 樸實 辛辣",
-    "aromaFamilies": ["甜香", "辛香", "土壤"],
-    "topics": ["消化", "泌尿", "肌肉關節", "婦科荷爾蒙"],
-    "benefits": [
-      { "text": "消化系統健康" },
-      { "text": "膀胱淨化利尿劑" },
-      { "text": "助消化" },
-      { "text": "祛腸胃脹氣" },
-      { "text": "抗痛風性關節炎" },
-      { "text": "補身美白" },
-      { "text": "抗風濕性關節炎" },
-      { "text": "肝腎排除毒素" },
-      { "text": "緩解女性經痛" }
+    "aromaRaw": "溫暖、辣、草本味",
+    "aromaFamilies": [
+      "辛香",
+      "草本"
     ],
-    "image": "/images/knowledge/o-114.webp",
-    "sourceFile": "IMG_6802.JPG",
-    "notes": "不規則膠囊排版（首列 3 個、其後每列 1~2 個），依橫列左右讀取"
-  },
-  {
-    "id": "o-113",
-    "code": "O-113",
-    "codeNum": 113,
-    "name": "側柏",
-    "englishName": "Arborvitae",
-    "alias": "生命之樹",
-    "aromaNotes": ["溫暖", "大地", "木質味"],
-    "aromaRaw": "溫暖 大地 木質味",
-    "aromaFamilies": ["木質", "土壤"],
     "topics": [
+      "情緒睡眠",
+      "神經",
+      "肌肉關節",
+      "免疫抗菌",
+      "婦科荷爾蒙",
+      "肌膚",
+      "呼吸道"
+    ],
+    "benefits": [
+      {
+        "text": "舒緩緊張情緒"
+      },
+      {
+        "text": "改善耳痛"
+      },
+      {
+        "text": "提升專注力"
+      },
+      {
+        "text": "舒緩運動後不適感"
+      },
+      {
+        "text": "治頭痛"
+      },
+      {
+        "text": "預防感冒"
+      },
+      {
+        "text": "減緩經期腹部不適"
+      },
+      {
+        "text": "滋養皮膚"
+      },
+      {
+        "text": "預防粉刺"
+      },
+      {
+        "text": "清潔皮脂"
+      }
+    ],
+    "image": "/images/knowledge/o-1.webp",
+    "sourceFile": "IMG_6854.JPG",
+    "notes": "放射狀標註環繞中央圖片（無欄列結構），自右上起順時針讀取"
+  },
+  {
+    "id": "o-2",
+    "code": "O-2",
+    "codeNum": 2,
+    "series": "精油小知識",
+    "name": "肉桂",
+    "englishName": "Cinnamon",
+    "aromaNotes": [
+      "溫暖",
+      "木質",
+      "甜美味"
+    ],
+    "aromaRaw": "溫暖、木質、甜美味",
+    "aromaFamilies": [
+      "辛香",
+      "木質",
+      "甜香"
+    ],
+    "topics": [
+      "呼吸道",
+      "免疫抗菌",
+      "消化",
+      "肌膚",
+      "肌肉關節",
+      "婦科荷爾蒙",
+      "清潔驅蟲"
+    ],
+    "benefits": [
+      {
+        "text": "減緩呼吸困難"
+      },
+      {
+        "text": "抗菌劑"
+      },
+      {
+        "text": "溫熱腸胃道並預防胃寒"
+      },
+      {
+        "text": "幫助消化"
+      },
+      {
+        "text": "改善胃下垂"
+      },
+      {
+        "text": "舒緩脹氣、胃痛"
+      },
+      {
+        "text": "清除疣類"
+      },
+      {
+        "text": "減緩肌肉痙攣關節風濕痛"
+      },
+      {
+        "text": "減輕蚊蟲叮咬的痛楚"
+      },
+      {
+        "text": "調解月經流量治療白帶"
+      },
+      {
+        "text": "減輕經痛"
+      }
+    ],
+    "image": "/images/knowledge/o-2.webp",
+    "sourceFile": "IMG_6855.JPG",
+    "notes": "放射狀標註環繞中央圖片，自右上起順時針讀取（右側由上到下、再由左側下方往上）"
+  },
+  {
+    "id": "o-3",
+    "code": "O-3",
+    "codeNum": 3,
+    "series": "精油小知識",
+    "name": "丁香",
+    "englishName": "Clove",
+    "aromaNotes": [
+      "溫暖",
+      "木質",
+      "辛辣味"
+    ],
+    "aromaRaw": "溫暖、木質、辛辣味",
+    "aromaFamilies": [
+      "木質",
+      "辛香"
+    ],
+    "topics": [
+      "婦科荷爾蒙",
       "肌膚",
       "免疫抗菌",
+      "消化",
+      "口腔",
+      "神經"
+    ],
+    "benefits": [
+      {
+        "text": "助產"
+      },
+      {
+        "text": "唇部疱疹"
+      },
+      {
+        "text": "強效抗菌"
+      },
+      {
+        "text": "緩解脹氣"
+      },
+      {
+        "text": "抗發炎"
+      },
+      {
+        "text": "抑制雌激素"
+      },
+      {
+        "text": "治傷口感染現象"
+      },
+      {
+        "text": "抑制嘔吐、腹瀉、腸痙攣"
+      },
+      {
+        "text": "減輕口臭"
+      },
+      {
+        "text": "麻醉止痛"
+      },
+      {
+        "text": "抗氧化劑"
+      }
+    ],
+    "image": "/images/knowledge/o-3.webp",
+    "sourceFile": "IMG_6856.JPG",
+    "notes": "標籤散落三處（左上 2 條、右側 6 條、左下 3 條），依左上→右側→左下的區塊順序串接"
+  },
+  {
+    "id": "o-4",
+    "code": "O-4",
+    "codeNum": 4,
+    "series": "精油小知識",
+    "name": "尤加利",
+    "englishName": "Eucalyptus",
+    "aromaNotes": [
+      "清新",
+      "草本味"
+    ],
+    "aromaRaw": "清新、草本味",
+    "aromaDiffersFromCatalog": "樟腦、藥香、草本",
+    "aromaFamilies": [
+      "草本"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "神經",
+      "免疫抗菌",
+      "泌尿",
+      "消化",
+      "肌膚",
+      "清潔驅蟲"
+    ],
+    "benefits": [
+      {
+        "text": "提振精神"
+      },
+      {
+        "text": "消除體臭"
+      },
+      {
+        "text": "集中注意力"
+      },
+      {
+        "text": "緩和發炎現象"
+      },
+      {
+        "text": "改善偏頭痛"
+      },
+      {
+        "text": "改善膀胱炎與腹瀉"
+      },
+      {
+        "text": "舒緩痘痘肌"
+      },
+      {
+        "text": "去除衣服焦油漬"
+      },
+      {
+        "text": "外出防蚊"
+      },
+      {
+        "text": "淨化空氣"
+      }
+    ],
+    "image": "/images/knowledge/o-4.webp",
+    "sourceFile": "IMG_6857.JPG",
+    "notes": "單一清單以左右交錯縮排呈現（非雙欄），依由上到下讀取。香味與官方目錄記載不同，已核對原圖確認為卡片原文"
+  },
+  {
+    "id": "o-5",
+    "code": "O-5",
+    "codeNum": 5,
+    "series": "精油小知識",
+    "name": "乳香",
+    "englishName": "Frankincense",
+    "alias": "精油之王",
+    "aromaNotes": [
+      "溫暖",
+      "清新",
+      "辛辣味"
+    ],
+    "aromaRaw": "溫暖、清新、辛辣味",
+    "aromaFamilies": [
+      "辛香"
+    ],
+    "topics": [
+      "肌膚",
+      "泌尿",
       "呼吸道",
-      "毛髮頭皮",
-      "清潔驅蟲",
+      "婦科荷爾蒙",
       "情緒睡眠"
     ],
     "benefits": [
-      { "text": "天然驅蟲" },
-      { "text": "防曬" },
-      { "text": "殺毒消菌" },
-      { "text": "緊緻皮膚" },
-      { "text": "減緩脫髮" },
-      { "text": "安定寧神" },
-      { "text": "抗痘、抗發炎" },
-      { "text": "抗腸病毒" },
-      { "text": "減少肌膚敏感" },
-      { "text": "念珠菌感染" },
-      { "text": "改善呼吸道" },
-      { "text": "提升免疫力" }
+      {
+        "text": "撫平皺紋"
+      },
+      {
+        "text": "減輕膀胱炎"
+      },
+      {
+        "text": "護膚聖品"
+      },
+      {
+        "text": "減緩陰道感染"
+      },
+      {
+        "text": "舒緩急促的呼吸"
+      },
+      {
+        "text": "舒緩產後憂鬱症"
+      },
+      {
+        "text": "調節黏液分泌量"
+      },
+      {
+        "text": "益於生殖泌尿管道"
+      },
+      {
+        "text": "緩解咳嗽、支氣管炎"
+      },
+      {
+        "text": "減輕子宮出血及經血過量"
+      }
     ],
-    "image": "/images/knowledge/o-113.webp",
-    "sourceFile": "IMG_6803.JPG",
-    "notes": "雙欄 6 列中間有裝飾分隔線，依橫列左右交替讀取"
+    "image": "/images/knowledge/o-5.webp",
+    "sourceFile": "IMG_6858.JPG",
+    "notes": "卡片另標「精油之王」稱號；雙欄 5 列打勾清單，依橫列左右交替讀取"
   },
   {
-    "id": "o-112",
-    "code": "O-112",
-    "codeNum": 112,
-    "name": "楓香",
-    "aromaNotes": ["香脂", "肉桂味", "苦杏仁味"],
-    "aromaRaw": "香脂、肉桂味 苦杏仁味",
-    "aromaFamilies": ["樹脂", "辛香"],
-    "topics": ["免疫抗菌", "情緒睡眠", "肌膚", "消化", "清潔驅蟲"],
+    "id": "o-6",
+    "code": "O-6",
+    "codeNum": 6,
+    "series": "精油小知識",
+    "name": "天竺葵",
+    "englishName": "Geranium",
+    "aromaNotes": [
+      "草本",
+      "花香",
+      "甜美",
+      "青草味"
+    ],
+    "aromaRaw": "草本、花香 甜美、青草味",
+    "aromaFamilies": [
+      "草本",
+      "花香",
+      "甜香"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "神經",
+      "泌尿",
+      "消化",
+      "婦科荷爾蒙",
+      "肌膚",
+      "循環心血管"
+    ],
     "benefits": [
-      { "text": "增強免疫" },
-      { "text": "抗氧化劑" },
-      { "text": "緩解壓力" },
-      { "text": "減少皺紋" },
-      { "text": "抗炎功效" },
-      { "text": "皮膚鬆弛" },
-      { "text": "傷口癒合" },
-      { "text": "消化道問題" },
-      { "text": "天然驅蟲" },
-      { "text": "滋潤保護肌膚" }
+      {
+        "text": "溫暖心緒",
+        "group": "心靈"
+      },
+      {
+        "text": "提振精神",
+        "group": "心靈"
+      },
+      {
+        "text": "安撫焦慮情緒",
+        "group": "心靈"
+      },
+      {
+        "text": "撫慰精神壓力",
+        "group": "心靈"
+      },
+      {
+        "text": "神經系統的補藥",
+        "group": "心靈"
+      },
+      {
+        "text": "利尿",
+        "group": "身體"
+      },
+      {
+        "text": "去水腫",
+        "group": "身體"
+      },
+      {
+        "text": "安撫神經痛",
+        "group": "身體"
+      },
+      {
+        "text": "肝臟腎臟排毒",
+        "group": "身體"
+      },
+      {
+        "text": "調節泌尿感染",
+        "group": "身體"
+      },
+      {
+        "text": "刺激淋巴系統",
+        "group": "身體"
+      },
+      {
+        "text": "調節經前症候群",
+        "group": "身體"
+      },
+      {
+        "text": "改善乳房充血及發炎",
+        "group": "身體"
+      },
+      {
+        "text": "調節陰道乾澀經血過多",
+        "group": "身體"
+      },
+      {
+        "text": "收斂緊緻",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善濕疹",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善灼傷",
+        "group": "皮膚"
+      },
+      {
+        "text": "平衡油脂分泌",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善帶狀袍疹",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善毛孔阻塞",
+        "group": "皮膚"
+      },
+      {
+        "text": "促進血液循環",
+        "group": "皮膚"
+      }
     ],
-    "image": "/images/knowledge/o-112.webp",
-    "sourceFile": "IMG_6804.JPG",
-    "notes": "卡片未標示英文名；雙欄 5 列依橫列左右交替讀取"
+    "image": "/images/knowledge/o-6.webp",
+    "sourceFile": "IMG_6859.JPG",
+    "notes": "三分區「心靈／身體／皮膚」以三個直欄並排，每欄自成一組，依欄由左到右讀取"
   },
   {
-    "id": "o-111",
-    "code": "O-111",
-    "codeNum": 111,
-    "name": "梔子花",
-    "englishName": "Gardenia",
-    "aromaNotes": ["花香", "濃郁", "香甜"],
-    "aromaRaw": "花香、濃郁、香甜",
-    "aromaFamilies": ["花香", "甜香"],
-    "topics": ["肌膚", "情緒睡眠"],
+    "id": "o-7",
+    "code": "O-7",
+    "codeNum": 7,
+    "series": "精油小知識",
+    "name": "葡萄柚",
+    "englishName": "Grapefruit",
+    "aromaNotes": [
+      "柑橘",
+      "花香",
+      "水果味"
+    ],
+    "aromaRaw": "柑橘 花香 水果味",
+    "aromaFamilies": [
+      "柑橘",
+      "花香",
+      "果香"
+    ],
+    "topics": [
+      "肌膚",
+      "消化",
+      "泌尿",
+      "神經",
+      "呼吸道",
+      "情緒睡眠",
+      "免疫抗菌"
+    ],
     "benefits": [
-      { "text": "肌膚健康" },
-      { "text": "滋潤肌膚" },
-      { "text": "柔潤皮膚" },
-      { "text": "淨化毛孔" },
-      { "text": "紓解壓力" },
-      { "text": "肌膚新陳代謝" },
-      { "text": "平衡肌膚油脂" }
+      {
+        "text": "清潔淨化"
+      },
+      {
+        "text": "消除脹氣"
+      },
+      {
+        "text": "抗氧護膚"
+      },
+      {
+        "text": "消除霉氣"
+      },
+      {
+        "text": "增加體力"
+      },
+      {
+        "text": "肝的補藥"
+      },
+      {
+        "text": "利尿消水腫"
+      },
+      {
+        "text": "減輕偏頭痛"
+      },
+      {
+        "text": "舒緩支氣管炎"
+      },
+      {
+        "text": "預防膽結石"
+      },
+      {
+        "text": "滋養組織細胞"
+      },
+      {
+        "text": "調節消化系統"
+      },
+      {
+        "text": "調整身心情緒"
+      },
+      {
+        "text": "氣味可抑制食慾"
+      },
+      {
+        "text": "提升肌膚新陳代謝"
+      },
+      {
+        "text": "改善蜂窩性組織炎"
+      }
     ],
-    "image": "/images/knowledge/o-111.webp",
-    "sourceFile": "IMG_6805.JPG",
-    "notes": "呵護系列 touch 滾珠瓶；英文名僅出現在瓶身標籤；單欄無順序疑義"
+    "image": "/images/knowledge/o-7.webp",
+    "sourceFile": "IMG_6860.JPG",
+    "notes": "上下兩個區塊、各為雙欄 4 列，依區塊順序、每區塊內橫列左右交替讀取"
   },
   {
-    "id": "o-110",
-    "code": "O-110",
-    "codeNum": 110,
-    "name": "藍睡蓮",
-    "englishName": "Blue Lotus",
+    "id": "o-8",
+    "code": "O-8",
+    "codeNum": 8,
+    "series": "精油小知識",
+    "name": "薰衣草",
+    "englishName": "Lavender",
+    "alias": "百草之王",
+    "aromaNotes": [
+      "清淡",
+      "花香味"
+    ],
+    "aromaRaw": "清淡 花香味",
+    "aromaFamilies": [
+      "花香"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "神經",
+      "循環心血管",
+      "婦科荷爾蒙",
+      "呼吸道",
+      "消化",
+      "肌膚"
+    ],
+    "benefits": [
+      {
+        "text": "舒緩壓力",
+        "group": "心靈"
+      },
+      {
+        "text": "安定情緒",
+        "group": "心靈"
+      },
+      {
+        "text": "撫慰精神",
+        "group": "心靈"
+      },
+      {
+        "text": "安神助睡眠",
+        "group": "心靈"
+      },
+      {
+        "text": "平衡中樞神經",
+        "group": "心靈"
+      },
+      {
+        "text": "安撫躁進脾氣",
+        "group": "心靈"
+      },
+      {
+        "text": "安撫心悸",
+        "group": "身體"
+      },
+      {
+        "text": "改善失眠",
+        "group": "身體"
+      },
+      {
+        "text": "緩解經痛",
+        "group": "身體"
+      },
+      {
+        "text": "進低高血壓",
+        "group": "身體"
+      },
+      {
+        "text": "益於呼吸系統",
+        "group": "身體"
+      },
+      {
+        "text": "改善胃脹氣及絞痛",
+        "group": "身體"
+      },
+      {
+        "text": "平衡油脂分泌",
+        "group": "皮膚"
+      },
+      {
+        "text": "去除痘疤痘印",
+        "group": "皮膚"
+      },
+      {
+        "text": "淨化肌膚",
+        "group": "皮膚"
+      },
+      {
+        "text": "調解賀爾蒙",
+        "group": "皮膚"
+      },
+      {
+        "text": "去除黑頭粉刺",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善面皰濕疹及乾癬",
+        "group": "皮膚"
+      }
+    ],
+    "image": "/images/knowledge/o-8.webp",
+    "sourceFile": "IMG_6861.JPG",
+    "notes": "卡片另標「百草之王」稱號；三分區以三個直欄並排，每欄自成一組。「進低高血壓」為卡片原文（疑為「降低高血壓」誤植），依原文照登未修改"
+  },
+  {
+    "id": "o-9",
+    "code": "O-9",
+    "codeNum": 9,
+    "series": "精油小知識",
+    "name": "檸檬",
+    "englishName": "Lemon",
+    "aromaNotes": [
+      "乾淨",
+      "清新",
+      "清淡",
+      "柑橘味"
+    ],
+    "aromaRaw": "乾淨 清新 清淡 柑橘味",
+    "aromaFamilies": [
+      "柑橘"
+    ],
+    "topics": [
+      "清潔驅蟲",
+      "消化",
+      "循環心血管",
+      "免疫抗菌",
+      "神經",
+      "肌膚",
+      "口腔",
+      "婦科荷爾蒙",
+      "情緒睡眠"
+    ],
+    "benefits": [
+      {
+        "text": "除臭"
+      },
+      {
+        "text": "消除倦怠感"
+      },
+      {
+        "text": "減輕貧血"
+      },
+      {
+        "text": "淨化環境"
+      },
+      {
+        "text": "促進消化道"
+      },
+      {
+        "text": "蚊蟲叮咬"
+      },
+      {
+        "text": "清新空氣"
+      },
+      {
+        "text": "增強免疫系統"
+      },
+      {
+        "text": "美白去痘"
+      },
+      {
+        "text": "去除油漬"
+      },
+      {
+        "text": "集中注意力"
+      },
+      {
+        "text": "平衡皮膚油脂"
+      },
+      {
+        "text": "抗菌解毒劑"
+      },
+      {
+        "text": "內分泌腺的補藥"
+      },
+      {
+        "text": "改善唇部袍疹"
+      },
+      {
+        "text": "去海鮮腥味"
+      },
+      {
+        "text": "緩解發炎發熱現象"
+      },
+      {
+        "text": "口腔氣味芳香劑"
+      }
+    ],
+    "image": "/images/knowledge/o-9.webp",
+    "sourceFile": "IMG_6862.JPG",
+    "notes": "三欄 6 列，依橫列由左到右讀取"
+  },
+  {
+    "id": "o-10",
+    "code": "O-10",
+    "codeNum": 10,
+    "series": "精油小知識",
+    "name": "檸檬草",
+    "englishName": "Lemongrass",
+    "aromaNotes": [
+      "青草",
+      "煙燻",
+      "柑橘"
+    ],
+    "aromaRaw": "青草 煙燻 柑橘",
+    "aromaDiffersFromCatalog": "青草、煙燻、柑橘味",
+    "aromaFamilies": [
+      "草本",
+      "柑橘"
+    ],
+    "topics": [
+      "消化",
+      "情緒睡眠",
+      "神經",
+      "呼吸道",
+      "循環心血管",
+      "肌膚",
+      "清潔驅蟲"
+    ],
+    "benefits": [
+      {
+        "text": "開胃",
+        "group": "心靈"
+      },
+      {
+        "text": "消除疲勞",
+        "group": "心靈"
+      },
+      {
+        "text": "恢復活力",
+        "group": "心靈"
+      },
+      {
+        "text": "讓頭腦清醒",
+        "group": "心靈"
+      },
+      {
+        "text": "益於呼吸道感染",
+        "group": "心靈"
+      },
+      {
+        "text": "促進循環",
+        "group": "心靈"
+      },
+      {
+        "text": "緩解疲憊的雙腳",
+        "group": "心靈"
+      },
+      {
+        "text": "消除粉刺",
+        "group": "皮膚"
+      },
+      {
+        "text": "殺菌、除臭",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善毛孔粗大",
+        "group": "皮膚"
+      },
+      {
+        "text": "疏通堵塞毛孔",
+        "group": "皮膚"
+      },
+      {
+        "text": "清除粉刺平衡油性膚質",
+        "group": "皮膚"
+      },
+      {
+        "text": "驅除蚊蟲",
+        "group": "皮膚"
+      }
+    ],
+    "image": "/images/knowledge/o-10.webp",
+    "sourceFile": "IMG_6863.JPG",
+    "notes": "只有「心靈」與「皮膚」兩個分區（無身體區）；心靈區單欄，皮膚區雙欄依橫列左右交替讀取。香味與官方目錄記載差一詞，已回頭核對原圖確認為卡片原文"
+  },
+  {
+    "id": "o-11",
+    "code": "O-11",
+    "codeNum": 11,
+    "series": "精油小知識",
+    "name": "馬鬱蘭",
+    "englishName": "Marjoram",
+    "aromaNotes": [
+      "溫暖",
+      "木質",
+      "青草味"
+    ],
+    "aromaRaw": "溫暖 木質 青草味",
+    "aromaFamilies": [
+      "木質",
+      "草本"
+    ],
+    "topics": [
+      "肌肉關節",
+      "消化",
+      "神經",
+      "婦科荷爾蒙",
+      "循環心血管",
+      "肌膚"
+    ],
+    "benefits": [
+      {
+        "text": "治療痙攣"
+      },
+      {
+        "text": "減輕經痛"
+      },
+      {
+        "text": "幫助消化"
+      },
+      {
+        "text": "改善頭痛"
+      },
+      {
+        "text": "安撫神經"
+      },
+      {
+        "text": "降低高血壓"
+      },
+      {
+        "text": "治療粉刺"
+      },
+      {
+        "text": "促進血液循環"
+      },
+      {
+        "text": "美白去痘印"
+      },
+      {
+        "text": "改善便秘脹氣"
+      },
+      {
+        "text": "淡化老人斑"
+      },
+      {
+        "text": "預防暈車暈船"
+      }
+    ],
+    "image": "/images/knowledge/o-11.webp",
+    "sourceFile": "IMG_6864.JPG",
+    "notes": "卡片裝飾字拼作 majoram（少一個 r），此處記為正確拼法 Marjoram；上下兩個區塊、各為雙欄 3 列，依橫列左右交替讀取"
+  },
+  {
+    "id": "o-13",
+    "code": "O-13",
+    "codeNum": 13,
+    "series": "精油小知識",
+    "name": "沒藥",
+    "englishName": "Myrrh",
+    "aromaNotes": [
+      "草木",
+      "木頭",
+      "甘甜味"
+    ],
+    "aromaRaw": "草木 木頭 甘甜味",
+    "aromaDiffersFromCatalog": "草本、木頭、甘甜味",
+    "aromaFamilies": [
+      "木質",
+      "甜香"
+    ],
+    "topics": [
+      "呼吸道",
+      "消化",
+      "情緒睡眠",
+      "免疫抗菌",
+      "婦科荷爾蒙",
+      "口腔"
+    ],
+    "benefits": [
+      {
+        "text": "清肺"
+      },
+      {
+        "text": "止瀉排脹氣"
+      },
+      {
+        "text": "提振精神"
+      },
+      {
+        "text": "護理消毒劑"
+      },
+      {
+        "text": "緩節喉嚨痛"
+      },
+      {
+        "text": "防止陰道搔癢"
+      },
+      {
+        "text": "口腔問題"
+      },
+      {
+        "text": "改善念珠菌感染"
+      },
+      {
+        "text": "牙齦發炎"
+      },
+      {
+        "text": "刺激白血球活化免疫系統"
+      }
+    ],
+    "image": "/images/knowledge/o-13.webp",
+    "sourceFile": "IMG_6866.JPG",
+    "notes": "雙欄 5 列打勾清單，依橫列左右交替讀取。「緩節喉嚨痛」為卡片原文（疑為「緩解」誤植），依原文照登未修改。香味與官方目錄記載差一詞，已回頭核對原圖確認為卡片原文"
+  },
+  {
+    "id": "o-14",
+    "code": "O-14",
+    "codeNum": 14,
+    "series": "精油小知識",
+    "name": "野橘",
+    "englishName": "Wild Orange",
     "aromaFamilies": [],
-    "topics": ["肌膚", "情緒睡眠", "毛髮頭皮"],
-    "benefits": [
-      { "text": "頭皮保養" },
-      { "text": "改善皺紋" },
-      { "text": "肌膚保養" },
-      { "text": "提亮膚色" },
-      { "text": "安撫情緒" },
-      { "text": "緩解壓力" },
-      { "text": "淡斑抗敏" },
-      { "text": "平衡焦慮" },
-      { "text": "平衡油脂" },
-      { "text": "幫助睡眠" },
-      { "text": "加強鎖水保濕" }
+    "topics": [
+      "免疫抗菌",
+      "情緒睡眠",
+      "消化",
+      "肌肉關節",
+      "肌膚"
     ],
-    "image": "/images/knowledge/o-110.webp",
-    "sourceFile": "IMG_6806.JPG",
-    "notes": "呵護系列 touch 滾珠瓶；此卡未標示香味描述；右欄向下偏移半列，依視覺橫列交替讀取"
+    "benefits": [
+      {
+        "text": "抗菌痙攣"
+      },
+      {
+        "text": "改善失眠"
+      },
+      {
+        "text": "幫助消化"
+      },
+      {
+        "text": "消化脂肪"
+      },
+      {
+        "text": "退燒鎮定"
+      },
+      {
+        "text": "放鬆身心靈"
+      },
+      {
+        "text": "刺激膽汁分泌"
+      },
+      {
+        "text": "緩解肌肉疼痛"
+      },
+      {
+        "text": "抵抗病毒感染"
+      },
+      {
+        "text": "改善乾燥皮膚"
+      }
+    ],
+    "image": "/images/knowledge/o-14.webp",
+    "sourceFile": "IMG_6867.JPG",
+    "notes": "此卡未標示香味描述；雙欄 5 列依橫列左右交替讀取"
   },
   {
-    "id": "o-109",
-    "code": "O-109",
-    "codeNum": 109,
-    "name": "甜桔",
-    "englishName": "Tangerine",
-    "aromaNotes": ["濃郁", "香甜", "清新"],
-    "aromaRaw": "濃郁、香甜、清新",
-    "aromaFamilies": ["柑橘", "甜香"],
-    "topics": ["情緒睡眠", "免疫抗菌", "呼吸道", "肌膚", "消化"],
-    "benefits": [
-      { "text": "提升專注力" },
-      { "text": "提振免疫力" },
-      { "text": "利膽" },
-      { "text": "健康呼吸道" },
-      { "text": "抗氧化" },
-      { "text": "淡化妊娠紋" },
-      { "text": "加強清潔" },
-      { "text": "促進脂肪代謝" },
-      { "text": "幫助消化" },
-      { "text": "降低壓力與焦慮" },
-      { "text": "有效抗菌" }
+    "id": "o-15",
+    "code": "O-15",
+    "codeNum": 15,
+    "series": "精油小知識",
+    "name": "牛至",
+    "englishName": "Oregano",
+    "aromaNotes": [
+      "強烈",
+      "草本味"
     ],
-    "image": "/images/knowledge/o-109.webp",
-    "sourceFile": "IMG_6807.JPG",
-    "notes": "右欄向下偏移半列（左 6 條、右 5 條），依視覺橫列交替讀取"
+    "aromaRaw": "強烈 草本味",
+    "aromaFamilies": [
+      "草本"
+    ],
+    "topics": [
+      "肌肉關節",
+      "消化",
+      "呼吸道",
+      "泌尿",
+      "免疫抗菌",
+      "肌膚"
+    ],
+    "benefits": [
+      {
+        "text": "止痛",
+        "group": "身體"
+      },
+      {
+        "text": "新陳代謝",
+        "group": "身體"
+      },
+      {
+        "text": "改善氣喘",
+        "group": "身體"
+      },
+      {
+        "text": "促進排尿",
+        "group": "身體"
+      },
+      {
+        "text": "安撫胃痙攣",
+        "group": "身體"
+      },
+      {
+        "text": "易於呼吸道",
+        "group": "身體"
+      },
+      {
+        "text": "提升免疫力",
+        "group": "身體"
+      },
+      {
+        "text": "減輕耳內疼痛",
+        "group": "身體"
+      },
+      {
+        "text": "改善濕疹乾癬",
+        "group": "皮膚"
+      },
+      {
+        "text": "減緩刀傷割傷",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善黴菌感染",
+        "group": "皮膚"
+      },
+      {
+        "text": "減輕傳染性病毒",
+        "group": "皮膚"
+      },
+      {
+        "text": "清潔淨化作用",
+        "group": "皮膚"
+      },
+      {
+        "text": "增強肌膚防護力",
+        "group": "皮膚"
+      }
+    ],
+    "image": "/images/knowledge/o-15.webp",
+    "sourceFile": "IMG_6868.JPG",
+    "notes": "只有「身體」與「皮膚」兩個分區；身體區單欄，皮膚區雙欄依橫列左右交替讀取"
   },
   {
-    "id": "o-106",
-    "code": "O-106",
-    "codeNum": 106,
-    "name": "癒創木",
-    "aromaNotes": ["大地氣息", "木質調", "香甜"],
-    "aromaRaw": "大地氣息｜木質調｜香甜",
-    "aromaFamilies": ["木質", "土壤", "甜香"],
-    "topics": ["肌肉關節", "神經", "免疫抗菌", "肌膚", "婦科荷爾蒙", "呼吸道"],
-    "benefits": [
-      { "text": "關節痛" },
-      { "text": "自律神經" },
-      { "text": "支持免疫" },
-      { "text": "咳嗽、便秘" },
-      { "text": "鎮靜放鬆減壓" },
-      { "text": "深層保濕" },
-      { "text": "皮膚組織緊實" },
-      { "text": "防止皮膚老化" },
-      { "text": "經痛、改善陰道乾澀" },
-      { "text": "抗氧化、驅蟲除蟎" },
-      { "text": "發汗劑、利尿、病毒感染" },
-      { "text": "痛風與風濕性關節炎症狀" }
+    "id": "o-16",
+    "code": "O-16",
+    "codeNum": 16,
+    "series": "精油小知識",
+    "name": "薄荷",
+    "englishName": "Peppermint",
+    "aromaNotes": [
+      "薄荷",
+      "草本味"
     ],
-    "image": "/images/knowledge/o-106.webp",
-    "sourceFile": "IMG_6808.JPG",
-    "notes": "版面是四個獨立白色區塊而非雙欄，依左上→左下→右下的區塊順序串接"
+    "aromaRaw": "薄荷 草本味",
+    "aromaFamilies": [
+      "薄荷",
+      "草本"
+    ],
+    "topics": [
+      "神經",
+      "消化",
+      "呼吸道",
+      "肌肉關節",
+      "口腔",
+      "肌膚"
+    ],
+    "benefits": [
+      {
+        "text": "具有安定神經和鎮定效果"
+      },
+      {
+        "text": "減緩脹氣與痙攣等消化不良症狀"
+      },
+      {
+        "text": "幫助舒緩感冒與咳嗽症狀"
+      },
+      {
+        "text": "幫助減緩扭傷、拉傷和類風濕性關節炎引起的關節與肌肉疼痛"
+      },
+      {
+        "text": "舒緩噁心和嘔吐症狀"
+      },
+      {
+        "text": "減緩頭痛、偏頭痛、牙痛"
+      },
+      {
+        "text": "改善濕疹、癬、疥瘡和搔癢"
+      }
+    ],
+    "image": "/images/knowledge/o-16.webp",
+    "sourceFile": "IMG_6869.JPG",
+    "notes": "單一清單以左右交錯的方框呈現（非雙欄），依由上到下讀取"
   },
   {
-    "id": "o-105",
-    "code": "O-105",
-    "codeNum": 105,
-    "name": "西班牙鼠尾草",
-    "aromaNotes": ["樟腦", "草本"],
-    "aromaRaw": "樟腦・草本",
-    "aromaFamilies": ["草本"],
-    "topics": ["神經", "情緒睡眠", "免疫抗菌", "呼吸道", "肌肉關節", "肌膚"],
-    "benefits": [
-      { "text": "抗抑鬱" },
-      { "text": "強化記憶" },
-      { "text": "抗菌抗黴菌" },
-      { "text": "提升專注" },
-      { "text": "舒緩呼吸道" },
-      { "text": "幫助認知" },
-      { "text": "肌肉關節疼痛" },
-      { "text": "頂輪用油" },
-      { "text": "促進皮膚細胞再生" }
+    "id": "o-17",
+    "code": "O-17",
+    "codeNum": 17,
+    "series": "精油小知識",
+    "name": "迷迭香",
+    "englishName": "Rosemary",
+    "aromaNotes": [
+      "草本味"
     ],
-    "image": "/images/knowledge/o-105.webp",
-    "sourceFile": "IMG_6809.JPG",
-    "notes": "卡片未標示英文名；右欄向下偏移（左 5 條、右 4 條），依視覺橫列交替讀取"
+    "aromaRaw": "草本味",
+    "aromaFamilies": [
+      "草本"
+    ],
+    "topics": [
+      "神經",
+      "肌肉關節",
+      "循環心血管",
+      "呼吸道",
+      "消化",
+      "婦科荷爾蒙",
+      "情緒睡眠"
+    ],
+    "benefits": [
+      {
+        "text": "改善暈眩刺激神經"
+      },
+      {
+        "text": "舒緩痛風及風濕痛"
+      },
+      {
+        "text": "調理貧血"
+      },
+      {
+        "text": "改善感冒及氣喘"
+      },
+      {
+        "text": "改善消化不良、脹氣"
+      },
+      {
+        "text": "舒緩月經絞痛"
+      },
+      {
+        "text": "減輕浮腫及腫脹"
+      },
+      {
+        "text": "活化腦細胞"
+      },
+      {
+        "text": "振奮精神"
+      }
+    ],
+    "image": "/images/knowledge/o-17.webp",
+    "sourceFile": "IMG_6870.JPG",
+    "notes": "單欄 9 項，無順序疑義"
   },
   {
-    "id": "o-104",
-    "code": "O-104",
-    "codeNum": 104,
-    "name": "日柚",
-    "englishName": "Citrus Junos",
-    "aromaNotes": ["明亮", "熱情", "淡淡花香"],
-    "aromaRaw": "明亮、熱情、淡淡花香",
-    "aromaFamilies": ["柑橘", "花香"],
-    "topics": ["肌膚", "情緒睡眠", "免疫抗菌", "循環心血管"],
-    "benefits": [
-      { "text": "保濕美白" },
-      { "text": "幫助睡眠" },
-      { "text": "養顏美肌" },
-      { "text": "緩解壓力" },
-      { "text": "改善膚質" },
-      { "text": "預防感冒" },
-      { "text": "促進血液" },
-      { "text": "促進皮膚膠原形成" }
+    "id": "o-18",
+    "code": "O-18",
+    "codeNum": 18,
+    "series": "精油小知識",
+    "name": "檀香木",
+    "englishName": "Sandalwood",
+    "aromaNotes": [
+      "木質",
+      "乾燥",
+      "香甜味"
     ],
-    "image": "/images/knowledge/o-104.webp",
-    "sourceFile": "IMG_6810.JPG",
-    "notes": "對齊的雙欄 4 列，依橫列左右交替讀取"
+    "aromaRaw": "木質 乾燥 香甜味",
+    "aromaFamilies": [
+      "木質",
+      "甜香"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "呼吸道",
+      "免疫抗菌",
+      "婦科荷爾蒙",
+      "肌膚"
+    ],
+    "benefits": [
+      {
+        "text": "清新凝神"
+      },
+      {
+        "text": "平衡肌膚"
+      },
+      {
+        "text": "穩定情緒"
+      },
+      {
+        "text": "改善乾燥"
+      },
+      {
+        "text": "治支氣管炎"
+      },
+      {
+        "text": "淡化紋理"
+      },
+      {
+        "text": "放鬆鎮靜效果"
+      },
+      {
+        "text": "促進細胞生長"
+      },
+      {
+        "text": "消除精神緊張"
+      },
+      {
+        "text": "改善乾燥性濕疹"
+      },
+      {
+        "text": "刺激免疫系統"
+      },
+      {
+        "text": "刺激免疫系統"
+      },
+      {
+        "text": "改善乾咳喉嚨痛"
+      },
+      {
+        "text": "絕佳的頸部乳霜"
+      },
+      {
+        "text": "調解賀爾蒙分泌"
+      },
+      {
+        "text": "改善皮膚發癢"
+      },
+      {
+        "text": "消除生殖系統炎症"
+      },
+      {
+        "text": "緩解皮膚癢痛"
+      },
+      {
+        "text": "促進陰道分泌作用"
+      },
+      {
+        "text": "抑制細菌生長"
+      }
+    ],
+    "image": "/images/knowledge/o-18.webp",
+    "sourceFile": "IMG_6871.JPG",
+    "notes": "雙欄 10 列（中間隔著標題直排字），依橫列左右交替讀取。「刺激免疫系統」左右欄各出現一次，卡片原文如此，未去重"
   },
   {
-    "id": "o-102",
-    "code": "O-102",
-    "codeNum": 102,
-    "name": "桂花",
-    "englishName": "Osmanthus",
-    "aromaNotes": ["花香", "甜美", "果香"],
-    "aromaRaw": "花香・甜美・果香",
-    "aromaFamilies": ["花香", "甜香", "果香"],
-    "topics": ["情緒睡眠", "消化", "肌膚", "婦科荷爾蒙", "泌尿"],
-    "ingredients": ["桂花精油", "分餾椰子油"],
-    "benefits": [
-      { "text": "催情" },
-      { "text": "改善情緒" },
-      { "text": "健胃通便" },
-      { "text": "美白排毒" },
-      { "text": "化痰止咳" },
-      { "text": "生殖助孕" },
-      { "text": "預防腎結石" },
-      { "text": "調理荷爾蒙" },
-      { "text": "皮膚保濕緊實" }
+    "id": "o-19",
+    "code": "O-19",
+    "codeNum": 19,
+    "series": "精油小知識",
+    "name": "百里香",
+    "englishName": "Thyme",
+    "aromaNotes": [
+      "溫暖",
+      "草本",
+      "花香味"
     ],
-    "image": "/images/knowledge/o-102.webp",
-    "sourceFile": "IMG_6812.JPG",
-    "notes": "呵護系列 touch 滾珠瓶；有成分欄；單欄無順序疑義"
+    "aromaRaw": "溫暖 草本 花香味",
+    "aromaFamilies": [
+      "草本",
+      "花香"
+    ],
+    "topics": [
+      "泌尿",
+      "免疫抗菌",
+      "消化",
+      "循環心血管",
+      "婦科荷爾蒙"
+    ],
+    "benefits": [
+      {
+        "text": "改善尿道炎"
+      },
+      {
+        "text": "改善膀胱炎"
+      },
+      {
+        "text": "刺激白血球生成"
+      },
+      {
+        "text": "提升人體免疫系統"
+      },
+      {
+        "text": "強化肝臟"
+      },
+      {
+        "text": "刺激血液循環"
+      },
+      {
+        "text": "減緩經期不適"
+      },
+      {
+        "text": "改善月經失調"
+      },
+      {
+        "text": "腸胃道消化劑"
+      }
+    ],
+    "image": "/images/knowledge/o-19.webp",
+    "sourceFile": "IMG_6872.JPG",
+    "notes": "兩個分離的單欄區塊（上方置中 4 條、右側 5 條），依上方→右側順序串接"
+  },
+  {
+    "id": "o-20",
+    "code": "O-20",
+    "codeNum": 20,
+    "series": "精油小知識",
+    "name": "伊蘭伊蘭",
+    "englishName": "Ylang Ylang",
+    "aromaNotes": [
+      "甜美",
+      "微辣",
+      "香料味"
+    ],
+    "aromaRaw": "甜美 微辣 香料味",
+    "aromaFamilies": [
+      "甜香",
+      "辛香"
+    ],
+    "topics": [
+      "神經",
+      "情緒睡眠",
+      "婦科荷爾蒙",
+      "循環心血管"
+    ],
+    "benefits": [
+      {
+        "text": "放鬆神經系統"
+      },
+      {
+        "text": "益於子宮"
+      },
+      {
+        "text": "緩解憤怒焦慮"
+      },
+      {
+        "text": "降低高血壓"
+      },
+      {
+        "text": "緩解恐慌恐懼"
+      },
+      {
+        "text": "調節生殖系統"
+      },
+      {
+        "text": "抗憂鬱抗沮喪"
+      },
+      {
+        "text": "改善性冷感性無能"
+      },
+      {
+        "text": "可調節腎上腺素"
+      },
+      {
+        "text": "保持乳房堅挺及彈性"
+      }
+    ],
+    "image": "/images/knowledge/o-20.webp",
+    "sourceFile": "IMG_6873.JPG",
+    "notes": "雙欄 5 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-21",
+    "code": "O-21",
+    "codeNum": 21,
+    "series": "精油小知識",
+    "name": "永久花",
+    "englishName": "Helichrysum",
+    "aromaNotes": [
+      "草本",
+      "乾草",
+      "蜂蜜味"
+    ],
+    "aromaRaw": "草本 乾草 蜂蜜味",
+    "aromaFamilies": [
+      "草本",
+      "甜香"
+    ],
+    "topics": [
+      "免疫抗菌",
+      "消化",
+      "循環心血管",
+      "呼吸道",
+      "肌膚",
+      "泌尿"
+    ],
+    "benefits": [
+      {
+        "text": "通經絡"
+      },
+      {
+        "text": "降低肝脾充血"
+      },
+      {
+        "text": "消除念珠菌"
+      },
+      {
+        "text": "調節膽汁分泌"
+      },
+      {
+        "text": "強化免疫力"
+      },
+      {
+        "text": "促進細胞再生"
+      },
+      {
+        "text": "調節血壓"
+      },
+      {
+        "text": "活化器官"
+      },
+      {
+        "text": "強化呼吸道"
+      },
+      {
+        "text": "益於粉刺濕疹"
+      },
+      {
+        "text": "減輕感冒發燒"
+      },
+      {
+        "text": "抑制膀胱炎"
+      }
+    ],
+    "image": "/images/knowledge/o-21.webp",
+    "sourceFile": "IMG_6834.JPG",
+    "notes": "上下兩個區塊、各為雙欄 3 列，依區塊順序、每區塊內橫列左右交替讀取"
+  },
+  {
+    "id": "o-22",
+    "code": "O-22",
+    "codeNum": 22,
+    "series": "精油小知識",
+    "name": "快樂鼠尾草",
+    "englishName": "Clary Sage",
+    "aromaNotes": [
+      "木質",
+      "草本味"
+    ],
+    "aromaRaw": "木質 草本味",
+    "aromaFamilies": [
+      "木質",
+      "草本"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "消化",
+      "婦科荷爾蒙",
+      "神經",
+      "免疫抗菌",
+      "肌膚",
+      "口腔",
+      "呼吸道"
+    ],
+    "benefits": [
+      {
+        "text": "促進睡眠"
+      },
+      {
+        "text": "改善口腔潰爛"
+      },
+      {
+        "text": "改善便祕"
+      },
+      {
+        "text": "改善牙齦發炎"
+      },
+      {
+        "text": "平衡賀爾蒙"
+      },
+      {
+        "text": "改善顫抖與癱瘓"
+      },
+      {
+        "text": "改善偏頭痛"
+      },
+      {
+        "text": "促進細胞再生"
+      },
+      {
+        "text": "經前症候群"
+      },
+      {
+        "text": "穩定神經系統"
+      },
+      {
+        "text": "舒緩焦慮情緒"
+      },
+      {
+        "text": "抑止皮脂分泌旺盛"
+      },
+      {
+        "text": "治念珠菌感染"
+      },
+      {
+        "text": "傷口止血"
+      },
+      {
+        "text": "舒緩消化不順"
+      },
+      {
+        "text": "改善毛孔粗大"
+      },
+      {
+        "text": "修護皮膚細胞"
+      },
+      {
+        "text": "緊緻皮膚"
+      },
+      {
+        "text": "調解氣喘喉嚨痛"
+      }
+    ],
+    "image": "/images/knowledge/o-22.webp",
+    "sourceFile": "IMG_6835.JPG",
+    "notes": "左欄 10 條、右欄 9 條，依橫列左右交替讀取；最後一列只有左欄"
+  },
+  {
+    "id": "o-23",
+    "code": "O-23",
+    "codeNum": 23,
+    "series": "精油小知識",
+    "name": "岩蘭草",
+    "englishName": "Vetiver",
+    "aromaNotes": [
+      "木質",
+      "焦糖",
+      "煙燻",
+      "香甜味"
+    ],
+    "aromaRaw": "木質 焦糖 煙燻 香甜味",
+    "aromaFamilies": [
+      "木質",
+      "甜香"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "神經",
+      "循環心血管",
+      "肌肉關節",
+      "婦科荷爾蒙",
+      "肌膚"
+    ],
+    "benefits": [
+      {
+        "text": "鎮靜心靈",
+        "group": "心靈"
+      },
+      {
+        "text": "穩定神經",
+        "group": "心靈"
+      },
+      {
+        "text": "強化紅血球",
+        "group": "身體"
+      },
+      {
+        "text": "清潔氣場",
+        "group": "身體"
+      },
+      {
+        "text": "安定中樞神經",
+        "group": "身體"
+      },
+      {
+        "text": "解除肌肉痠痛",
+        "group": "身體"
+      },
+      {
+        "text": "減緩風濕痛",
+        "group": "身體"
+      },
+      {
+        "text": "關節炎疼痛",
+        "group": "身體"
+      },
+      {
+        "text": "改善失眠",
+        "group": "身體"
+      },
+      {
+        "text": "改善性冷感",
+        "group": "身體"
+      },
+      {
+        "text": "淨化皮膚",
+        "group": "皮膚"
+      },
+      {
+        "text": "調理油脂",
+        "group": "皮膚"
+      },
+      {
+        "text": "治療粉刺",
+        "group": "皮膚"
+      },
+      {
+        "text": "收斂毛孔",
+        "group": "皮膚"
+      }
+    ],
+    "image": "/images/knowledge/o-23.webp",
+    "sourceFile": "IMG_6836.JPG",
+    "notes": "三分區「心靈／身體／皮膚」（同 O-27 香蜂草的寫法）；各區內為雙欄，依橫列左右交替讀取"
+  },
+  {
+    "id": "o-24",
+    "code": "O-24",
+    "codeNum": 24,
+    "series": "精油小知識",
+    "name": "胡荽",
+    "englishName": "Coriander",
+    "aromaNotes": [
+      "香甜",
+      "辛香",
+      "草本味"
+    ],
+    "aromaRaw": "香甜 辛香 草本味",
+    "aromaFamilies": [
+      "甜香",
+      "辛香",
+      "草本"
+    ],
+    "topics": [
+      "婦科荷爾蒙",
+      "消化",
+      "神經",
+      "肌肉關節"
+    ],
+    "benefits": [
+      {
+        "text": "調理卵巢"
+      },
+      {
+        "text": "緩和腸胃不適"
+      },
+      {
+        "text": "緩解便秘"
+      },
+      {
+        "text": "改善食慾不振"
+      },
+      {
+        "text": "緩解頭痛"
+      },
+      {
+        "text": "減輕肌肉疼痛"
+      },
+      {
+        "text": "幫助消化"
+      },
+      {
+        "text": "改善經期不規則"
+      },
+      {
+        "text": "強肝利膽"
+      },
+      {
+        "text": "活化胰島素接受體"
+      },
+      {
+        "text": "刺激雌激素"
+      },
+      {
+        "text": "讓胰腺功能恢復正常"
+      }
+    ],
+    "image": "/images/knowledge/o-24.webp",
+    "sourceFile": "IMG_6837.JPG",
+    "notes": "雙欄 6 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-25",
+    "code": "O-25",
+    "codeNum": 25,
+    "series": "精油小知識",
+    "name": "佛手柑",
+    "englishName": "Bergamot",
+    "aromaNotes": [
+      "果香",
+      "花香",
+      "柑橘味"
+    ],
+    "aromaRaw": "果香 花香 柑橘味",
+    "aromaFamilies": [
+      "果香",
+      "花香",
+      "柑橘"
+    ],
+    "topics": [
+      "神經",
+      "情緒睡眠",
+      "消化",
+      "呼吸道",
+      "婦科荷爾蒙",
+      "泌尿",
+      "肌膚"
+    ],
+    "benefits": [
+      {
+        "text": "安撫神經"
+      },
+      {
+        "text": "刺激食慾"
+      },
+      {
+        "text": "提振精神"
+      },
+      {
+        "text": "改善消化不良"
+      },
+      {
+        "text": "改善焦慮"
+      },
+      {
+        "text": "益於呼吸道"
+      },
+      {
+        "text": "消除緊張"
+      },
+      {
+        "text": "調解子宮機能"
+      },
+      {
+        "text": "改善膀胱炎"
+      },
+      {
+        "text": "用於皮膚潰瘍療效佳"
+      }
+    ],
+    "image": "/images/knowledge/o-25.webp",
+    "sourceFile": "IMG_6838.JPG",
+    "notes": "雙欄 5 列打勾清單，依橫列左右交替讀取"
+  },
+  {
+    "id": "o-26",
+    "code": "O-26",
+    "codeNum": 26,
+    "series": "精油小知識",
+    "name": "羅馬洋甘菊",
+    "englishName": "Roman Chamomile",
+    "aromaNotes": [
+      "花香",
+      "甜味",
+      "草本味"
+    ],
+    "aromaRaw": "花香 甜味 草本味",
+    "aromaFamilies": [
+      "花香",
+      "甜香",
+      "草本"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "消化",
+      "神經",
+      "免疫抗菌",
+      "肌膚",
+      "婦科荷爾蒙"
+    ],
+    "benefits": [
+      {
+        "text": "舒緩焦慮"
+      },
+      {
+        "text": "緩解胃炎"
+      },
+      {
+        "text": "緩解失眠"
+      },
+      {
+        "text": "減緩腹絞痛助消化"
+      },
+      {
+        "text": "鎮定頭痛"
+      },
+      {
+        "text": "提升免疫功能"
+      },
+      {
+        "text": "治過敏螫傷"
+      },
+      {
+        "text": "改善尿布疹"
+      },
+      {
+        "text": "調節經期"
+      },
+      {
+        "text": "改善紅疹濕疹"
+      },
+      {
+        "text": "緩解經期不順"
+      },
+      {
+        "text": "緩解肌膚乾癢"
+      }
+    ],
+    "image": "/images/knowledge/o-26.webp",
+    "sourceFile": "IMG_6839.JPG",
+    "notes": "上下兩個區塊、各為雙欄 3 列，依區塊順序、每區塊內橫列左右交替讀取"
   },
   {
     "id": "o-27",
     "code": "O-27",
     "codeNum": 27,
+    "series": "精油小知識",
     "name": "香蜂草",
     "englishName": "Melissa",
-    "aromaNotes": ["草本", "柑橘味"],
+    "aromaNotes": [
+      "草本",
+      "柑橘味"
+    ],
     "aromaRaw": "草本 柑橘味",
-    "aromaFamilies": ["草本", "柑橘"],
+    "aromaFamilies": [
+      "草本",
+      "柑橘"
+    ],
     "topics": [
       "情緒睡眠",
       "循環心血管",
@@ -304,23 +1832,3026 @@
       "毛髮頭皮"
     ],
     "benefits": [
-      { "text": "鎮靜寧神", "group": "心靈" },
-      { "text": "抗憂鬱及焦慮", "group": "心靈" },
-      { "text": "調養心臟", "group": "身體" },
-      { "text": "降低高血壓", "group": "身體" },
-      { "text": "改善支氣管", "group": "身體" },
-      { "text": "促進胃消化", "group": "身體" },
-      { "text": "緩解經期不適", "group": "身體" },
-      { "text": "改善免疫系統", "group": "身體" },
-      { "text": "保護子宮", "group": "身體" },
-      { "text": "動脈粥狀硬化", "group": "身體" },
-      { "text": "傷口止血", "group": "皮膚" },
-      { "text": "預防落髮", "group": "皮膚" },
-      { "text": "帶狀皰疹", "group": "皮膚" },
-      { "text": "抑制黴菌感染", "group": "皮膚" }
+      {
+        "text": "鎮靜寧神",
+        "group": "心靈"
+      },
+      {
+        "text": "抗憂鬱及焦慮",
+        "group": "心靈"
+      },
+      {
+        "text": "調養心臟",
+        "group": "身體"
+      },
+      {
+        "text": "降低高血壓",
+        "group": "身體"
+      },
+      {
+        "text": "改善支氣管",
+        "group": "身體"
+      },
+      {
+        "text": "促進胃消化",
+        "group": "身體"
+      },
+      {
+        "text": "緩解經期不適",
+        "group": "身體"
+      },
+      {
+        "text": "改善免疫系統",
+        "group": "身體"
+      },
+      {
+        "text": "保護子宮",
+        "group": "身體"
+      },
+      {
+        "text": "動脈粥狀硬化",
+        "group": "身體"
+      },
+      {
+        "text": "傷口止血",
+        "group": "皮膚"
+      },
+      {
+        "text": "預防落髮",
+        "group": "皮膚"
+      },
+      {
+        "text": "帶狀皰疹",
+        "group": "皮膚"
+      },
+      {
+        "text": "抑制黴菌感染",
+        "group": "皮膚"
+      }
     ],
     "image": "/images/knowledge/o-27.webp",
     "sourceFile": "IMG_6840.JPG",
     "notes": "有 心靈／身體／皮膚 三分區，各區內為雙欄，依橫列左右交替讀取"
+  },
+  {
+    "id": "o-28",
+    "code": "O-28",
+    "codeNum": 28,
+    "series": "精油小知識",
+    "name": "萊姆",
+    "englishName": "Lime",
+    "aromaNotes": [
+      "酸甜",
+      "柑橘味"
+    ],
+    "aromaRaw": "酸甜 柑橘味",
+    "aromaFamilies": [
+      "柑橘",
+      "甜香"
+    ],
+    "topics": [
+      "呼吸道",
+      "情緒睡眠",
+      "肌膚",
+      "免疫抗菌",
+      "肌肉關節",
+      "消化"
+    ],
+    "benefits": [
+      {
+        "text": "發燒降溫"
+      },
+      {
+        "text": "抗焦慮"
+      },
+      {
+        "text": "緩解咳嗽"
+      },
+      {
+        "text": "清除油脂"
+      },
+      {
+        "text": "緩解鼻竇炎"
+      },
+      {
+        "text": "收斂毛孔"
+      },
+      {
+        "text": "淋巴排毒"
+      },
+      {
+        "text": "調理皮膚"
+      },
+      {
+        "text": "益於風濕性疼痛"
+      },
+      {
+        "text": "預防膽結石"
+      }
+    ],
+    "image": "/images/knowledge/o-28.webp",
+    "sourceFile": "IMG_6841.JPG",
+    "notes": "雙欄 5 列打勾清單，依橫列左右交替讀取"
+  },
+  {
+    "id": "o-29",
+    "code": "O-29",
+    "codeNum": 29,
+    "series": "精油小知識",
+    "name": "廣藿香",
+    "englishName": "Patchouli",
+    "aromaNotes": [
+      "草本味"
+    ],
+    "aromaRaw": "草本味",
+    "aromaFamilies": [
+      "草本"
+    ],
+    "topics": [
+      "肌膚",
+      "消化",
+      "情緒睡眠",
+      "清潔驅蟲"
+    ],
+    "benefits": [
+      {
+        "text": "舒緩過敏"
+      },
+      {
+        "text": "抗濕疹防痔瘡"
+      },
+      {
+        "text": "改善粗糙皮膚"
+      },
+      {
+        "text": "祛暑濕肝解毒"
+      },
+      {
+        "text": "減輕焦慮"
+      },
+      {
+        "text": "消除嗜睡"
+      },
+      {
+        "text": "傷口癒合"
+      },
+      {
+        "text": "天然殺蟲"
+      },
+      {
+        "text": "顧脾胃"
+      }
+    ],
+    "image": "/images/knowledge/o-29.webp",
+    "sourceFile": "IMG_6842.JPG",
+    "notes": "兩個分離的單欄區塊（上方置中 4 條、左側 5 條），依上方→左側順序串接"
+  },
+  {
+    "id": "o-30",
+    "code": "O-30",
+    "codeNum": 30,
+    "series": "精油小知識",
+    "name": "道格拉斯冷杉",
+    "englishName": "Douglas Fir",
+    "aromaNotes": [
+      "清新",
+      "舒暢",
+      "木質",
+      "香甜味"
+    ],
+    "aromaRaw": "清新 舒暢 木質 香甜味",
+    "aromaFamilies": [
+      "木質",
+      "甜香"
+    ],
+    "topics": [
+      "清潔驅蟲",
+      "情緒睡眠",
+      "免疫抗菌",
+      "呼吸道",
+      "肌肉關節"
+    ],
+    "benefits": [
+      {
+        "text": "天然驅蟲"
+      },
+      {
+        "text": "提振精神"
+      },
+      {
+        "text": "抗菌抗發炎"
+      },
+      {
+        "text": "補氣祛痰"
+      },
+      {
+        "text": "促進呼吸順暢"
+      },
+      {
+        "text": "促進骨骼生長"
+      },
+      {
+        "text": "改善支氣管炎"
+      },
+      {
+        "text": "舒緩關節疼痛"
+      }
+    ],
+    "image": "/images/knowledge/o-30.webp",
+    "sourceFile": "IMG_6843.JPG",
+    "notes": "雙欄 4 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-31",
+    "code": "O-31",
+    "codeNum": 31,
+    "series": "精油小知識",
+    "name": "冬青",
+    "englishName": "Wintergreen",
+    "aromaNotes": [
+      "香甜",
+      "清新",
+      "薄荷味"
+    ],
+    "aromaRaw": "香甜 清新 薄荷味",
+    "aromaFamilies": [
+      "甜香",
+      "薄荷"
+    ],
+    "topics": [
+      "肌肉關節",
+      "循環心血管"
+    ],
+    "benefits": [
+      {
+        "text": "消炎去痠痛"
+      },
+      {
+        "text": "改善肌肉疼痛"
+      },
+      {
+        "text": "修復軟骨損傷"
+      },
+      {
+        "text": "含甲基水楊酸"
+      },
+      {
+        "text": "抗痛風關節炎"
+      },
+      {
+        "text": "抗骨刺肌腱炎"
+      },
+      {
+        "text": "促進血液循環"
+      },
+      {
+        "text": "改善風濕抽筋"
+      }
+    ],
+    "image": "/images/knowledge/o-31.webp",
+    "sourceFile": "IMG_6844.JPG",
+    "notes": "兩個對角配置的單欄區塊（左上 4 條、右下 4 條），依左上→右下順序串接"
+  },
+  {
+    "id": "o-32",
+    "code": "O-32",
+    "codeNum": 32,
+    "series": "精油小知識",
+    "name": "黑胡椒",
+    "englishName": "Black Pepper",
+    "aromaNotes": [
+      "溫熱",
+      "果香",
+      "辣味"
+    ],
+    "aromaRaw": "溫熱 果香 辣味",
+    "aromaFamilies": [
+      "辛香",
+      "果香"
+    ],
+    "topics": [
+      "消化",
+      "呼吸道",
+      "泌尿",
+      "毛髮頭皮",
+      "肌肉關節",
+      "神經",
+      "循環心血管"
+    ],
+    "benefits": [
+      {
+        "text": "提升食慾"
+      },
+      {
+        "text": "預防感冒咳嗽"
+      },
+      {
+        "text": "幫助戒菸"
+      },
+      {
+        "text": "舒緩胃脹氣護腎"
+      },
+      {
+        "text": "消脂生髮"
+      },
+      {
+        "text": "舒緩肌肉痠痛"
+      },
+      {
+        "text": "舒緩神經痛"
+      },
+      {
+        "text": "改善循環抗寒"
+      }
+    ],
+    "image": "/images/knowledge/o-32.webp",
+    "sourceFile": "IMG_6845.JPG",
+    "notes": "右側上下兩個單欄區塊，依上到下串接"
+  },
+  {
+    "id": "o-33",
+    "code": "O-33",
+    "codeNum": 33,
+    "series": "精油小知識",
+    "name": "甜茴香",
+    "englishName": "Fennel",
+    "aromaNotes": [
+      "甘草",
+      "香甜",
+      "蜂蜜味"
+    ],
+    "aromaRaw": "甘草 香甜 蜂蜜味",
+    "aromaFamilies": [
+      "甜香",
+      "草本"
+    ],
+    "topics": [
+      "消化",
+      "免疫抗菌",
+      "婦科荷爾蒙",
+      "泌尿"
+    ],
+    "benefits": [
+      {
+        "text": "幫助開胃"
+      },
+      {
+        "text": "抗氧化"
+      },
+      {
+        "text": "刺激雌激素"
+      },
+      {
+        "text": "刺激乳腺分泌"
+      },
+      {
+        "text": "舒緩經痛"
+      },
+      {
+        "text": "抗痙攣胃脹氣"
+      },
+      {
+        "text": "抑制食慾"
+      },
+      {
+        "text": "改善前列腺增生"
+      },
+      {
+        "text": "舒緩腸絞痛"
+      },
+      {
+        "text": "緩解更年期症狀"
+      }
+    ],
+    "image": "/images/knowledge/o-33.webp",
+    "sourceFile": "IMG_6846.JPG",
+    "notes": "雙欄 5 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-34",
+    "code": "O-34",
+    "codeNum": 34,
+    "series": "精油小知識",
+    "name": "胡荽葉",
+    "englishName": "Cilantro",
+    "aromaNotes": [
+      "新鮮",
+      "辛香",
+      "香甜",
+      "草本味"
+    ],
+    "aromaRaw": "新鮮 辛香 香甜 草本味",
+    "aromaFamilies": [
+      "辛香",
+      "甜香",
+      "草本"
+    ],
+    "topics": [
+      "消化",
+      "口腔",
+      "肌膚",
+      "婦科荷爾蒙",
+      "情緒睡眠",
+      "免疫抗菌"
+    ],
+    "benefits": [
+      {
+        "text": "舒緩胃痛"
+      },
+      {
+        "text": "強肝利膽"
+      },
+      {
+        "text": "改善腹瀉"
+      },
+      {
+        "text": "保護皮膚"
+      },
+      {
+        "text": "消除口臭"
+      },
+      {
+        "text": "改善痙攣疼痛"
+      },
+      {
+        "text": "幫助消化"
+      },
+      {
+        "text": "調理生理期不適"
+      },
+      {
+        "text": "改善腹痛"
+      },
+      {
+        "text": "排出重金屬等毒素"
+      },
+      {
+        "text": "舒緩焦慮"
+      },
+      {
+        "text": "抗氧化劑清理自由基"
+      }
+    ],
+    "image": "/images/knowledge/o-34.webp",
+    "sourceFile": "IMG_6847.JPG",
+    "notes": "雙欄 6 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-35",
+    "code": "O-35",
+    "codeNum": 35,
+    "series": "精油小知識",
+    "name": "夏威夷檀香木",
+    "englishName": "Sandalwood Hawaiian",
+    "aromaNotes": [
+      "蜂蜜",
+      "木質",
+      "香甜味"
+    ],
+    "aromaRaw": "蜂蜜 木質 香甜味",
+    "aromaFamilies": [
+      "木質",
+      "甜香"
+    ],
+    "topics": [
+      "肌膚",
+      "肌肉關節",
+      "泌尿",
+      "神經",
+      "免疫抗菌",
+      "情緒睡眠",
+      "呼吸道",
+      "婦科荷爾蒙"
+    ],
+    "benefits": [
+      {
+        "text": "淡化疤痕"
+      },
+      {
+        "text": "幫助冥想"
+      },
+      {
+        "text": "軟骨修復"
+      },
+      {
+        "text": "舒緩咳嗽"
+      },
+      {
+        "text": "治療膀胱炎"
+      },
+      {
+        "text": "改善白斑病"
+      },
+      {
+        "text": "改善神經系統"
+      },
+      {
+        "text": "皮膚緊緻保濕"
+      },
+      {
+        "text": "促進淋巴系統"
+      },
+      {
+        "text": "刺激生殖器"
+      }
+    ],
+    "image": "/images/knowledge/o-35.webp",
+    "sourceFile": "IMG_6848.JPG",
+    "notes": "雙欄 5 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-36",
+    "code": "O-36",
+    "codeNum": 36,
+    "series": "精油小知識",
+    "name": "杜松漿果",
+    "englishName": "Juniper Berry",
+    "aromaNotes": [
+      "乾淨",
+      "木質",
+      "香料味"
+    ],
+    "aromaRaw": "乾淨 木質 香料味",
+    "aromaFamilies": [
+      "木質",
+      "辛香"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "神經",
+      "消化",
+      "泌尿",
+      "肌膚",
+      "毛髮頭皮"
+    ],
+    "benefits": [
+      {
+        "text": "醒腦",
+        "group": "心靈"
+      },
+      {
+        "text": "激勵",
+        "group": "心靈"
+      },
+      {
+        "text": "淨身淨心",
+        "group": "心靈"
+      },
+      {
+        "text": "淨化氣氛",
+        "group": "心靈"
+      },
+      {
+        "text": "安撫憂鬱",
+        "group": "心靈"
+      },
+      {
+        "text": "集中注意力",
+        "group": "心靈"
+      },
+      {
+        "text": "幫助排毒",
+        "group": "身體"
+      },
+      {
+        "text": "預防肥胖",
+        "group": "身體"
+      },
+      {
+        "text": "保護腎臟",
+        "group": "身體"
+      },
+      {
+        "text": "預防攝護腺疾病",
+        "group": "身體"
+      },
+      {
+        "text": "預防腎結石",
+        "group": "身體"
+      },
+      {
+        "text": "防止水分滯留",
+        "group": "身體"
+      },
+      {
+        "text": "治療面皰",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善粉刺",
+        "group": "皮膚"
+      },
+      {
+        "text": "治療痔瘡",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善濕疹",
+        "group": "皮膚"
+      },
+      {
+        "text": "調節毛孔阻塞",
+        "group": "皮膚"
+      },
+      {
+        "text": "改善頭皮皮脂漏",
+        "group": "皮膚"
+      }
+    ],
+    "image": "/images/knowledge/o-36.webp",
+    "sourceFile": "IMG_6849.JPG",
+    "notes": "三分區「心靈／身體／皮膚」以三個直欄並排呈現，每欄自成一組（非雙欄橫列），依欄由左到右讀取"
+  },
+  {
+    "id": "o-37",
+    "code": "O-37",
+    "codeNum": 37,
+    "series": "精油小知識",
+    "name": "雪松",
+    "englishName": "Cedarwood",
+    "aromaFamilies": [],
+    "topics": [
+      "情緒睡眠",
+      "毛髮頭皮",
+      "肌膚",
+      "呼吸道",
+      "泌尿"
+    ],
+    "benefits": [
+      {
+        "text": "寧神安眠"
+      },
+      {
+        "text": "益於頭皮增髮"
+      },
+      {
+        "text": "舒緩焦慮"
+      },
+      {
+        "text": "收斂油性肌膚"
+      },
+      {
+        "text": "止咳利尿"
+      },
+      {
+        "text": "改善面皰粉刺"
+      },
+      {
+        "text": "調節體內濕氣"
+      },
+      {
+        "text": "改善銀屑病"
+      },
+      {
+        "text": "鎖住膠原蛋白"
+      },
+      {
+        "text": "調節頭皮屑"
+      },
+      {
+        "text": "調節腎臟功能"
+      },
+      {
+        "text": "改善皮膚病"
+      }
+    ],
+    "image": "/images/knowledge/o-37.webp",
+    "sourceFile": "IMG_6850.JPG",
+    "notes": "此卡未標示香味描述；上下兩個區塊、各為雙欄 3 列，依區塊順序、每區塊內橫列左右交替讀取"
+  },
+  {
+    "id": "o-38",
+    "code": "O-38",
+    "codeNum": 38,
+    "series": "精油小知識",
+    "name": "豆蔻",
+    "englishName": "Cardamom",
+    "aromaNotes": [
+      "辛辣",
+      "果香濃郁",
+      "溫暖感"
+    ],
+    "aromaRaw": "辛辣 果香濃郁 溫暖感",
+    "aromaFamilies": [
+      "辛香",
+      "果香"
+    ],
+    "topics": [
+      "消化",
+      "呼吸道",
+      "神經",
+      "婦科荷爾蒙"
+    ],
+    "benefits": [
+      {
+        "text": "抗痙攣"
+      },
+      {
+        "text": "防止便秘"
+      },
+      {
+        "text": "暢通呼吸道"
+      },
+      {
+        "text": "緩解咳嗽頭痛"
+      },
+      {
+        "text": "改善胃脹氣"
+      },
+      {
+        "text": "舒緩噁心"
+      },
+      {
+        "text": "改善胃潰瘍"
+      },
+      {
+        "text": "安撫經前症狀"
+      },
+      {
+        "text": "改善消化不良"
+      },
+      {
+        "text": "健胃去痰"
+      }
+    ],
+    "image": "/images/knowledge/o-38.webp",
+    "sourceFile": "IMG_6851.JPG",
+    "notes": "雙欄 5 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-39",
+    "code": "O-39",
+    "codeNum": 39,
+    "series": "精油小知識",
+    "name": "玫瑰",
+    "englishName": "Rose",
+    "aromaNotes": [
+      "花香",
+      "清甜"
+    ],
+    "aromaRaw": "花香 清甜",
+    "aromaFamilies": [
+      "花香",
+      "甜香"
+    ],
+    "topics": [
+      "消化",
+      "循環心血管",
+      "神經",
+      "情緒睡眠",
+      "肌膚",
+      "免疫抗菌",
+      "婦科荷爾蒙"
+    ],
+    "benefits": [
+      {
+        "text": "改善便祕"
+      },
+      {
+        "text": "利脾益心"
+      },
+      {
+        "text": "保護肝腎"
+      },
+      {
+        "text": "修復神經"
+      },
+      {
+        "text": "改善產後憂鬱"
+      },
+      {
+        "text": "促進血液循環"
+      },
+      {
+        "text": "抗憂鬱"
+      },
+      {
+        "text": "增強血清素"
+      },
+      {
+        "text": "促進黑色素分解"
+      },
+      {
+        "text": "增加膠原纖維活性"
+      },
+      {
+        "text": "益於肌膚彈性"
+      },
+      {
+        "text": "催情"
+      },
+      {
+        "text": "肌膚保濕"
+      },
+      {
+        "text": "天然抗菌"
+      },
+      {
+        "text": "調節女性荷爾蒙"
+      },
+      {
+        "text": "改善更年期障礙"
+      }
+    ],
+    "image": "/images/knowledge/o-39.webp",
+    "sourceFile": "IMG_6852.JPG",
+    "notes": "三個分離的單欄區塊（右上、右中、左下），依由上到下的區塊順序串接"
+  },
+  {
+    "id": "o-40",
+    "code": "O-40",
+    "codeNum": 40,
+    "series": "精油小知識",
+    "name": "穗甘松",
+    "englishName": "Spikenard",
+    "aromaFamilies": [],
+    "topics": [
+      "循環心血管",
+      "情緒睡眠",
+      "免疫抗菌",
+      "泌尿",
+      "肌膚",
+      "消化"
+    ],
+    "benefits": [
+      {
+        "text": "降血脂"
+      },
+      {
+        "text": "鎮靜抗焦慮"
+      },
+      {
+        "text": "降血壓"
+      },
+      {
+        "text": "抗氧化抗感染"
+      },
+      {
+        "text": "強化靜脈"
+      },
+      {
+        "text": "利尿排毒"
+      },
+      {
+        "text": "皮膚再生滋潤"
+      },
+      {
+        "text": "護腎養肝"
+      }
+    ],
+    "image": "/images/knowledge/o-40.webp",
+    "sourceFile": "IMG_6853.JPG",
+    "notes": "此卡未標示香味描述；雙欄 4 列打勾清單，依橫列左右交替讀取"
+  },
+  {
+    "id": "o-41",
+    "code": "O-41",
+    "codeNum": 41,
+    "series": "精油小知識",
+    "name": "苦橙葉",
+    "englishName": "Petitgrain",
+    "aromaNotes": [
+      "清新",
+      "花香",
+      "草本味"
+    ],
+    "aromaRaw": "清新 花香 草本味",
+    "aromaFamilies": [
+      "花香",
+      "草本"
+    ],
+    "topics": [
+      "肌肉關節",
+      "毛髮頭皮",
+      "情緒睡眠",
+      "肌膚",
+      "消化",
+      "呼吸道"
+    ],
+    "benefits": [
+      {
+        "text": "舒緩肌肉"
+      },
+      {
+        "text": "頭髮保養"
+      },
+      {
+        "text": "預防慢性肝炎"
+      },
+      {
+        "text": "改善流汗過多"
+      },
+      {
+        "text": "舒緩心悸失眠"
+      },
+      {
+        "text": "改善粉刺"
+      },
+      {
+        "text": "改善胃部痙攣"
+      },
+      {
+        "text": "改善青春痘"
+      },
+      {
+        "text": "改善呼吸道感染"
+      },
+      {
+        "text": "改善油性皮膚"
+      }
+    ],
+    "image": "/images/knowledge/o-41.webp",
+    "sourceFile": "IMG_6815.JPG",
+    "notes": "雙欄 5 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-42",
+    "code": "O-42",
+    "codeNum": 42,
+    "series": "精油小知識",
+    "name": "山雞椒",
+    "englishName": "Litsea",
+    "aromaNotes": [
+      "潔淨",
+      "清新",
+      "香甜味"
+    ],
+    "aromaRaw": "潔淨、清新、香甜味",
+    "aromaFamilies": [
+      "柑橘",
+      "甜香"
+    ],
+    "topics": [
+      "消化",
+      "呼吸道",
+      "循環心血管",
+      "肌膚",
+      "情緒睡眠",
+      "免疫抗菌",
+      "婦科荷爾蒙"
+    ],
+    "benefits": [
+      {
+        "text": "溫暖腸胃",
+        "group": "身體療效"
+      },
+      {
+        "text": "促進乳汁分泌",
+        "group": "身體療效"
+      },
+      {
+        "text": "解痙藥",
+        "group": "身體療效"
+      },
+      {
+        "text": "擴張氣管",
+        "group": "身體療效"
+      },
+      {
+        "text": "增加冠狀動脈流量",
+        "group": "身體療效"
+      },
+      {
+        "text": "維護肺部健康",
+        "group": "身體療效"
+      },
+      {
+        "text": "舒緩宿醉的頭痛",
+        "group": "身體療效"
+      },
+      {
+        "text": "調節心律失常",
+        "group": "身體療效"
+      },
+      {
+        "text": "祛脹氣抗發炎",
+        "group": "身體療效"
+      },
+      {
+        "text": "幫助消化",
+        "group": "身體療效"
+      },
+      {
+        "text": "抗菌",
+        "group": "皮膚療效"
+      },
+      {
+        "text": "抗氧化",
+        "group": "皮膚療效"
+      },
+      {
+        "text": "修復表皮細胞",
+        "group": "皮膚療效"
+      },
+      {
+        "text": "緊緻毛孔",
+        "group": "皮膚療效"
+      },
+      {
+        "text": "改善油性皮膚",
+        "group": "皮膚療效"
+      },
+      {
+        "text": "緩解抑鬱",
+        "group": "心靈療效"
+      },
+      {
+        "text": "心情愉悅",
+        "group": "心靈療效"
+      },
+      {
+        "text": "緩解焦慮",
+        "group": "心靈療效"
+      },
+      {
+        "text": "振奮精神",
+        "group": "心靈療效"
+      }
+    ],
+    "image": "/images/knowledge/o-42.webp",
+    "sourceFile": "IMG_6816.JPG",
+    "notes": "三分區「身體療效／皮膚療效／心靈療效」（組名寫法與 O-27 香蜂草不同，保留原文）；身體療效區為雙欄，依橫列左右交替讀取"
+  },
+  {
+    "id": "o-43",
+    "code": "O-43",
+    "codeNum": 43,
+    "series": "精油小知識",
+    "name": "麥蘆卡",
+    "englishName": "Manuka",
+    "aromaNotes": [
+      "蜜香味",
+      "香甜",
+      "草本"
+    ],
+    "aromaRaw": "蜜香味 香甜 草本",
+    "aromaFamilies": [
+      "甜香",
+      "草本"
+    ],
+    "topics": [
+      "免疫抗菌",
+      "肌膚",
+      "呼吸道"
+    ],
+    "benefits": [
+      {
+        "text": "組織修復"
+      },
+      {
+        "text": "提升免疫力"
+      },
+      {
+        "text": "抗金黃色葡萄球菌"
+      },
+      {
+        "text": "紓緩感冒症狀"
+      },
+      {
+        "text": "異位性皮膚炎"
+      },
+      {
+        "text": "治濕疹"
+      },
+      {
+        "text": "祛疤"
+      },
+      {
+        "text": "控油淨膚"
+      },
+      {
+        "text": "皮膚保溼"
+      },
+      {
+        "text": "增加肌膚彈性"
+      }
+    ],
+    "image": "/images/knowledge/o-43.webp",
+    "sourceFile": "IMG_6817.JPG",
+    "notes": "單欄分成上下兩個區塊，依上到下串接"
+  },
+  {
+    "id": "o-44",
+    "code": "O-44",
+    "codeNum": 44,
+    "series": "精油小知識",
+    "name": "古巴香脂",
+    "englishName": "Copaiba",
+    "aromaNotes": [
+      "辛辣",
+      "木質香味"
+    ],
+    "aromaRaw": "辛辣・木質香味",
+    "aromaFamilies": [
+      "辛香",
+      "木質"
+    ],
+    "topics": [
+      "呼吸道",
+      "情緒睡眠",
+      "肌膚",
+      "消化",
+      "循環心血管",
+      "免疫抗菌",
+      "神經",
+      "肌肉關節"
+    ],
+    "benefits": [
+      {
+        "text": "喉嚨痛"
+      },
+      {
+        "text": "舒緩焦慮"
+      },
+      {
+        "text": "膚質透亮"
+      },
+      {
+        "text": "強效止痛"
+      },
+      {
+        "text": "消化功能"
+      },
+      {
+        "text": "皮膚潰傷"
+      },
+      {
+        "text": "心血管健康"
+      },
+      {
+        "text": "超級抗氧化"
+      },
+      {
+        "text": "提高健康防禦"
+      },
+      {
+        "text": "止血、抗炎鎮痛"
+      },
+      {
+        "text": "抗菌抗感染"
+      },
+      {
+        "text": "鎮定保護神經"
+      }
+    ],
+    "image": "/images/knowledge/o-44.webp",
+    "sourceFile": "IMG_6818.JPG",
+    "notes": "三欄 4 列，依橫列由左到右讀取"
+  },
+  {
+    "id": "o-45",
+    "code": "O-45",
+    "codeNum": 45,
+    "series": "精油小知識",
+    "name": "西伯利亞冷杉",
+    "englishName": "Siberian Fir",
+    "aromaNotes": [
+      "青綠",
+      "木本",
+      "清新味"
+    ],
+    "aromaRaw": "青綠、木本、清新味",
+    "aromaFamilies": [
+      "木質",
+      "草本"
+    ],
+    "topics": [
+      "呼吸道",
+      "肌肉關節",
+      "循環心血管",
+      "肌膚",
+      "免疫抗菌",
+      "情緒睡眠"
+    ],
+    "benefits": [
+      {
+        "text": "緩解咳嗽、鼻塞",
+        "group": "身體療效"
+      },
+      {
+        "text": "改善支氣管炎",
+        "group": "身體療效"
+      },
+      {
+        "text": "舒緩肌肉痠痛",
+        "group": "身體療效"
+      },
+      {
+        "text": "促進血液循環、抗痙攣",
+        "group": "身體療效"
+      },
+      {
+        "text": "骨骼發展、筋骨舒暢",
+        "group": "身體療效"
+      },
+      {
+        "text": "抗菌性",
+        "group": "皮膚療效"
+      },
+      {
+        "text": "傷口癒合",
+        "group": "皮膚療效"
+      },
+      {
+        "text": "止癢",
+        "group": "皮膚療效"
+      },
+      {
+        "text": "平滑肌膚",
+        "group": "皮膚療效"
+      },
+      {
+        "text": "放鬆情緒",
+        "group": "心靈療效"
+      },
+      {
+        "text": "平和焦慮",
+        "group": "心靈療效"
+      },
+      {
+        "text": "消除疲勞",
+        "group": "心靈療效"
+      }
+    ],
+    "image": "/images/knowledge/o-45.webp",
+    "sourceFile": "IMG_6819.JPG",
+    "notes": "三分區「身體療效／皮膚療效／心靈療效」；皮膚與心靈區為每列兩項並排，依橫列左右讀取"
+  },
+  {
+    "id": "o-46",
+    "code": "O-46",
+    "codeNum": 46,
+    "series": "精油小知識",
+    "name": "藍艾菊",
+    "englishName": "Blue Tansy",
+    "aromaNotes": [
+      "醇香",
+      "果香味"
+    ],
+    "aromaRaw": "醇香、果香味",
+    "aromaFamilies": [
+      "果香"
+    ],
+    "topics": [
+      "肌膚",
+      "情緒睡眠"
+    ],
+    "benefits": [
+      {
+        "text": "放鬆舒緩"
+      },
+      {
+        "text": "舒適感"
+      },
+      {
+        "text": "改善皮膚"
+      },
+      {
+        "text": "皮膚抗炎過敏"
+      },
+      {
+        "text": "皮膚保溼"
+      },
+      {
+        "text": "增加彈性"
+      },
+      {
+        "text": "皮膚炎"
+      },
+      {
+        "text": "減少細紋"
+      },
+      {
+        "text": "蕁麻疹、濕疹"
+      },
+      {
+        "text": "祛疤"
+      }
+    ],
+    "image": "/images/knowledge/o-46.webp",
+    "sourceFile": "IMG_6820.JPG",
+    "notes": "前三項（放鬆舒緩／舒適感／改善皮膚）在卡片上是標題樣式的摘要句，非打勾清單，一併收錄；其餘為單欄打勾清單"
+  },
+  {
+    "id": "o-47",
+    "code": "O-47",
+    "codeNum": 47,
+    "series": "精油小知識",
+    "name": "西洋蓍草/石榴籽油複合精華",
+    "englishName": "Yarrow&Pom",
+    "aromaNotes": [
+      "草本",
+      "果香",
+      "辛香味"
+    ],
+    "aromaRaw": "草本｜果香 辛香味",
+    "aromaFamilies": [
+      "草本",
+      "果香",
+      "辛香"
+    ],
+    "topics": [
+      "肌膚",
+      "免疫抗菌",
+      "肌肉關節",
+      "婦科荷爾蒙",
+      "神經",
+      "循環心血管",
+      "泌尿",
+      "消化"
+    ],
+    "benefits": [
+      {
+        "text": "濕疹"
+      },
+      {
+        "text": "發燒"
+      },
+      {
+        "text": "痛風"
+      },
+      {
+        "text": "消炎"
+      },
+      {
+        "text": "痛經"
+      },
+      {
+        "text": "神經痛"
+      },
+      {
+        "text": "高血壓"
+      },
+      {
+        "text": "皮膚暗沉"
+      },
+      {
+        "text": "賀爾蒙平衡"
+      },
+      {
+        "text": "減少青春痘"
+      },
+      {
+        "text": "延緩衰老"
+      },
+      {
+        "text": "泌尿感染"
+      },
+      {
+        "text": "腸胃問題"
+      },
+      {
+        "text": "緩解經痛"
+      },
+      {
+        "text": "淡化曬斑"
+      }
+    ],
+    "image": "/images/knowledge/o-47.webp",
+    "sourceFile": "IMG_6821.JPG",
+    "notes": "版面是三個獨立方框、各自單欄，依框由左到右串接"
+  },
+  {
+    "id": "o-48",
+    "code": "O-48",
+    "codeNum": 48,
+    "series": "精油小知識",
+    "name": "薑黃",
+    "englishName": "Turmeric",
+    "aromaNotes": [
+      "溫熱",
+      "辛香",
+      "果香味"
+    ],
+    "aromaRaw": "溫熱、辛香 果香味",
+    "aromaFamilies": [
+      "辛香",
+      "果香"
+    ],
+    "topics": [
+      "肌膚",
+      "免疫抗菌",
+      "消化",
+      "婦科荷爾蒙",
+      "神經",
+      "肌肉關節",
+      "循環心血管"
+    ],
+    "benefits": [
+      {
+        "text": "皮膚柔嫩"
+      },
+      {
+        "text": "肥胖"
+      },
+      {
+        "text": "消炎殺菌"
+      },
+      {
+        "text": "消化不良"
+      },
+      {
+        "text": "高抗氧化"
+      },
+      {
+        "text": "通經止痛"
+      },
+      {
+        "text": "新陳代謝"
+      },
+      {
+        "text": "護肝排毒"
+      },
+      {
+        "text": "帕金森氏症"
+      },
+      {
+        "text": "阿茲海默症"
+      },
+      {
+        "text": "控制血糖血脂"
+      },
+      {
+        "text": "風濕性關節炎"
+      }
+    ],
+    "image": "/images/knowledge/o-48.webp",
+    "sourceFile": "IMG_6822.JPG",
+    "notes": "上方雙欄 4 列依橫列左右讀取；下方第二區塊只有右欄單欄 4 項，接在後面"
+  },
+  {
+    "id": "o-49",
+    "code": "O-49",
+    "codeNum": 49,
+    "series": "精油小知識",
+    "name": "粉紅胡椒",
+    "englishName": "Pink Pepper",
+    "aromaNotes": [
+      "果香",
+      "辛香味",
+      "清淡木質香"
+    ],
+    "aromaRaw": "果香 辛香味 清淡木質香",
+    "aromaFamilies": [
+      "果香",
+      "辛香",
+      "木質"
+    ],
+    "topics": [
+      "泌尿",
+      "肌肉關節",
+      "神經",
+      "免疫抗菌",
+      "消化",
+      "循環心血管"
+    ],
+    "benefits": [
+      {
+        "text": "利尿"
+      },
+      {
+        "text": "骨質疏鬆"
+      },
+      {
+        "text": "腎臟養護"
+      },
+      {
+        "text": "水腫"
+      },
+      {
+        "text": "平穩血糖"
+      },
+      {
+        "text": "神經放鬆"
+      },
+      {
+        "text": "痛風"
+      },
+      {
+        "text": "細胞健康"
+      },
+      {
+        "text": "免疫系統"
+      },
+      {
+        "text": "瘦身"
+      },
+      {
+        "text": "新陳代謝"
+      },
+      {
+        "text": "消化系統"
+      }
+    ],
+    "image": "/images/knowledge/o-49.webp",
+    "sourceFile": "IMG_6823.JPG",
+    "notes": "三欄 4 列，依橫列由左到右讀取"
+  },
+  {
+    "id": "o-50",
+    "code": "O-50",
+    "codeNum": 50,
+    "series": "精油小知識",
+    "name": "青橘",
+    "englishName": "Green Mandarin",
+    "aromaNotes": [
+      "清甜花香",
+      "果香味",
+      "柑橘清香"
+    ],
+    "aromaRaw": "清甜花香 果香味 柑橘清香",
+    "aromaFamilies": [
+      "柑橘",
+      "花香",
+      "果香",
+      "甜香"
+    ],
+    "topics": [
+      "肌膚",
+      "毛髮頭皮",
+      "消化",
+      "循環心血管",
+      "免疫抗菌",
+      "呼吸道"
+    ],
+    "benefits": [
+      {
+        "text": "皮膚護理"
+      },
+      {
+        "text": "頭髮護理"
+      },
+      {
+        "text": "排毒功效"
+      },
+      {
+        "text": "降低血壓"
+      },
+      {
+        "text": "通便助消化"
+      },
+      {
+        "text": "加快代謝"
+      },
+      {
+        "text": "維護免疫"
+      },
+      {
+        "text": "改善暗沉"
+      },
+      {
+        "text": "抗菌抗氧化"
+      },
+      {
+        "text": "暢通呼吸道"
+      }
+    ],
+    "image": "/images/knowledge/o-50.webp",
+    "sourceFile": "IMG_6824.JPG",
+    "notes": "版面是兩張並排的獨立卡片、各自單欄，依卡片由左到右串接（非雙欄橫列）"
+  },
+  {
+    "id": "o-51",
+    "code": "O-51",
+    "codeNum": 51,
+    "series": "精油小知識",
+    "name": "檸檬尤加利",
+    "englishName": "Lemon Eucalyptus",
+    "aromaNotes": [
+      "清新",
+      "檸檬味"
+    ],
+    "aromaRaw": "清新、檸檬味",
+    "aromaFamilies": [
+      "柑橘"
+    ],
+    "topics": [
+      "清潔驅蟲",
+      "情緒睡眠",
+      "肌膚",
+      "毛髮頭皮",
+      "免疫抗菌"
+    ],
+    "benefits": [
+      {
+        "text": "防蚊蟲"
+      },
+      {
+        "text": "提振精神"
+      },
+      {
+        "text": "清潔淨化肌膚"
+      },
+      {
+        "text": "空氣淨化清新劑"
+      },
+      {
+        "text": "清潔頭髮和物體表面"
+      },
+      {
+        "text": "消除馬桶浴廁異味臭味"
+      },
+      {
+        "text": "干擾白色念珠菌生物膜形成"
+      }
+    ],
+    "image": "/images/knowledge/o-51.webp",
+    "sourceFile": "IMG_6825.JPG",
+    "notes": "單欄無順序疑義"
+  },
+  {
+    "id": "o-52",
+    "code": "O-52",
+    "codeNum": 52,
+    "series": "精油小知識",
+    "name": "黑雲杉",
+    "englishName": "Black Spruce",
+    "aromaNotes": [
+      "酸甜",
+      "青草味",
+      "果香",
+      "木質香"
+    ],
+    "aromaRaw": "酸甜、青草味 果香、木質香",
+    "aromaFamilies": [
+      "甜香",
+      "草本",
+      "果香",
+      "木質"
+    ],
+    "topics": [
+      "肌膚",
+      "呼吸道",
+      "情緒睡眠",
+      "肌肉關節"
+    ],
+    "benefits": [
+      {
+        "text": "美白"
+      },
+      {
+        "text": "呼吸"
+      },
+      {
+        "text": "肌膚不適"
+      },
+      {
+        "text": "鎮咳"
+      },
+      {
+        "text": "減壓"
+      },
+      {
+        "text": "放鬆身心"
+      },
+      {
+        "text": "祛痰"
+      },
+      {
+        "text": "補能量"
+      },
+      {
+        "text": "皮膚發炎"
+      },
+      {
+        "text": "補氣"
+      },
+      {
+        "text": "舒緩疲勞"
+      },
+      {
+        "text": "風濕性關節炎"
+      }
+    ],
+    "image": "/images/knowledge/o-52.webp",
+    "sourceFile": "IMG_6826.JPG",
+    "notes": "三欄 4 列，依橫列由左到右讀取"
+  },
+  {
+    "id": "o-53",
+    "code": "O-53",
+    "codeNum": 53,
+    "series": "精油小知識",
+    "name": "絲柏",
+    "englishName": "Cypress",
+    "aromaNotes": [
+      "乾淨",
+      "清新",
+      "木質",
+      "草本味"
+    ],
+    "aromaRaw": "乾淨 清新 木質 草本味",
+    "aromaFamilies": [
+      "木質",
+      "草本"
+    ],
+    "topics": [
+      "肌肉關節",
+      "泌尿",
+      "情緒睡眠",
+      "循環心血管",
+      "呼吸道",
+      "消化"
+    ],
+    "benefits": [
+      {
+        "text": "舒緩關節炎"
+      },
+      {
+        "text": "調理前列腺"
+      },
+      {
+        "text": "收斂體液"
+      },
+      {
+        "text": "提振精神"
+      },
+      {
+        "text": "增強毛細血管壁"
+      },
+      {
+        "text": "護胰腺"
+      },
+      {
+        "text": "防痔瘡"
+      },
+      {
+        "text": "支氣管炎"
+      },
+      {
+        "text": "靜脈曲張"
+      }
+    ],
+    "image": "/images/knowledge/o-53.webp",
+    "sourceFile": "IMG_6827.JPG",
+    "notes": "上下兩個單欄區塊，依上到下串接"
+  },
+  {
+    "id": "o-54",
+    "code": "O-54",
+    "codeNum": 54,
+    "series": "精油小知識",
+    "name": "聖羅勒",
+    "englishName": "Tulsi / Holy Basil",
+    "aromaFamilies": [],
+    "topics": [
+      "神經",
+      "情緒睡眠",
+      "循環心血管",
+      "免疫抗菌",
+      "消化",
+      "口腔"
+    ],
+    "benefits": [
+      {
+        "text": "頭痛"
+      },
+      {
+        "text": "焦慮"
+      },
+      {
+        "text": "止痛"
+      },
+      {
+        "text": "體液循環"
+      },
+      {
+        "text": "心血管"
+      },
+      {
+        "text": "抗感染"
+      },
+      {
+        "text": "抗氧化"
+      },
+      {
+        "text": "養護肝臟"
+      },
+      {
+        "text": "口腔健康"
+      }
+    ],
+    "image": "/images/knowledge/o-54.webp",
+    "sourceFile": "IMG_6828.JPG",
+    "notes": "此卡未標示香味描述；卡片同時印 Tulsi 與 Holy Basil 兩個英文名；版面是兩張並排面板、各自單欄，依面板由左到右串接"
+  },
+  {
+    "id": "o-55",
+    "code": "O-55",
+    "codeNum": 55,
+    "series": "精油小知識",
+    "name": "分餾椰子油",
+    "englishName": "Fractionated Coconut Oil Kit",
+    "aromaNotes": [
+      "無味"
+    ],
+    "aromaRaw": "無味",
+    "aromaFamilies": [],
+    "topics": [
+      "肌膚",
+      "毛髮頭皮"
+    ],
+    "benefits": [
+      {
+        "text": "防曬護膚"
+      },
+      {
+        "text": "抗氧化"
+      },
+      {
+        "text": "天然卸妝"
+      },
+      {
+        "text": "調整皮脂腺分泌"
+      },
+      {
+        "text": "滋潤肌膚"
+      },
+      {
+        "text": "降低角蛋白膨脹度"
+      },
+      {
+        "text": "天然護髮素"
+      },
+      {
+        "text": "曬後修復"
+      },
+      {
+        "text": "抗皺抗老化"
+      },
+      {
+        "text": "通暢毛孔"
+      }
+    ],
+    "image": "/images/knowledge/o-55.webp",
+    "sourceFile": "IMG_6829.JPG",
+    "notes": "香味欄位卡片明確標示「無味」（不是漏抄）；雙欄 5 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-56",
+    "code": "O-56",
+    "codeNum": 56,
+    "series": "精油小知識",
+    "name": "桂皮",
+    "englishName": "Cassia",
+    "aromaNotes": [
+      "溫暖",
+      "辛辣",
+      "肉桂味"
+    ],
+    "aromaRaw": "溫暖 辛辣 肉桂味",
+    "aromaFamilies": [
+      "辛香"
+    ],
+    "topics": [
+      "免疫抗菌",
+      "情緒睡眠",
+      "循環心血管",
+      "泌尿",
+      "清潔驅蟲",
+      "消化",
+      "呼吸道",
+      "肌膚"
+    ],
+    "benefits": [
+      {
+        "text": "抗菌"
+      },
+      {
+        "text": "焦慮"
+      },
+      {
+        "text": "促進循環"
+      },
+      {
+        "text": "腎病"
+      },
+      {
+        "text": "驅蟲"
+      },
+      {
+        "text": "保護腸胃"
+      },
+      {
+        "text": "抗病毒"
+      },
+      {
+        "text": "咳嗽"
+      },
+      {
+        "text": "潔淨肌膚"
+      },
+      {
+        "text": "胃腸脹氣"
+      },
+      {
+        "text": "男性陽痿"
+      },
+      {
+        "text": "療癒心靈"
+      }
+    ],
+    "image": "/images/knowledge/o-56.webp",
+    "sourceFile": "IMG_6830.JPG",
+    "notes": "三欄 4 列，依橫列由左到右讀取"
+  },
+  {
+    "id": "o-57",
+    "code": "O-57",
+    "codeNum": 57,
+    "series": "精油小知識",
+    "name": "當歸",
+    "englishName": "Angelica",
+    "aromaNotes": [
+      "藥香",
+      "當歸特有氣味"
+    ],
+    "aromaRaw": "藥香 當歸特有氣味",
+    "aromaFamilies": [
+      "草本"
+    ],
+    "topics": [
+      "循環心血管",
+      "免疫抗菌",
+      "呼吸道",
+      "婦科荷爾蒙",
+      "肌膚",
+      "消化",
+      "肌肉關節",
+      "情緒睡眠",
+      "神經"
+    ],
+    "benefits": [
+      {
+        "text": "補血活血"
+      },
+      {
+        "text": "增加腦供血量"
+      },
+      {
+        "text": "抗氧化抗血栓"
+      },
+      {
+        "text": "通經止痛"
+      },
+      {
+        "text": "改善血液循環"
+      },
+      {
+        "text": "平衡內分泌"
+      },
+      {
+        "text": "清除自由基"
+      },
+      {
+        "text": "調理肌膚"
+      },
+      {
+        "text": "提升免疫力"
+      },
+      {
+        "text": "治便祕"
+      },
+      {
+        "text": "久咳平喘"
+      },
+      {
+        "text": "舒緩關節疼痛"
+      },
+      {
+        "text": "緩解貧血症狀"
+      },
+      {
+        "text": "養心安眠"
+      }
+    ],
+    "image": "/images/knowledge/o-57.webp",
+    "sourceFile": "IMG_6831.JPG",
+    "notes": "左欄 8 條、右欄 6 條且向下偏移 2 列，依視覺橫列交替讀取（前兩條只有左欄）"
+  },
+  {
+    "id": "o-58",
+    "code": "O-58",
+    "codeNum": 58,
+    "series": "精油小知識",
+    "name": "五味子",
+    "englishName": "Schisandra",
+    "aromaNotes": [
+      "藥香",
+      "五味子特有氣味"
+    ],
+    "aromaRaw": "藥香 五味子特有氣味",
+    "aromaFamilies": [
+      "草本"
+    ],
+    "topics": [
+      "消化",
+      "免疫抗菌",
+      "情緒睡眠",
+      "呼吸道",
+      "神經",
+      "循環心血管",
+      "泌尿"
+    ],
+    "benefits": [
+      {
+        "text": "護肝"
+      },
+      {
+        "text": "抗氧化"
+      },
+      {
+        "text": "補氣聖品"
+      },
+      {
+        "text": "抵禦輻射和感染"
+      },
+      {
+        "text": "安神助眠"
+      },
+      {
+        "text": "穩定血糖與血壓"
+      },
+      {
+        "text": "舒緩久咳"
+      },
+      {
+        "text": "增強男性性活力"
+      },
+      {
+        "text": "安定中樞神經"
+      },
+      {
+        "text": "調理消化系統"
+      },
+      {
+        "text": "增加血管張力"
+      },
+      {
+        "text": "調理泌尿系統"
+      },
+      {
+        "text": "舒緩心悸心慌"
+      },
+      {
+        "text": "降低膽固醇"
+      },
+      {
+        "text": "預防視網膜變性"
+      }
+    ],
+    "image": "/images/knowledge/o-58.webp",
+    "sourceFile": "IMG_6832.JPG",
+    "notes": "雙欄 7 列依橫列左右交替讀取；最後一項「預防視網膜變性」置中橫跨兩欄"
+  },
+  {
+    "id": "o-59",
+    "code": "O-59",
+    "codeNum": 59,
+    "series": "精油小知識",
+    "name": "馬達加斯加香草",
+    "englishName": "Madagascar Vanilla",
+    "aromaNotes": [
+      "豐富",
+      "細膩",
+      "甜美"
+    ],
+    "aromaRaw": "豐富、細膩、甜美",
+    "aromaFamilies": [
+      "甜香"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "免疫抗菌",
+      "神經",
+      "消化"
+    ],
+    "benefits": [
+      {
+        "text": "改善睡眠障礙"
+      },
+      {
+        "text": "抗氧化"
+      },
+      {
+        "text": "抗抑鬱消除焦慮"
+      },
+      {
+        "text": "催情劑"
+      },
+      {
+        "text": "香氣能調節血清素"
+      },
+      {
+        "text": "提振精神"
+      },
+      {
+        "text": "天然抑制食慾的特性"
+      },
+      {
+        "text": "多巴胺分泌"
+      }
+    ],
+    "image": "/images/knowledge/o-59.webp",
+    "sourceFile": "IMG_6833.JPG",
+    "notes": "雙欄 4 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-99",
+    "code": "O-99",
+    "codeNum": 99,
+    "series": "精油小知識",
+    "name": "茉莉",
+    "englishName": "Jasmine",
+    "aromaNotes": [
+      "濃郁花香",
+      "溫暖",
+      "麝香味"
+    ],
+    "aromaRaw": "濃郁花香 溫暖・麝香味",
+    "aromaFamilies": [
+      "花香"
+    ],
+    "topics": [
+      "婦科荷爾蒙",
+      "肌膚",
+      "呼吸道",
+      "泌尿",
+      "情緒睡眠"
+    ],
+    "ingredients": [
+      "分餾椰子油",
+      "茉莉精油"
+    ],
+    "benefits": [
+      {
+        "text": "性冷淡"
+      },
+      {
+        "text": "咳嗽"
+      },
+      {
+        "text": "調節經期"
+      },
+      {
+        "text": "美胸"
+      },
+      {
+        "text": "養顏回春"
+      },
+      {
+        "text": "淡化傷疤"
+      },
+      {
+        "text": "女性荷爾蒙"
+      },
+      {
+        "text": "提升多巴胺"
+      },
+      {
+        "text": "經前症候群"
+      },
+      {
+        "text": "前列腺肥大"
+      },
+      {
+        "text": "改善子宮血循不良"
+      },
+      {
+        "text": "增加皮膚彈性"
+      }
+    ],
+    "image": "/images/knowledge/o-99.webp",
+    "sourceFile": "IMG_6811.JPG",
+    "notes": "呵護系列 touch 滾珠瓶；有成分欄；雙欄 6 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-101",
+    "code": "O-101",
+    "codeNum": 101,
+    "series": "精油小知識",
+    "name": "木蘭花",
+    "englishName": "Magnolia",
+    "aromaNotes": [
+      "果香",
+      "酸甜",
+      "花香味"
+    ],
+    "aromaRaw": "果香・酸甜 花香味",
+    "aromaFamilies": [
+      "果香",
+      "花香",
+      "甜香"
+    ],
+    "topics": [
+      "神經",
+      "肌膚",
+      "婦科荷爾蒙",
+      "情緒睡眠",
+      "循環心血管",
+      "呼吸道",
+      "泌尿"
+    ],
+    "ingredients": [
+      "木蘭花",
+      "分餾椰子油"
+    ],
+    "benefits": [
+      {
+        "text": "抗癲癇"
+      },
+      {
+        "text": "止咳化痰"
+      },
+      {
+        "text": "保濕淡斑"
+      },
+      {
+        "text": "改善支氣管炎"
+      },
+      {
+        "text": "子宮保養"
+      },
+      {
+        "text": "放鬆減緩焦慮"
+      },
+      {
+        "text": "幫助睡眠"
+      },
+      {
+        "text": "促進血液循環"
+      },
+      {
+        "text": "血管斑塊"
+      },
+      {
+        "text": "改善泌尿系統"
+      }
+    ],
+    "image": "/images/knowledge/o-101.webp",
+    "sourceFile": "IMG_6813.JPG",
+    "notes": "呵護系列 touch 滾珠瓶；有成分欄；雙欄 5 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-102",
+    "code": "O-102",
+    "codeNum": 102,
+    "series": "精油小知識",
+    "name": "桂花",
+    "englishName": "Osmanthus",
+    "aromaNotes": [
+      "花香",
+      "甜美",
+      "果香"
+    ],
+    "aromaRaw": "花香・甜美・果香",
+    "aromaFamilies": [
+      "花香",
+      "甜香",
+      "果香"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "消化",
+      "肌膚",
+      "婦科荷爾蒙",
+      "泌尿"
+    ],
+    "ingredients": [
+      "桂花精油",
+      "分餾椰子油"
+    ],
+    "benefits": [
+      {
+        "text": "催情"
+      },
+      {
+        "text": "改善情緒"
+      },
+      {
+        "text": "健胃通便"
+      },
+      {
+        "text": "美白排毒"
+      },
+      {
+        "text": "化痰止咳"
+      },
+      {
+        "text": "生殖助孕"
+      },
+      {
+        "text": "預防腎結石"
+      },
+      {
+        "text": "調理荷爾蒙"
+      },
+      {
+        "text": "皮膚保濕緊實"
+      }
+    ],
+    "image": "/images/knowledge/o-102.webp",
+    "sourceFile": "IMG_6812.JPG",
+    "notes": "呵護系列 touch 滾珠瓶；有成分欄；單欄無順序疑義"
+  },
+  {
+    "id": "o-104",
+    "code": "O-104",
+    "codeNum": 104,
+    "series": "精油小知識",
+    "name": "日柚",
+    "englishName": "Citrus Junos",
+    "aromaNotes": [
+      "明亮",
+      "熱情",
+      "淡淡花香"
+    ],
+    "aromaRaw": "明亮、熱情、淡淡花香",
+    "aromaFamilies": [
+      "柑橘",
+      "花香"
+    ],
+    "topics": [
+      "肌膚",
+      "情緒睡眠",
+      "免疫抗菌",
+      "循環心血管"
+    ],
+    "benefits": [
+      {
+        "text": "保濕美白"
+      },
+      {
+        "text": "幫助睡眠"
+      },
+      {
+        "text": "養顏美肌"
+      },
+      {
+        "text": "緩解壓力"
+      },
+      {
+        "text": "改善膚質"
+      },
+      {
+        "text": "預防感冒"
+      },
+      {
+        "text": "促進血液"
+      },
+      {
+        "text": "促進皮膚膠原形成"
+      }
+    ],
+    "image": "/images/knowledge/o-104.webp",
+    "sourceFile": "IMG_6810.JPG",
+    "notes": "對齊的雙欄 4 列，依橫列左右交替讀取"
+  },
+  {
+    "id": "o-105",
+    "code": "O-105",
+    "codeNum": 105,
+    "series": "精油小知識",
+    "name": "西班牙鼠尾草",
+    "aromaNotes": [
+      "樟腦",
+      "草本"
+    ],
+    "aromaRaw": "樟腦・草本",
+    "aromaFamilies": [
+      "草本"
+    ],
+    "topics": [
+      "神經",
+      "情緒睡眠",
+      "免疫抗菌",
+      "呼吸道",
+      "肌肉關節",
+      "肌膚"
+    ],
+    "benefits": [
+      {
+        "text": "抗抑鬱"
+      },
+      {
+        "text": "強化記憶"
+      },
+      {
+        "text": "抗菌抗黴菌"
+      },
+      {
+        "text": "提升專注"
+      },
+      {
+        "text": "舒緩呼吸道"
+      },
+      {
+        "text": "幫助認知"
+      },
+      {
+        "text": "肌肉關節疼痛"
+      },
+      {
+        "text": "頂輪用油"
+      },
+      {
+        "text": "促進皮膚細胞再生"
+      }
+    ],
+    "image": "/images/knowledge/o-105.webp",
+    "sourceFile": "IMG_6809.JPG",
+    "notes": "卡片未標示英文名；右欄向下偏移（左 5 條、右 4 條），依視覺橫列交替讀取"
+  },
+  {
+    "id": "o-106",
+    "code": "O-106",
+    "codeNum": 106,
+    "series": "精油小知識",
+    "name": "癒創木",
+    "aromaNotes": [
+      "大地氣息",
+      "木質調",
+      "香甜"
+    ],
+    "aromaRaw": "大地氣息｜木質調｜香甜",
+    "aromaFamilies": [
+      "木質",
+      "土壤",
+      "甜香"
+    ],
+    "topics": [
+      "肌肉關節",
+      "神經",
+      "免疫抗菌",
+      "肌膚",
+      "婦科荷爾蒙",
+      "呼吸道"
+    ],
+    "benefits": [
+      {
+        "text": "關節痛"
+      },
+      {
+        "text": "自律神經"
+      },
+      {
+        "text": "支持免疫"
+      },
+      {
+        "text": "咳嗽、便秘"
+      },
+      {
+        "text": "鎮靜放鬆減壓"
+      },
+      {
+        "text": "深層保濕"
+      },
+      {
+        "text": "皮膚組織緊實"
+      },
+      {
+        "text": "防止皮膚老化"
+      },
+      {
+        "text": "經痛、改善陰道乾澀"
+      },
+      {
+        "text": "抗氧化、驅蟲除蟎"
+      },
+      {
+        "text": "發汗劑、利尿、病毒感染"
+      },
+      {
+        "text": "痛風與風濕性關節炎症狀"
+      }
+    ],
+    "image": "/images/knowledge/o-106.webp",
+    "sourceFile": "IMG_6808.JPG",
+    "notes": "版面是四個獨立白色區塊而非雙欄，依左上→左下→右下的區塊順序串接"
+  },
+  {
+    "id": "o-109",
+    "code": "O-109",
+    "codeNum": 109,
+    "series": "精油小知識",
+    "name": "甜桔",
+    "englishName": "Tangerine",
+    "aromaNotes": [
+      "濃郁",
+      "香甜",
+      "清新"
+    ],
+    "aromaRaw": "濃郁、香甜、清新",
+    "aromaFamilies": [
+      "柑橘",
+      "甜香"
+    ],
+    "topics": [
+      "情緒睡眠",
+      "免疫抗菌",
+      "呼吸道",
+      "肌膚",
+      "消化"
+    ],
+    "benefits": [
+      {
+        "text": "提升專注力"
+      },
+      {
+        "text": "提振免疫力"
+      },
+      {
+        "text": "利膽"
+      },
+      {
+        "text": "健康呼吸道"
+      },
+      {
+        "text": "抗氧化"
+      },
+      {
+        "text": "淡化妊娠紋"
+      },
+      {
+        "text": "加強清潔"
+      },
+      {
+        "text": "促進脂肪代謝"
+      },
+      {
+        "text": "幫助消化"
+      },
+      {
+        "text": "降低壓力與焦慮"
+      },
+      {
+        "text": "有效抗菌"
+      }
+    ],
+    "image": "/images/knowledge/o-109.webp",
+    "sourceFile": "IMG_6807.JPG",
+    "notes": "右欄向下偏移半列（左 6 條、右 5 條），依視覺橫列交替讀取"
+  },
+  {
+    "id": "o-110",
+    "code": "O-110",
+    "codeNum": 110,
+    "series": "精油小知識",
+    "name": "藍睡蓮",
+    "englishName": "Blue Lotus",
+    "aromaFamilies": [],
+    "topics": [
+      "肌膚",
+      "情緒睡眠",
+      "毛髮頭皮"
+    ],
+    "benefits": [
+      {
+        "text": "頭皮保養"
+      },
+      {
+        "text": "改善皺紋"
+      },
+      {
+        "text": "肌膚保養"
+      },
+      {
+        "text": "提亮膚色"
+      },
+      {
+        "text": "安撫情緒"
+      },
+      {
+        "text": "緩解壓力"
+      },
+      {
+        "text": "淡斑抗敏"
+      },
+      {
+        "text": "平衡焦慮"
+      },
+      {
+        "text": "平衡油脂"
+      },
+      {
+        "text": "幫助睡眠"
+      },
+      {
+        "text": "加強鎖水保濕"
+      }
+    ],
+    "image": "/images/knowledge/o-110.webp",
+    "sourceFile": "IMG_6806.JPG",
+    "notes": "呵護系列 touch 滾珠瓶；此卡未標示香味描述；右欄向下偏移半列，依視覺橫列交替讀取"
+  },
+  {
+    "id": "o-111",
+    "code": "O-111",
+    "codeNum": 111,
+    "series": "精油小知識",
+    "name": "梔子花",
+    "englishName": "Gardenia",
+    "aromaNotes": [
+      "花香",
+      "濃郁",
+      "香甜"
+    ],
+    "aromaRaw": "花香、濃郁、香甜",
+    "aromaFamilies": [
+      "花香",
+      "甜香"
+    ],
+    "topics": [
+      "肌膚",
+      "情緒睡眠"
+    ],
+    "benefits": [
+      {
+        "text": "肌膚健康"
+      },
+      {
+        "text": "滋潤肌膚"
+      },
+      {
+        "text": "柔潤皮膚"
+      },
+      {
+        "text": "淨化毛孔"
+      },
+      {
+        "text": "紓解壓力"
+      },
+      {
+        "text": "肌膚新陳代謝"
+      },
+      {
+        "text": "平衡肌膚油脂"
+      }
+    ],
+    "image": "/images/knowledge/o-111.webp",
+    "sourceFile": "IMG_6805.JPG",
+    "notes": "呵護系列 touch 滾珠瓶；英文名僅出現在瓶身標籤；單欄無順序疑義"
+  },
+  {
+    "id": "o-112",
+    "code": "O-112",
+    "codeNum": 112,
+    "series": "精油小知識",
+    "name": "楓香",
+    "aromaNotes": [
+      "香脂",
+      "肉桂味",
+      "苦杏仁味"
+    ],
+    "aromaRaw": "香脂、肉桂味 苦杏仁味",
+    "aromaFamilies": [
+      "樹脂",
+      "辛香"
+    ],
+    "topics": [
+      "免疫抗菌",
+      "情緒睡眠",
+      "肌膚",
+      "消化",
+      "清潔驅蟲"
+    ],
+    "benefits": [
+      {
+        "text": "增強免疫"
+      },
+      {
+        "text": "抗氧化劑"
+      },
+      {
+        "text": "緩解壓力"
+      },
+      {
+        "text": "減少皺紋"
+      },
+      {
+        "text": "抗炎功效"
+      },
+      {
+        "text": "皮膚鬆弛"
+      },
+      {
+        "text": "傷口癒合"
+      },
+      {
+        "text": "消化道問題"
+      },
+      {
+        "text": "天然驅蟲"
+      },
+      {
+        "text": "滋潤保護肌膚"
+      }
+    ],
+    "image": "/images/knowledge/o-112.webp",
+    "sourceFile": "IMG_6804.JPG",
+    "notes": "卡片未標示英文名；雙欄 5 列依橫列左右交替讀取"
+  },
+  {
+    "id": "o-113",
+    "code": "O-113",
+    "codeNum": 113,
+    "series": "精油小知識",
+    "name": "側柏",
+    "englishName": "Arborvitae",
+    "alias": "生命之樹",
+    "aromaNotes": [
+      "溫暖",
+      "大地",
+      "木質味"
+    ],
+    "aromaRaw": "溫暖 大地 木質味",
+    "aromaFamilies": [
+      "木質",
+      "土壤"
+    ],
+    "topics": [
+      "肌膚",
+      "免疫抗菌",
+      "呼吸道",
+      "毛髮頭皮",
+      "清潔驅蟲",
+      "情緒睡眠"
+    ],
+    "benefits": [
+      {
+        "text": "天然驅蟲"
+      },
+      {
+        "text": "防曬"
+      },
+      {
+        "text": "殺毒消菌"
+      },
+      {
+        "text": "緊緻皮膚"
+      },
+      {
+        "text": "減緩脫髮"
+      },
+      {
+        "text": "安定寧神"
+      },
+      {
+        "text": "抗痘、抗發炎"
+      },
+      {
+        "text": "抗腸病毒"
+      },
+      {
+        "text": "減少肌膚敏感"
+      },
+      {
+        "text": "念珠菌感染"
+      },
+      {
+        "text": "改善呼吸道"
+      },
+      {
+        "text": "提升免疫力"
+      }
+    ],
+    "image": "/images/knowledge/o-113.webp",
+    "sourceFile": "IMG_6803.JPG",
+    "notes": "雙欄 6 列中間有裝飾分隔線，依橫列左右交替讀取"
+  },
+  {
+    "id": "o-114",
+    "code": "O-114",
+    "codeNum": 114,
+    "series": "精油小知識",
+    "name": "芹菜籽",
+    "englishName": "Celery Seed",
+    "aromaNotes": [
+      "甘甜",
+      "溫暖",
+      "樸實",
+      "辛辣"
+    ],
+    "aromaRaw": "甘甜 溫暖 樸實 辛辣",
+    "aromaFamilies": [
+      "甜香",
+      "辛香",
+      "土壤"
+    ],
+    "topics": [
+      "消化",
+      "泌尿",
+      "肌肉關節",
+      "婦科荷爾蒙"
+    ],
+    "benefits": [
+      {
+        "text": "消化系統健康"
+      },
+      {
+        "text": "膀胱淨化利尿劑"
+      },
+      {
+        "text": "助消化"
+      },
+      {
+        "text": "祛腸胃脹氣"
+      },
+      {
+        "text": "抗痛風性關節炎"
+      },
+      {
+        "text": "補身美白"
+      },
+      {
+        "text": "抗風濕性關節炎"
+      },
+      {
+        "text": "肝腎排除毒素"
+      },
+      {
+        "text": "緩解女性經痛"
+      }
+    ],
+    "image": "/images/knowledge/o-114.webp",
+    "sourceFile": "IMG_6802.JPG",
+    "notes": "不規則膠囊排版（首列 3 個、其後每列 1~2 個），依橫列左右讀取"
+  },
+  {
+    "id": "o-115",
+    "code": "O-115",
+    "codeNum": 115,
+    "series": "精油小知識",
+    "name": "樺樹",
+    "englishName": "Birch",
+    "aromaNotes": [
+      "薄荷味",
+      "甜味",
+      "輕微的木香"
+    ],
+    "aromaRaw": "薄荷味 甜味 輕微的木香",
+    "aromaFamilies": [
+      "薄荷",
+      "甜香",
+      "木質"
+    ],
+    "topics": [
+      "肌肉關節",
+      "神經",
+      "免疫抗菌",
+      "口腔"
+    ],
+    "benefits": [
+      {
+        "text": "肌肉酸痛"
+      },
+      {
+        "text": "止痛抗感染"
+      },
+      {
+        "text": "骨頭疼痛"
+      },
+      {
+        "text": "牙齦出血"
+      },
+      {
+        "text": "肌肉發炎"
+      },
+      {
+        "text": "神經病症"
+      },
+      {
+        "text": "脊椎側彎"
+      },
+      {
+        "text": "多發性硬化症"
+      }
+    ],
+    "image": "/images/knowledge/o-115.webp",
+    "sourceFile": "IMG_6801.JPG",
+    "notes": "功效為對齊的雙欄 4 列，依橫列左右交替讀取"
+  },
+  {
+    "id": "tea-tree",
+    "series": "精油小知識",
+    "name": "茶樹",
+    "englishName": "Tea Tree",
+    "aromaNotes": [
+      "溫暖",
+      "綠色",
+      "似皮革味"
+    ],
+    "aromaRaw": "溫暖 綠色 似皮革味",
+    "aromaDiffersFromCatalog": "草本、綠色、似皮革味",
+    "aromaFamilies": [
+      "草本",
+      "木質"
+    ],
+    "topics": [
+      "泌尿",
+      "免疫抗菌",
+      "婦科荷爾蒙",
+      "毛髮頭皮",
+      "神經",
+      "清潔驅蟲",
+      "肌膚"
+    ],
+    "usage": {
+      "title": "對抗痘痘4大用法",
+      "items": [
+        "塗抹於痘痘",
+        "與蘆薈調和",
+        "配合化妝水",
+        "調和成噴霧"
+      ]
+    },
+    "benefits": [
+      {
+        "text": "淨化尿道"
+      },
+      {
+        "text": "天然抑菌"
+      },
+      {
+        "text": "改善經痛"
+      },
+      {
+        "text": "調理頭皮"
+      },
+      {
+        "text": "使頭腦清新"
+      },
+      {
+        "text": "空氣淨化"
+      },
+      {
+        "text": "改善唇部疱疹"
+      },
+      {
+        "text": "天然防蚊"
+      },
+      {
+        "text": "抗念珠菌感染"
+      },
+      {
+        "text": "淨化痘痘"
+      }
+    ],
+    "image": "/images/knowledge/tea-tree.webp",
+    "sourceFile": "IMG_6865.JPG",
+    "notes": "卡片上未印編號，id 改用英文名 slug（相鄰的 IMG_6864 為 O-11、IMG_6866 為 O-13，推測本卡應為 O-12，但卡面確實沒有）；另有「對抗痘痘4大用法」使用方法區塊，與功效分開存放。香味與官方目錄記載差一詞，已回頭核對原圖確認為卡片原文"
+  },
+  {
+    "id": "2-14",
+    "code": "2-14",
+    "codeNum": 14,
+    "series": "營養補充品",
+    "name": "生薑油",
+    "englishName": "Ginger Oil",
+    "aromaFamilies": [],
+    "topics": [
+      "消化",
+      "肌肉關節",
+      "循環心血管",
+      "婦科荷爾蒙"
+    ],
+    "benefits": [
+      {
+        "text": "腹瀉"
+      },
+      {
+        "text": "經痛"
+      },
+      {
+        "text": "暈眩"
+      },
+      {
+        "text": "肌腱炎"
+      },
+      {
+        "text": "體寒"
+      },
+      {
+        "text": "降膽固醇"
+      },
+      {
+        "text": "風濕"
+      },
+      {
+        "text": "促進新陳代謝"
+      },
+      {
+        "text": "抑制嘔吐"
+      },
+      {
+        "text": "腸胃消化不良"
+      },
+      {
+        "text": "血液循環"
+      }
+    ],
+    "image": "/images/knowledge/2-14.webp",
+    "sourceFile": "IMG_6814.JPG",
+    "notes": "非精油小知識系列，卡片頁腳標示「營養補充品 NUTRITION SUPPLEMENT」，編號 2-14；未標示香味；右欄向下偏移，依視覺橫列交替讀取"
   }
 ]

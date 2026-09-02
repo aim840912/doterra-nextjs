@@ -10,9 +10,13 @@ import raw from './knowledge.json'
  */
 export const knowledgeCards: KnowledgeCard[] = raw
 
-/** 依編號排序（用 codeNum，字串排序會把 O-115 排在 O-7 之前） */
+/**
+ * 先依系列、再依編號數值排序。
+ * 用 codeNum 而非 code，因為字串排序會把 'O-115' 排在 'O-7' 之前；
+ * 先分系列則是因為兩個系列的編號各自獨立（O-14 與 2-14 不相干）。
+ */
 export const knowledgeByCode = [...knowledgeCards].sort(
-  (a, b) => a.codeNum - b.codeNum
+  (a, b) => a.series.localeCompare(b.series, 'zh-TW') || (a.codeNum ?? Infinity) - (b.codeNum ?? Infinity)
 )
 
 export const getCardById = (id: string): KnowledgeCard | undefined =>

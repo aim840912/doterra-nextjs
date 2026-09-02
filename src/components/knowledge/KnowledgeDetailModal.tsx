@@ -145,9 +145,9 @@ export default function KnowledgeDetailModal({
                       </h4>
                     )}
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5">
-                      {items.map(benefit => (
+                      {items.map((benefit, i) => (
                         <li
-                          key={benefit.text}
+                          key={`${benefit.text}-${i}`}
                           className="flex items-start gap-1.5 text-gray-700"
                         >
                           <span
@@ -164,6 +164,20 @@ export default function KnowledgeDetailModal({
                 ))}
               </div>
             </section>
+
+            {/* 使用方法與功效性質不同，另立區塊，不混進功效清單 */}
+            {card.usage && (
+              <section>
+                <h3 className="text-sm font-medium text-gray-500 mb-2">
+                  {card.usage.title}
+                </h3>
+                <ol className="list-decimal list-inside space-y-1 text-gray-700">
+                  {card.usage.items.map((item, i) => (
+                    <li key={`${item}-${i}`}>{item}</li>
+                  ))}
+                </ol>
+              </section>
+            )}
           </div>
         </div>
       </div>

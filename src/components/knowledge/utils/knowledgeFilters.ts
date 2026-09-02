@@ -33,13 +33,21 @@ const FUSE_OPTIONS = {
     { name: 'alias', weight: 2 },
     { name: 'aromaNotes', weight: 1.5 },
     { name: 'benefits.text', weight: 1.2 },
-    { name: 'topics', weight: 1 },
     { name: 'ingredients', weight: 0.8 },
+    // 刻意不把 topics / aromaFamilies 放進搜尋鍵。
+    // 它們是為篩選 pill 歸納的標籤，不是卡片原文；放進來會讓搜尋變成「打標籤」：
+    // 搜「睡眠」曾回 50 張（= 標了「情緒睡眠」的卡片數）、搜「關節」回 28 張，
+    // 而使用者要找的是功效原文真的提到那個詞的卡片。標籤走 pill，搜尋走原文。
   ],
   threshold: 0.3,
   ignoreLocation: true,
   minMatchCharLength: 2,
   shouldSort: true,
+  // 開啟延伸語法，讓查詢可以用 ' 前綴要求「精確包含」。
+  // 實測：純模糊比對在這份資料上不可用——搜「睡眠」回 50/73 張、
+  // 搜「O-27」回 16 張（O-2、O-7、O-20… 全被模糊命中）。
+  // 中文詞短、編號又高度相似，編輯距離式比對幾乎等於沒有篩選。
+  useExtendedSearch: true,
 }
 
 export const createKnowledgeFuse = (cards: KnowledgeCard[]) =>
@@ -73,9 +81,12 @@ export const filterCards = (
   filters: KnowledgeFilterState,
   fuse: Fuse<KnowledgeCard>
 ): KnowledgeCard[] => {
+  const query = filters.search.trim()
   const searched =
-    filters.search.trim().length > 0
-      ? fuse.search(filters.search.trim()).map(r => r.item)
+    query.length > 0
+      ? // ' 前綴 = 精確包含（延伸語法）。使用者打的是實際字詞，
+        // 子字串比對比模糊比對可預測得多，也不會被相似編號洗版。
+        fuse.search(`'${query}`).map(r => r.item)
       : cards
 
   return searched.filter(card => {
