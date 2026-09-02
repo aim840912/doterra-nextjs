@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -12,11 +12,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/*
+ * 這裡原本有一段 @media (prefers-color-scheme: dark)，把 --foreground 翻成
+ * #ededed。移除的原因：全站元件都硬寫淺色底（bg-white、from-green-50…），
+ * 沒有任何一個配合深色模式，所以那段只會造成傷害——背景仍是白的，繼承來的
+ * 文字卻變成淺灰。實測就是這樣讓 /knowledge 的搜尋框在深色偏好的瀏覽器裡
+ * 幾乎看不見（Playwright headless 預設淺色，所以測不出來）。
+ *
+ * color-scheme: light 則是讓瀏覽器的原生控制項（輸入框、捲軸、下拉選單）
+ * 也一律用淺色，避免同樣的「淺色底配深色系控制項」不一致。
+ *
+ * 真的要做深色模式，得先把元件的硬寫顏色改成雙模式，不是只翻這兩個變數。
+ */
+:root {
+  color-scheme: light;
 }
 
 body {

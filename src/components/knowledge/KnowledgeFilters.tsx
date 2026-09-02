@@ -79,13 +79,16 @@ export default function KnowledgeFilters({
         <label htmlFor="knowledge-search" className="sr-only">
           搜尋精油小知識
         </label>
+        {/* 文字與 placeholder 顏色必須明確指定：不指定就繼承 body，
+            而 body 的顏色來自 CSS 變數，曾因瀏覽器深色偏好翻成淺灰、
+            疊在硬寫的白底上幾乎看不見 */}
         <input
           id="knowledge-search"
           type="search"
           value={filters.search}
           onChange={e => onSearchChange(e.target.value)}
           placeholder="搜尋精油名稱、功效或編號，例如「睡眠」「O-27」"
-          className="w-full min-h-[44px] px-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none"
+          className="w-full min-h-[44px] px-4 bg-white text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none"
         />
       </div>
 
