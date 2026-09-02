@@ -25,7 +25,9 @@
     "products:stats": "tsx -e \"import { getProductStats } from './src/data/products'; console.log(getProductStats())\"",
     "cleanup": "tsx scripts/cleanup.ts",
     "cleanup:cache": "tsx scripts/cleanup.ts --cache-only",
-    "cleanup:deps": "tsx scripts/cleanup.ts --refresh-deps"
+    "cleanup:deps": "tsx scripts/cleanup.ts --refresh-deps",
+    "knowledge:verify": "tsx scripts/verify-knowledge.ts",
+    "knowledge:images": "tsx scripts/import-knowledge-images.ts"
   },
   "dependencies": {
     "browser-image-compression": "^2.0.2",
