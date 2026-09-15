@@ -62,7 +62,7 @@ import { chromium } from 'playwright';
     
     // 截圖保存修復後的效果（表單上半部）
     await page.screenshot({ 
-      path: 'add-product-form-fixed-top.png', 
+      path: 'screenshots/add-product-form-fixed-top.png', 
       fullPage: false,
       clip: { x: 0, y: 0, width: 1280, height: 700 } 
     });
@@ -74,7 +74,7 @@ import { chromium } from 'playwright';
     
     // 截圖表單下半部
     await page.screenshot({ 
-      path: 'add-product-form-fixed-bottom.png', 
+      path: 'screenshots/add-product-form-fixed-bottom.png', 
       fullPage: false,
       clip: { x: 0, y: 0, width: 1280, height: 700 } 
     });
@@ -91,7 +91,7 @@ import { chromium } from 'playwright';
     
     // 截圖類別選擇器
     await page.screenshot({ 
-      path: 'category-selector-fixed.png', 
+      path: 'screenshots/category-selector-fixed.png', 
       fullPage: false,
       clip: { x: 300, y: 200, width: 600, height: 400 } 
     });

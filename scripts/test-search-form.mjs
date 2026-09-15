@@ -40,7 +40,7 @@ import { chromium } from 'playwright';
     
     // 截圖保存修復後的效果
     await page.screenshot({ 
-      path: 'search-form-fixed.png', 
+      path: 'screenshots/search-form-fixed.png', 
       fullPage: false,
       clip: { x: 0, y: 0, width: 1280, height: 400 } 
     });
@@ -53,7 +53,7 @@ import { chromium } from 'playwright';
     
     // 截圖 placeholder 效果
     await page.screenshot({ 
-      path: 'search-form-placeholder.png', 
+      path: 'screenshots/search-form-placeholder.png', 
       fullPage: false,
       clip: { x: 0, y: 0, width: 1280, height: 300 } 
     });

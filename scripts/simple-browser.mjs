@@ -30,7 +30,7 @@ import { chromium } from 'playwright';
     console.log('⏰ 瀏覽器將保持開啟 10 分鐘，或您可以手動關閉');
     
     // 截圖首頁
-    await page.screenshot({ path: 'doterra-homepage.png', fullPage: true });
+    await page.screenshot({ path: 'screenshots/doterra-homepage.png', fullPage: true });
     console.log('📸 已截圖保存首頁為 doterra-homepage.png');
     
     // 保持瀏覽器開啟 10 分鐘

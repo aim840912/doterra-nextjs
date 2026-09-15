@@ -50,7 +50,7 @@ import { chromium } from 'playwright';
     await page.waitForTimeout(3000);
     
     // 截圖包含 Modal
-    await page.screenshot({ path: 'doTERRA-modal-demo.png', fullPage: true });
+    await page.screenshot({ path: 'screenshots/doTERRA-modal-demo.png', fullPage: true });
     console.log('📸 已截圖保存 Modal 示例為 doTERRA-modal-demo.png');
     
     // 測試 ESC 鍵關閉 Modal
@@ -72,7 +72,7 @@ import { chromium } from 'playwright';
     console.log('✅ Modal 成功透過關閉按鈕關閉！');
     
     // 最終截圖
-    await page.screenshot({ path: 'doTERRA-products-page.png', fullPage: true });
+    await page.screenshot({ path: 'screenshots/doTERRA-products-page.png', fullPage: true });
     console.log('📸 已截圖保存為 doTERRA-products-page.png');
     
     console.log('\n🎉 瀏覽器已成功打開 doTERRA 專案！');
