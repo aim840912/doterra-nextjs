@@ -76,3 +76,6 @@ test-results/
 
 # Supabase 臨時檔案
 supabase/.temp/
+
+# Playwright debug screenshots written by scripts/*-browser.mjs and scripts/test-*.mjs
+/screenshots/
